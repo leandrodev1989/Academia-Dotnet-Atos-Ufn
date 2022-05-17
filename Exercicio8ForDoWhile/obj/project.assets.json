@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\ExercicioForDoWhile\\Exercicio8ForDoWhile.csproj",
+      "projectUniqueName": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Exercicio8ForDoWhile\\Exercicio8ForDoWhile.csproj",
       "projectName": "Exercicio8ForDoWhile",
-      "projectPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\ExercicioForDoWhile\\Exercicio8ForDoWhile.csproj",
+      "projectPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Exercicio8ForDoWhile\\Exercicio8ForDoWhile.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\ExercicioForDoWhile\\obj\\",
+      "outputPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Exercicio8ForDoWhile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -8,20 +8,59 @@ Média de idade das mulheres. */
 
 
 string nome;
-string sexo;
+char sexo;
 int idade;
-int cont = 0;
+int IdadeMulheres = 0;
+int TotalPessoasSexoM = 0;
+int TotalPessoasSexoF = 0;
+int IdadeMenor30Anos = 0;
+int IdadeMaior60Anos = 0;
+double media;
 
-while (cont < 50)
+
+
+for(int i = 0; i < 2; i++)
 {
+
     Console.Write("Digite o nome: ");
     nome = Console.ReadLine();
 
-    Console.Write("Digite seu Sexo: ");
-    sexo = Console.ReadLine();
+    Console.Write("Qual é o  seu Sexo? : ");
+    sexo = char.Parse(Console.ReadLine().ToUpper());
 
     Console.Write("Digite sua Idade: ");
     idade = int.Parse(Console.ReadLine());
 
-    Console.Clear();
+    if (sexo == 'M')
+    {
+        TotalPessoasSexoM++;
+    }
+    else
+    {
+        TotalPessoasSexoF++;
+        IdadeMulheres += IdadeMulheres;
+        
+    }
+
+    if(idade < 30)
+    {
+       IdadeMenor30Anos++;
+    }
+    else if(idade > 60)
+    {
+        IdadeMaior60Anos++;
+    }
+
+    Console.WriteLine("==================");
+
+
+
 }
+
+media =    IdadeMulheres  / TotalPessoasSexoF ;
+
+Console.WriteLine($"Total de NUmero de Pessoas do Sexo (M) é de :{TotalPessoasSexoM}");
+Console.WriteLine($"Total de NUmero de Pessoas do Sexo (F) é de :{TotalPessoasSexoF}");
+Console.WriteLine($"Número de pessoas com idade inferior a 30 anos é de :{IdadeMenor30Anos}");
+Console.WriteLine($"Número de pessoas com idade Superior a 60 anos é de :{IdadeMaior60Anos}");
+Console.WriteLine($"Média de idade das Mulheres: {media}");

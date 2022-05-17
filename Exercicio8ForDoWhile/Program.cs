@@ -7,7 +7,8 @@ Finalmente, pergunte ao usuário se ele quer repetir o programa em VS. */
 /// <summary>
 /// recebe o numero para verificar se é par ou impar
 /// </summary>
-int numero;
+
+int numero ;
 
 /// <summary>
 /// valida a opção de sim ou não
@@ -18,13 +19,15 @@ string op;
 /// <summary>
 /// Valida se o verdadeiro ou falso
 /// </summary>
-bool escolheu = false; 
+bool escolheu = false;
 
 
 /// <summary>
 /// Processamento de Dados
 /// </summary>
-while(escolheu == false)
+
+
+while (escolheu == false)
 {
     Console.WriteLine("Digite um numero inteiro: ");
     numero = int.Parse(Console.ReadLine());
@@ -53,10 +56,8 @@ while(escolheu == false)
     {
         escolheu = false;
     }
-
-
-
-
 }
+
+
 
 
