@@ -1,11 +1,6 @@
 ﻿/*12 Apresentar o total da soma dos cem primeiros números inteiros.*/
 
 
-
-
-
-
-
 /// <summary>
 /// variavel que faz a inicialização
 /// </summary>
