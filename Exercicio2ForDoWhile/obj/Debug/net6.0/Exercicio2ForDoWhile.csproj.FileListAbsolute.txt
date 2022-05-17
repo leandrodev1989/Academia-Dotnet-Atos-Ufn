@@ -1,0 +1,15 @@
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\bin\Debug\net6.0\Exercicio2ForDoWhile.exe
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\bin\Debug\net6.0\Exercicio2ForDoWhile.deps.json
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\bin\Debug\net6.0\Exercicio2ForDoWhile.runtimeconfig.json
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\bin\Debug\net6.0\Exercicio2ForDoWhile.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\bin\Debug\net6.0\Exercicio2ForDoWhile.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.csproj.AssemblyReference.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.AssemblyInfoInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.AssemblyInfo.cs
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\refint\Exercicio2ForDoWhile.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\Exercicio2ForDoWhile.genruntimeconfig.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Exercicio2ForDoWhile\obj\Debug\net6.0\ref\Exercicio2ForDoWhile.dll
