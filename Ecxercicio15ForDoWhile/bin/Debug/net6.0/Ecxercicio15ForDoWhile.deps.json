@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Ecxercicio15ForDoWhile/1.0.0": {
+        "runtime": {
+          "Ecxercicio15ForDoWhile.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ecxercicio15ForDoWhile/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
