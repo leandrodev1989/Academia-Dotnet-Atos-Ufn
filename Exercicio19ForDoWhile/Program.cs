@@ -47,7 +47,7 @@ double MaiorSalario = 0;
 /// <summary>
 /// retorna o percentual de pessoas com osalario até 100,00
 /// </summary>
-double Percentual100;
+double PercentualPor100;
 
 
 
@@ -105,5 +105,5 @@ for (int i = 0; i < listaSalario.Count; i++)
         count++;
     }
 }
-Percentual100 = (count * 100) / listaSalario.Count;
-Console.WriteLine($"Percentual de pessoas com salário até R$100,00: {Percentual100}"  );
+PercentualPor100 = (count * 100) / listaSalario.Count;
+Console.WriteLine($"Percentual de pessoas com salário até R$100,00: {PercentualPor100}"  );
