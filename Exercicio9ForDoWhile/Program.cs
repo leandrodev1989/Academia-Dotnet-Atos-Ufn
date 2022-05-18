@@ -10,7 +10,7 @@ Quantas pessoas não tem filhos. */
 /// <summary>
 /// variável recebe a contagem dos filhos
 /// </summary>
-int QunatidadeFilhos = 0;
+int QuantidadeFilhos = 0;
 
 /// <summary>
 /// variavel que adiciona a quantidade de filhos entre 1 e 3
@@ -40,17 +40,17 @@ int NaoteFilhos = 0;
 for (int i = 0; i < 30; i++)
 {
     Console.Write("Qauntos Filhos Voçê Tem? ");
-    QunatidadeFilhos = int.Parse(Console.ReadLine());
+    QuantidadeFilhos = int.Parse(Console.ReadLine());
 
-    if (QunatidadeFilhos > 0 && QunatidadeFilhos <= 3)
+    if (QunatidadeFilhos > 0 && QuantidadeFilhos <= 3)
     {
         Entre1e3Filhos++;
     }
-    else if (QunatidadeFilhos > 3 && QunatidadeFilhos <= 7)
+    else if (QuantidadeFilhos > 3 && QuantidadeFilhos <= 7)
     {
         Entre4e7Filhos++;
     }
-    else if (QunatidadeFilhos > 7)
+    else if (QuantidadeFilhos > 7)
     {
         Mais8Filhos++;
     }
