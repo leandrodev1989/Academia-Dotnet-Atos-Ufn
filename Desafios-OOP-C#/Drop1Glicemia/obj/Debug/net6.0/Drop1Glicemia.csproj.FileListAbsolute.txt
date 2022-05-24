@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\bin\Debug\net6.0\Drop1Glicemia.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\bin\Debug\net6.0\Drop1Glicemia.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\bin\Debug\net6.0\Drop1Glicemia.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\bin\Debug\net6.0\Drop1Glicemia.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\bin\Debug\net6.0\Drop1Glicemia.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\refint\Drop1Glicemia.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\Drop1Glicemia.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\Drop1Glicemia\obj\Debug\net6.0\ref\Drop1Glicemia.dll

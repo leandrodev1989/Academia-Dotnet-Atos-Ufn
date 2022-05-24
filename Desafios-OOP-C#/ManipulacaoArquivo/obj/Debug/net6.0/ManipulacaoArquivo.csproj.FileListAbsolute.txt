@@ -1,0 +1,15 @@
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\bin\Debug\net6.0\ManipulacaoArquivo.exe
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\bin\Debug\net6.0\ManipulacaoArquivo.deps.json
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\bin\Debug\net6.0\ManipulacaoArquivo.runtimeconfig.json
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\bin\Debug\net6.0\ManipulacaoArquivo.dll
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\bin\Debug\net6.0\ManipulacaoArquivo.pdb
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.csproj.AssemblyReference.cache
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.AssemblyInfoInputs.cache
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.AssemblyInfo.cs
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.dll
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\refint\ManipulacaoArquivo.dll
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.pdb
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ManipulacaoArquivo.genruntimeconfig.cache
+C:\Users\Usuário\Desktop\OOPALEXANDRE\ManipulacaoArquivo\obj\Debug\net6.0\ref\ManipulacaoArquivo.dll

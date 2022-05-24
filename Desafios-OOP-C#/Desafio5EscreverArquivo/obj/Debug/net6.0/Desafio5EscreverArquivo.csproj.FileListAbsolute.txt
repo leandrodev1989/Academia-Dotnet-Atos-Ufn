@@ -1,0 +1,15 @@
+C:\C#OOP\Desafio5EscreverArquivo\bin\Debug\net6.0\Desafio5EscreverArquivo.exe
+C:\C#OOP\Desafio5EscreverArquivo\bin\Debug\net6.0\Desafio5EscreverArquivo.deps.json
+C:\C#OOP\Desafio5EscreverArquivo\bin\Debug\net6.0\Desafio5EscreverArquivo.runtimeconfig.json
+C:\C#OOP\Desafio5EscreverArquivo\bin\Debug\net6.0\Desafio5EscreverArquivo.dll
+C:\C#OOP\Desafio5EscreverArquivo\bin\Debug\net6.0\Desafio5EscreverArquivo.pdb
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.csproj.AssemblyReference.cache
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.AssemblyInfoInputs.cache
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.AssemblyInfo.cs
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.csproj.CoreCompileInputs.cache
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.dll
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\refint\Desafio5EscreverArquivo.dll
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.pdb
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\Desafio5EscreverArquivo.genruntimeconfig.cache
+C:\C#OOP\Desafio5EscreverArquivo\obj\Debug\net6.0\ref\Desafio5EscreverArquivo.dll

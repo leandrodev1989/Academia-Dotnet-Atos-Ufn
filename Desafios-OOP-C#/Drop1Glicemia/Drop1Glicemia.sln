@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drop1Glicemia", "Drop1Glicemia.csproj", "{6DA8A79E-70D6-4D38-8E71-1F417D00C428}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DA8A79E-70D6-4D38-8E71-1F417D00C428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA8A79E-70D6-4D38-8E71-1F417D00C428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA8A79E-70D6-4D38-8E71-1F417D00C428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA8A79E-70D6-4D38-8E71-1F417D00C428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09B0B5C1-4C5F-4E95-B52F-958BC1BD3703}
+	EndGlobalSection
+EndGlobal

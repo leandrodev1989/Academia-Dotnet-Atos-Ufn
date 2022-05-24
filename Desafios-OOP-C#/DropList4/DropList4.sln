@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drop4EmailArquivo", "Drop4EmailArquivo.csproj", "{1C62BF18-EC95-49CC-99EE-FDF9B86807BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C62BF18-EC95-49CC-99EE-FDF9B86807BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C62BF18-EC95-49CC-99EE-FDF9B86807BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C62BF18-EC95-49CC-99EE-FDF9B86807BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C62BF18-EC95-49CC-99EE-FDF9B86807BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB46A2AA-3B18-4B2B-A24A-C349C8EA7B6A}
+	EndGlobalSection
+EndGlobal
