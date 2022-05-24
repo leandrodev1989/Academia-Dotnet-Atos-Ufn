@@ -1,0 +1,15 @@
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\bin\Debug\net6.0\Drop4EmailArquivo.exe
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\bin\Debug\net6.0\Drop4EmailArquivo.deps.json
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\bin\Debug\net6.0\Drop4EmailArquivo.runtimeconfig.json
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\bin\Debug\net6.0\Drop4EmailArquivo.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\bin\Debug\net6.0\Drop4EmailArquivo.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.csproj.AssemblyReference.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.AssemblyInfoInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.AssemblyInfo.cs
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\refint\Drop4EmailArquivo.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\Drop4EmailArquivo.genruntimeconfig.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\Desafios-OOP-C#\DropList4\obj\Debug\net6.0\ref\Drop4EmailArquivo.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\ExerciciosAcademiaDotNetAtosProfRicardo\\DropList4\\Drop4EmailArquivo.csproj": {}
+    "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Desafios-OOP-C#\\DropList4\\Drop4EmailArquivo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\ExerciciosAcademiaDotNetAtosProfRicardo\\DropList4\\Drop4EmailArquivo.csproj": {
+    "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Desafios-OOP-C#\\DropList4\\Drop4EmailArquivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\ExerciciosAcademiaDotNetAtosProfRicardo\\DropList4\\Drop4EmailArquivo.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Desafios-OOP-C#\\DropList4\\Drop4EmailArquivo.csproj",
         "projectName": "Drop4EmailArquivo",
-        "projectPath": "C:\\Users\\Usuário\\ExerciciosAcademiaDotNetAtosProfRicardo\\DropList4\\Drop4EmailArquivo.csproj",
+        "projectPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Desafios-OOP-C#\\DropList4\\Drop4EmailArquivo.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\ExerciciosAcademiaDotNetAtosProfRicardo\\DropList4\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\AcademiaAtosWhileFor\\Desafios-OOP-C#\\DropList4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -14,6 +14,8 @@ MENU
 4 - Sair
 Opção:____ */
 
+using System.IO;
+
 List<string> listaEmails = new List<string>();
 List<string> listaDominios = new List<string>();
 string opcao;
@@ -25,7 +27,8 @@ do
     Console.WriteLine("1 - Abrir arquivo com emails e popular lista");
     Console.WriteLine("2 - Exibir lista de emails");
     Console.WriteLine("3 - Mostrar os domínios dos emails");
-    Console.WriteLine("4 - Sair");
+    Console.WriteLine("4 - Cadastrar emails");
+    Console.WriteLine("5 - Sair");
     Console.Write("Opção: ");
     opcao = Console.ReadLine();
 
@@ -56,7 +59,7 @@ do
                         string[] emailSplit;
                         string dominio;
                         emailSplit = email.Split("@");
-                        dominio = emailSplit[1];
+                        dominio = emailSplit[0];
                         if (!listaDominios.Contains(dominio))
                         {
                             listaDominios.Add(dominio);
@@ -108,6 +111,18 @@ do
             }
             break;
         case "4":
+
+            Console.WriteLine("[Digite Seu Email]");
+            email = Console.ReadLine();
+            Console.WriteLine("Email Cadastrado Com Sucesso!!");
+
+            StreamWriter escritor = new StreamWriter("Email.txt", true);
+            escritor.WriteLine(email);                   
+            listaEmails.Add(email);
+            escritor.Close();   
+            break;
+
+        case "5":
             Console.WriteLine("Obrigado por usar o sistema");
             break;
         default:
@@ -117,4 +132,4 @@ do
 
     Console.Write("Pressione algo para continuar!");
     Console.ReadKey();
-} while (opcao != "4");
+} while (opcao != "5");
