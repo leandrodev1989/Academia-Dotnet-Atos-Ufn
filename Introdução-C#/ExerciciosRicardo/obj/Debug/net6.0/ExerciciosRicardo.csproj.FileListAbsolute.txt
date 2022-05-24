@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\bin\Debug\net6.0\ExerciciosRicardo.exe
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\bin\Debug\net6.0\ExerciciosRicardo.deps.json
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\bin\Debug\net6.0\ExerciciosRicardo.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\bin\Debug\net6.0\ExerciciosRicardo.dll
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\bin\Debug\net6.0\ExerciciosRicardo.pdb
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.dll
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\refint\ExerciciosRicardo.dll
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.pdb
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ExerciciosRicardo.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademia\ExerciciosRicardo\obj\Debug\net6.0\ref\ExerciciosRicardo.dll

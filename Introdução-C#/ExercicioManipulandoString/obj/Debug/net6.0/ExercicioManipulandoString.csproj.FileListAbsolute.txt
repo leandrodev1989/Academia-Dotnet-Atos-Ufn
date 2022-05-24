@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\bin\Debug\net6.0\ExercicioManipulandoString.exe
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\bin\Debug\net6.0\ExercicioManipulandoString.deps.json
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\bin\Debug\net6.0\ExercicioManipulandoString.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\bin\Debug\net6.0\ExercicioManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\bin\Debug\net6.0\ExercicioManipulandoString.pdb
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\refint\ExercicioManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.pdb
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ExercicioManipulandoString.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademia\ExercicioManipulandoString\obj\Debug\net6.0\ref\ExercicioManipulandoString.dll

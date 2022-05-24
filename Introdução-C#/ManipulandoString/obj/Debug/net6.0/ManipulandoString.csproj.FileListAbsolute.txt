@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\bin\Debug\net6.0\ManipulandoString.exe
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\bin\Debug\net6.0\ManipulandoString.deps.json
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\bin\Debug\net6.0\ManipulandoString.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\bin\Debug\net6.0\ManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\bin\Debug\net6.0\ManipulandoString.pdb
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\refint\ManipulandoString.dll
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.pdb
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ManipulandoString.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademia\ManipulandoString\obj\Debug\net6.0\ref\ManipulandoString.dll

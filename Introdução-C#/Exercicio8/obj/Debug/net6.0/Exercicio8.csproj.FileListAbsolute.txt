@@ -1,0 +1,15 @@
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\bin\Debug\net6.0\Exercicio8.exe
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\bin\Debug\net6.0\Exercicio8.deps.json
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\bin\Debug\net6.0\Exercicio8.runtimeconfig.json
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\bin\Debug\net6.0\Exercicio8.dll
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\bin\Debug\net6.0\Exercicio8.pdb
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.csproj.AssemblyReference.cache
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.AssemblyInfoInputs.cache
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.AssemblyInfo.cs
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.dll
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\refint\Exercicio8.dll
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.pdb
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\Exercicio8.genruntimeconfig.cache
+C:\Users\Usuário\source\repos\ExerciciosAcademia\Exercicio8\obj\Debug\net6.0\ref\Exercicio8.dll

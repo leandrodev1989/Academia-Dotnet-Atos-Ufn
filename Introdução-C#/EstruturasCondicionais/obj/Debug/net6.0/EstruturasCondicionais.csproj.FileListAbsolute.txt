@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\bin\Debug\net6.0\EstruturasCondicionais.exe
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\bin\Debug\net6.0\EstruturasCondicionais.deps.json
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\bin\Debug\net6.0\EstruturasCondicionais.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\bin\Debug\net6.0\EstruturasCondicionais.dll
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\bin\Debug\net6.0\EstruturasCondicionais.pdb
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.dll
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\refint\EstruturasCondicionais.dll
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.pdb
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\EstruturasCondicionais.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademia\EstruturasCondicionais\obj\Debug\net6.0\ref\EstruturasCondicionais.dll
