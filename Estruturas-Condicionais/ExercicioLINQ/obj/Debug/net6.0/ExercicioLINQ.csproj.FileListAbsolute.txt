@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\bin\Debug\net6.0\ExercicioLINQ.exe
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\bin\Debug\net6.0\ExercicioLINQ.deps.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\bin\Debug\net6.0\ExercicioLINQ.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\bin\Debug\net6.0\ExercicioLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\bin\Debug\net6.0\ExercicioLINQ.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\refint\ExercicioLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ExercicioLINQ.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ExercicioLINQ\obj\Debug\net6.0\ref\ExercicioLINQ.dll

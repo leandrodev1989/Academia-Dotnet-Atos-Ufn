@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\bin\Debug\net6.0\NotacaoPonto.exe
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\bin\Debug\net6.0\NotacaoPonto.deps.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\bin\Debug\net6.0\NotacaoPonto.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\bin\Debug\net6.0\NotacaoPonto.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\bin\Debug\net6.0\NotacaoPonto.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\refint\NotacaoPonto.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\NotacaoPonto.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\NotacaoPonto\obj\Debug\net6.0\ref\NotacaoPonto.dll

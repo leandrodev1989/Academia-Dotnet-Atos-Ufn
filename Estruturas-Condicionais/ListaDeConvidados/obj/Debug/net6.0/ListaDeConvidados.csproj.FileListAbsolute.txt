@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\bin\Debug\net6.0\ListaDeConvidados.exe
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\bin\Debug\net6.0\ListaDeConvidados.deps.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\bin\Debug\net6.0\ListaDeConvidados.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\bin\Debug\net6.0\ListaDeConvidados.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\bin\Debug\net6.0\ListaDeConvidados.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\refint\ListaDeConvidados.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ListaDeConvidados.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListaDeConvidados\obj\Debug\net6.0\ref\ListaDeConvidados.dll
