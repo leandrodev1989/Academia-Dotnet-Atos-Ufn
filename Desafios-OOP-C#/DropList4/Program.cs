@@ -23,13 +23,14 @@ string opcao;
 do
 {
     Console.Clear();
-    Console.WriteLine("MENU");
-    Console.WriteLine("1 - Abrir arquivo com emails e popular lista");
-    Console.WriteLine("2 - Exibir lista de emails");
-    Console.WriteLine("3 - Mostrar os domínios dos emails");
-    Console.WriteLine("4 - Cadastrar emails");
-    Console.WriteLine("5 - Sair");
-    Console.Write("Opção: ");
+    Console.WriteLine("==============================  - MENU                                    =======================================");
+    Console.WriteLine("==============================  - MENU                                    =======================================");
+    Console.WriteLine("==============================1 - Abrir arquivo com emails e popular lista=======================================");
+    Console.WriteLine("==============================2 - Exibir lista de email                   =======================================");
+    Console.WriteLine("==============================3 - Mostrar os domínios dos emails          =======================================");
+    Console.WriteLine("==============================4 - Cadastrar emails                        =======================================");
+    Console.WriteLine("==============================5 - Sair                                    =======================================");
+    Console.Write    ("==============================  - Opção:   ");
     opcao = Console.ReadLine();
 
     switch (opcao)
