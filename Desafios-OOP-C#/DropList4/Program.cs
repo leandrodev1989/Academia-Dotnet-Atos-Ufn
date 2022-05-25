@@ -23,6 +23,7 @@ string opcao;
 do
 {
     Console.Clear();
+<<<<<<< HEAD
     Console.WriteLine("==============================  - MENU                                    =======================================");
     Console.WriteLine("==============================  - MENU                                    =======================================");
     Console.WriteLine("==============================1 - Abrir arquivo com emails e popular lista=======================================");
@@ -31,6 +32,15 @@ do
     Console.WriteLine("==============================4 - Cadastrar emails                        =======================================");
     Console.WriteLine("==============================5 - Sair                                    =======================================");
     Console.Write    ("==============================  - Opção:   ");
+=======
+    Console.WriteLine("MENU");
+    Console.WriteLine("1 - Abrir arquivo com emails e popular lista");
+    Console.WriteLine("2 - Exibir lista de emails");
+    Console.WriteLine("3 - Mostrar os domínios dos emails");
+    Console.WriteLine("4 - Cadastrar Email");
+    Console.WriteLine("5 - Sair");
+    Console.Write("Opção: ");
+>>>>>>> a6e1ea9bbf1db576408ce8b13c7dbbf106352d58
     opcao = Console.ReadLine();
 
     switch (opcao)
@@ -111,7 +121,12 @@ do
                 }
             }
             break;
+<<<<<<< HEAD
         case "4":
+=======
+
+            case "4":
+>>>>>>> a6e1ea9bbf1db576408ce8b13c7dbbf106352d58
 
             Console.WriteLine("[Digite Seu Email]");
             email = Console.ReadLine();
