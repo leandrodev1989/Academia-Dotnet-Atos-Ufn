@@ -33,33 +33,7 @@ namespace Exercicio2
 
 
 
-        public void ExibirGato()
-        {
-             Console.WriteLine($"NOME: {Nome}");
-             Console.WriteLine($"TIPO: {Tipo}");
-             Console.WriteLine($"NUMERO: {contadorgato}");
-            
-        }
-
-        public void Exibircachorro()
-        {
-            Console.WriteLine($"NOME: {Nome}");
-            Console.WriteLine($"TIPO: {Tipo}");
-            Console.WriteLine($"NUMERO: {contadorcachorro}");
-
-        }
-
-        public void ExibirPeixe()
-        {
-            Console.WriteLine($"NOME: {Nome}");
-            Console.WriteLine($"TIPO: {Tipo}");
-            Console.WriteLine($"NUMERO: {contadorpeixe}");
-
-        }
-
-
-
-    }
+     }
 
     
 }

@@ -10,175 +10,89 @@ Caso seja informado um tipo diferente o programa repetir até o usuário digitar
 A classe deverá possuir dois dados privados (propriedades) para representar as características do animal.
 A classe deverá possuir métodos de acesso (propriedade getter e setter) para permitir que o usuário armazene/leia os dados dos dois dados privados (propriedades).*/
 
+using Exercicio2;
 
-namespace Exercicio2
+
+
+class Program
 {
-    class Program
+    static List<Animal> animais = new List<Animal>();
+    static void Main(string[] args)
     {
-        static List<Animal> animais = new List<Animal>();
-        static void Main(string[] args)
+
+
+
+
+        for (int i = 0; i < 5; i++)
         {
-            string opcao = "";
-
-            do
+            bool escolheu = false;
+            while (escolheu == false)
             {
-                Console.Clear();
-
-               
-                Console.WriteLine("[ANIMAIS DE ESTIMAÇÃO]");
-                Console.WriteLine("1 - CADASTRAR ANIMAIS");
-                Console.WriteLine("2 - LISTAR Gato");
-                Console.WriteLine("3 - LISTAR Peixe");
-                Console.WriteLine("4 - LISTAR Cachorro");
-                Console.WriteLine("5 - SAIR");
-                Console.WriteLine("OPÇÃO");
-                opcao = Console.ReadLine();
-
-
-                switch (opcao)
+                if (escolheu == false)
                 {
-                    case "1":
-                        CadastrarTipoAnimais();
-                        break;
-                    case "2":
-                   
-                        ListarGato();
-                        break;
-                    case "3":
-                    case "4":
+                    int contadorgato = 0;
+                    int contadorcachorro = 0;
+                    int contadorpeixe = 0;
+                    Console.WriteLine("Entre com os Dados dos  Animais");
+                    Console.WriteLine("Digite o nome do Animal");
+                    var nome = Console.ReadLine();
+                    Console.WriteLine("Digite o Tipo do Animal");
+                    var tipo = Console.ReadLine();
+                    Console.WriteLine("");
 
-                        ListarPeixe();
-                        break;
-                    case "5":
+                    if (tipo == "GATO".ToLower() || tipo == "CACHORRO".ToLower() || tipo == "PEIXE".ToLower())
+                    {
+                        if (tipo == "gato")
+                        {
+                            contadorgato++;
+                        }
+                        else if (tipo == "cachorro")
+                        {
+                            contadorcachorro++;
+                        }
+                        else if (tipo == "peixe")
+                        {
+                            contadorpeixe++;
+                        }
 
-                        ListarCachorro();
-                        break;
-                        Console.WriteLine("Obrigado por usar o sistema");
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida!");
-                        break;
+                        Animal animal = new Animal(nome, tipo, contadorgato, contadorcachorro, contadorpeixe);
+                        animais.Add(animal);
 
 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tipo de Animal Não Valido!!");
+
+                    }
                 }
 
-                Console.Write("Pressione algo para continuar!");
-                Console.ReadKey();
 
-            } while (opcao != "7");
-        }
-
-        static void CadastrarTipoAnimais()
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                int contadorgato = 0;
-                int contadorcachorro = 0;
-                int contadorpeixe = 0;
-
-                Console.WriteLine("Entre com os Dados dos  Animais");
-                Console.WriteLine("Digite o nome do Animal");
-                var nome = Console.ReadLine();
-
-                Console.WriteLine("Digite o Tipo do Animal");
-                var tipo = Console.ReadLine();
-                Console.WriteLine("");
-
-
-                if (tipo == "GATO".ToLower() || tipo == "CACHORRO".ToLower() || tipo == "PEIXE".ToLower())
-                {
-                    if(tipo == "gato")
-                    {
-                        contadorgato++;
-                    }
-                    else if (tipo == "cachorro")
-                    {
-                        contadorcachorro++;
-                    }
-                    else if(tipo == "peixe")
-                    {
-                        contadorpeixe++;
-                    }
-
-
-                    Animal animal = new Animal(nome, tipo, contadorgato, contadorcachorro, contadorpeixe);
-
-                    
-                    animais.Add(animal);
-
-
-                  
-                }
-                else
-                {
-                    Console.WriteLine("Tipo de Animal Não Valido!!");
-
-                }
-
-               
-
+                escolheu = true;
 
 
 
 
             }
 
-
         }
 
-        static void ListarGato()
-        {
-
-            Console.WriteLine("Lista dos animais");
-
-            foreach( var i in animais)
-            {
-               i.ExibirGato();
-               
-
-            }
-             
-               
-           
-
-        }
-
-        static void ListarCachorro()
-        {
-
-            Console.WriteLine("Lista dos animais");
-
-            foreach (var i in animais)
-            {
-              
-                i.Exibircachorro();
-               
-            }
-
-
-
-
-        }
-
-        static void ListarPeixe()
-        {
-
-            Console.WriteLine("Lista dos animais");
-
-            foreach (var i in animais)
-            {
-               
-                i.ExibirPeixe();
-
-            }
-
-
-
-
-        }
-
-
-
-
+        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorgato}");
+        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorcachorro}");
+        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorpeixe}");
     }
-}
+
+        
+
+}      
+
+
+
+
+
+
+
+
+
+
+
