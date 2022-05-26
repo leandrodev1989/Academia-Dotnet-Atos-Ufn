@@ -8,9 +8,9 @@ namespace Exercicio2
 {
      class Animal
      {
-        private int contadorgato = 0;
-        private int contadorcachorro = 0;
-        private int contadorpeixe = 0;
+        private int contadorgato ;
+        private int contadorcachorro;
+        private int contadorpeixe ;
 
         private string Nome { get;  set; }
         private string Tipo { get;  set; }
@@ -31,6 +31,12 @@ namespace Exercicio2
 
         }
 
+
+        public string Exibir()
+        {
+            return $" Nome: {this.Nome} \n Tipo: {this.Tipo}";
+
+        }
 
 
      }

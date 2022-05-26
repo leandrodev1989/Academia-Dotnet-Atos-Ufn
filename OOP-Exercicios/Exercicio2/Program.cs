@@ -13,78 +13,70 @@ A classe deverá possuir métodos de acesso (propriedade getter e setter) para p
 using Exercicio2;
 
 
+List<Animal> animais = new List<Animal>();
+  
 
-class Program
+/// <summary>
+/// Processamento de Dados
+/// </summary>
+for (int i = 0; i < 5; i++)
 {
-    static List<Animal> animais = new List<Animal>();
-    static void Main(string[] args)
+
+    int contadorgato = 0;
+    int contadorcachorro = 0;
+    int contadorpeixe = 0;
+    Console.WriteLine("Entre com os Dados dos  Animais");
+    Console.WriteLine("Digite o nome do Animal");
+    var nome = Console.ReadLine();
+    Console.WriteLine("Digite o Tipo do Animal");
+    var tipo = Console.ReadLine();
+    Console.WriteLine("");
+
+    if (tipo == "GATO".ToLower() || tipo == "CACHORRO".ToLower() || tipo == "PEIXE".ToLower())
     {
-
-
-
-
-        for (int i = 0; i < 5; i++)
+        if (tipo == "gato")
         {
-            bool escolheu = false;
-            while (escolheu == false)
-            {
-                if (escolheu == false)
-                {
-                    int contadorgato = 0;
-                    int contadorcachorro = 0;
-                    int contadorpeixe = 0;
-                    Console.WriteLine("Entre com os Dados dos  Animais");
-                    Console.WriteLine("Digite o nome do Animal");
-                    var nome = Console.ReadLine();
-                    Console.WriteLine("Digite o Tipo do Animal");
-                    var tipo = Console.ReadLine();
-                    Console.WriteLine("");
-
-                    if (tipo == "GATO".ToLower() || tipo == "CACHORRO".ToLower() || tipo == "PEIXE".ToLower())
-                    {
-                        if (tipo == "gato")
-                        {
-                            contadorgato++;
-                        }
-                        else if (tipo == "cachorro")
-                        {
-                            contadorcachorro++;
-                        }
-                        else if (tipo == "peixe")
-                        {
-                            contadorpeixe++;
-                        }
-
-                        Animal animal = new Animal(nome, tipo, contadorgato, contadorcachorro, contadorpeixe);
-                        animais.Add(animal);
-
-
-                    }
-                    else
-                    {
-                        Console.WriteLine("Tipo de Animal Não Valido!!");
-
-                    }
-                }
-
-
-                escolheu = true;
-
-
-
-
-            }
-
+            contadorgato++;
+        }
+        else if (tipo == "cachorro")
+        {
+            contadorcachorro++;
+        }
+        else if (tipo == "peixe")
+        {
+            contadorpeixe++;
         }
 
-        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorgato}");
-        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorcachorro}");
-        Console.WriteLine($"Nome do animal é {nome} | Tipo do animal {contadorpeixe}");
+        
+        animais.Add(new Animal(nome, tipo, contadorgato, contadorcachorro, contadorpeixe));
+
+
     }
+    else
+    {
+        Console.WriteLine("Tipo de Animal Não Valido!!");
+
+    }
+
+
+}
+
+
+/// <summary>
+/// Metodo para exibir a lista dos animais
+/// </summary>
+for(int i = 0; i < animais.Count; i++)
+{
+    Console.WriteLine(animais[i].Exibir());
+    Console.WriteLine("===========");
+}
+
+        
+    
 
         
 
-}      
+      
 
 
 
