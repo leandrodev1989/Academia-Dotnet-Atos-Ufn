@@ -53,7 +53,7 @@ namespace Desafio7PrimeiraParte
                 leitor = new StreamReader(nomeArquivo);
                 do
                 {
-                    vetorDados = leitor.ReadLine().Split("  ;"); //placa;data
+                    vetorDados = leitor.ReadLine().Split(" ; "); //placa;data
                     listaveiculos.Add(new Veiculo(vetorDados[0], DateTime.Now));
                 } while (!leitor.EndOfStream); //repete-se a leitura da linha até que o leitor não chegue no final do arquivo
                 
@@ -76,7 +76,7 @@ namespace Desafio7PrimeiraParte
         {
             foreach (Veiculo i in listaveiculos)
             {
-                if (objeto.placa.Equals(i.datahoraentrada))
+                if (objeto.placa.Equals(i.datahoraentrada) && objeto.datahoraentrada.Equals(i.datahoradaentrada))
                 {
                     return true;
                 }
