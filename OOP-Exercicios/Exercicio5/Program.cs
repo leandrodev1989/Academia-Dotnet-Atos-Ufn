@@ -15,11 +15,9 @@ using System.Diagnostics;
 //List<Item> items = new List<Item>();
 
 
-
-
     DateTime datacriacao = DateTime.Now;
 
-    Console.WriteLine("[Inforções Do Item]");
+    Console.WriteLine("[Informações Do Item]");
     Console.WriteLine("");
 
     Console.WriteLine("Digite a Descrição do Item");

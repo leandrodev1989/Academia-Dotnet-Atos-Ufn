@@ -1,0 +1,15 @@
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.csproj.AssemblyReference.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.AssemblyInfoInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.AssemblyInfo.cs
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\bin\Debug\net6.0\Exercicio6CadastroEmail.exe
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\bin\Debug\net6.0\Exercicio6CadastroEmail.deps.json
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\bin\Debug\net6.0\Exercicio6CadastroEmail.runtimeconfig.json
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\bin\Debug\net6.0\Exercicio6CadastroEmail.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\bin\Debug\net6.0\Exercicio6CadastroEmail.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\refint\Exercicio6CadastroEmail.dll
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.pdb
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\Exercicio6CadastroEmail.genruntimeconfig.cache
+C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\Exercicio6CadastroEmail\obj\Debug\net6.0\ref\Exercicio6CadastroEmail.dll
