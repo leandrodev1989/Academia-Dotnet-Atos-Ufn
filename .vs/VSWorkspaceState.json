@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Desafios-OOP-C#",
-    "\\Desafios-OOP-C#\\DropList4"
+    "\\DesafioGaragem1Parte",
+    "\\DesafioGaragem1Parte\\Desafio7GaragemPrimeiraParte",
+    "\\DesafioGaragem1Parte\\Desafio7GaragemPrimeiraParte\\src",
+    "\\DesafioGaragem1Parte\\Desafio7GaragemPrimeiraParte\\src\\Entities"
   ],
-  "SelectedNode": "\\Desafios-OOP-C#\\DropList4\\DropList4.sln",
+  "SelectedNode": "\\DesafioGaragem1Parte\\Desafio7GaragemPrimeiraParte\\src\\Entities\\UtilServico.cs",
   "PreviewInSolutionExplorer": false
 }

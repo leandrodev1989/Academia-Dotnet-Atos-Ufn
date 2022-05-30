@@ -25,7 +25,7 @@ namespace Desafio7PrimeiraParte
                 Console.WriteLine(frase);
                 foreach (Veiculo i in listaveiculos)
                 {
-                    Console.WriteLine(i.placa);
+                    Console.WriteLine(i.placa + " - " + i.Datahoradaentrada);
 
                 }
 
@@ -53,7 +53,7 @@ namespace Desafio7PrimeiraParte
                 leitor = new StreamReader(nomeArquivo);
                 do
                 {
-                    vetorDados = leitor.ReadLine().Split(" ; "); //placa;data
+                    vetorDados = leitor.ReadLine().Split(";"); //placa;data
                     listaveiculos.Add(new Veiculo(vetorDados[0], DateTime.Now));
                 } while (!leitor.EndOfStream); //repete-se a leitura da linha até que o leitor não chegue no final do arquivo
                 
@@ -76,7 +76,7 @@ namespace Desafio7PrimeiraParte
         {
             foreach (Veiculo i in listaveiculos)
             {
-                if (objeto.placa.Equals(i.datahoraentrada) && objeto.datahoraentrada.Equals(i.datahoradaentrada))
+                if (objeto.placa.Equals(i.placa) && objeto.Datahoradaentrada.Equals(i.Datahoradaentrada))
                 {
                     return true;
                 }
@@ -96,7 +96,7 @@ namespace Desafio7PrimeiraParte
             {
                 StreamWriter escritor = new StreamWriter("garagem.dat", true);
 
-                escritor.WriteLine(objeto.placa + ";" + objeto.datahoraentrada);
+                escritor.WriteLine(objeto.placa + ";" + objeto.Datahoradaentrada);
                 escritor.Flush();
                 escritor.Close();
             }
@@ -123,15 +123,15 @@ namespace Desafio7PrimeiraParte
 
             Console.WriteLine(frase);
             string placa;
-            DateTime data = DateTime.Now;
-
+            
             Console.Write("Digite a Placa do veiculo: ");
             placa = Console.ReadLine();
 
             Console.WriteLine("Veiculo Cadastrado com Sucesso!!");
-               
-     
-             Veiculo objeto = new Veiculo(placa, data);
+
+            DateTime datahoraentrada = DateTime.Now;
+
+            Veiculo objeto = new Veiculo(placa, datahoraentrada);
 
             if (!UtilServico.jaCadastrado(objeto, listaveiculos))
             {

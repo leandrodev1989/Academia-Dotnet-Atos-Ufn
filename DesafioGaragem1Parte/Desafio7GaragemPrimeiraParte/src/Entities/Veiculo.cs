@@ -12,22 +12,17 @@ namespace Desafio7PrimeiraParte
         /// <summary>
         /// variaveis declaradas para receber informações da placa
         /// </summary>
-        public string placa;
+         string Placa;
 
         /// <summary>
         /// variavel para gerar a data de entrada
         /// </summary>
-        public DateTime datahoraentrada;
+         DateTime datahoraentrada;
 
 
 
 
-        /// <summary>
-        /// Construtor com as insformações da placa e data
-        /// </summary>
-        /// <param name="placa"></param>
-        /// <param name="data"></param>
-        public Veiculo(string placa, DateTime data)
+        public Veiculo(string placa, DateTime  data)
         {
             this.Placa = placa;
             this.datahoraentrada = data;
@@ -37,13 +32,13 @@ namespace Desafio7PrimeiraParte
         /// <summary>
         /// Get e set para setar e alterar a placa
         /// </summary>
-        public string Placa { get => placa; set => placa = value; }
+        public string placa { get => Placa; set => Placa = value; }
 
 
         /// <summary>
         /// get e set da data e hora
         /// </summary>
-        public DateTime datahoradaentrada { get => datahoraentrada; set => datahoraentrada = value; }
+        public  DateTime Datahoradaentrada { get => datahoraentrada; set => datahoraentrada = value; }
 
 
 
