@@ -1,5 +1,5 @@
 # Academia  DOT-NET Atos Conteúdo Back-End
-Exercicios de Fixação e Assuntos estudados de Estrutura de Controle é Repetição Com o Professor Alexandre Zamberlan
+Exercicios de Fixação e Assuntos estudados de Estrutura de Controle é Repetição Orientação a Objetos - Com o Professor Alexandre Zamberlan
 ----
 
 ### Assuntos:
