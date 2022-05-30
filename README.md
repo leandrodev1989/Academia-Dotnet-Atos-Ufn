@@ -15,4 +15,6 @@ Exercicios de Fixação e Assuntos estudados de Estrutura de Controle é Repeti�
   <li>Objetos</li>
   <li>Metodos</li>
   <li>Atributos</li>
+  <li>Construtores</li>
+  <li>Listas</li>
 </ul>
