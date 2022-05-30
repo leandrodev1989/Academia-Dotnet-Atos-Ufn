@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\bin\Debug\net6.0\ListasLINQ.exe
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\bin\Debug\net6.0\ListasLINQ.deps.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\bin\Debug\net6.0\ListasLINQ.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\bin\Debug\net6.0\ListasLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\bin\Debug\net6.0\ListasLINQ.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\refint\ListasLINQ.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ListasLINQ.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\ListasLINQ\obj\Debug\net6.0\ref\ListasLINQ.dll
