@@ -1,5 +1,0 @@
-C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\ExercicioDrop8\obj\Debug\net6.0\Exercicio1.csproj.AssemblyReference.cache
-C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\ExercicioDrop8\obj\Debug\net6.0\Exercicio1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\ExercicioDrop8\obj\Debug\net6.0\Exercicio1.AssemblyInfoInputs.cache
-C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\ExercicioDrop8\obj\Debug\net6.0\Exercicio1.AssemblyInfo.cs
-C:\Users\Usuário\AcademiaAtosWhileFor\OOP-Exercicios\ExercicioDrop8\obj\Debug\net6.0\Exercicio1.csproj.CoreCompileInputs.cache
