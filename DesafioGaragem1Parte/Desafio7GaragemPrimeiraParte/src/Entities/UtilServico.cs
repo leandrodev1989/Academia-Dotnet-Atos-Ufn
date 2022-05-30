@@ -25,7 +25,7 @@ namespace Desafio7PrimeiraParte
                 Console.WriteLine(frase);
                 foreach (Veiculo i in listaveiculos)
                 {
-                    Console.WriteLine(i.placa + " - " + i.Datahoradaentrada);
+                    Console.WriteLine(i.Placa + " - " + i.Datahoradaentrada);
 
                 }
 
@@ -54,7 +54,8 @@ namespace Desafio7PrimeiraParte
                 do
                 {
                     vetorDados = leitor.ReadLine().Split(";"); //placa;data
-                    listaveiculos.Add(new Veiculo(vetorDados[0], DateTime.Now));
+                    DateTime Datahoraentrada = DateTime.Parse(vetorDados[1]);
+                    listaveiculos.Add(new Veiculo(vetorDados[0], Datahoraentrada));
                 } while (!leitor.EndOfStream); //repete-se a leitura da linha até que o leitor não chegue no final do arquivo
                 
                 leitor.Close();
@@ -76,7 +77,7 @@ namespace Desafio7PrimeiraParte
         {
             foreach (Veiculo i in listaveiculos)
             {
-                if (objeto.placa.Equals(i.placa) && objeto.Datahoradaentrada.Equals(i.Datahoradaentrada))
+                if (objeto.Placa.Equals(i.Placa) && objeto.Datahoradaentrada.Equals(i.Datahoradaentrada))
                 {
                     return true;
                 }
@@ -96,7 +97,7 @@ namespace Desafio7PrimeiraParte
             {
                 StreamWriter escritor = new StreamWriter("garagem.dat", true);
 
-                escritor.WriteLine(objeto.placa + ";" + objeto.Datahoradaentrada);
+                escritor.WriteLine(objeto.Placa + ";" + objeto.Datahoradaentrada);
                 escritor.Flush();
                 escritor.Close();
             }
@@ -123,15 +124,42 @@ namespace Desafio7PrimeiraParte
 
             Console.WriteLine(frase);
             string placa;
+
+            do
+            {
+                Console.Write("Digite a Placa do veiculo: ");
+                placa = Console.ReadLine();
+
+
+                if (placa.Length != 7)
+                {
+                    Console.WriteLine("Digite a placa com 7 caracteres.");
+
+
+                    if (placa == null || string.IsNullOrEmpty(placa) || string.IsNullOrWhiteSpace(placa))
+                    {
+                        Console.WriteLine("Placa não Pode ser vazia ou nula!!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Veiculo Cadastrado com Sucesso!!");
+                    }
+                }
+                else
+                {
+                    break;
+                }
+                
+
+                Console.WriteLine("Veiculo Cadastrado com Sucesso!!");
+            } while (true);
+
+
+          
             
-            Console.Write("Digite a Placa do veiculo: ");
-            placa = Console.ReadLine();
 
-            Console.WriteLine("Veiculo Cadastrado com Sucesso!!");
-
-            DateTime datahoraentrada = DateTime.Now;
-
-            Veiculo objeto = new Veiculo(placa, datahoraentrada);
+            Veiculo objeto = new Veiculo(placa);
 
             if (!UtilServico.jaCadastrado(objeto, listaveiculos))
             {
