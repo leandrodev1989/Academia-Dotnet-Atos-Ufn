@@ -121,12 +121,8 @@ do
                 }
             }
             break;
-<<<<<<< HEAD
-        case "4":
-=======
 
             case "4":
->>>>>>> a6e1ea9bbf1db576408ce8b13c7dbbf106352d58
 
             Console.WriteLine("[Digite Seu Email]");
             email = Console.ReadLine();
