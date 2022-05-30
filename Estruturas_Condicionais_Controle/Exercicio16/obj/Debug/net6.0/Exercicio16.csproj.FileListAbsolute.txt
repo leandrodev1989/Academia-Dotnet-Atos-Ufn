@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\bin\Debug\net6.0\Exercicio16.exe
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\bin\Debug\net6.0\Exercicio16.deps.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\bin\Debug\net6.0\Exercicio16.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\bin\Debug\net6.0\Exercicio16.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\bin\Debug\net6.0\Exercicio16.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\refint\Exercicio16.dll
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.pdb
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\Exercicio16.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaAtosCondicionais\Exercicio16\obj\Debug\net6.0\ref\Exercicio16.dll
