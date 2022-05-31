@@ -139,7 +139,8 @@ namespace Desafio7PrimeiraParte
                     if (placa == null || string.IsNullOrEmpty(placa) || string.IsNullOrWhiteSpace(placa))
                     {
                         Console.WriteLine("Placa não Pode ser vazia ou nula!!");
-                        break;
+                        break; 
+
                     }
                     else
                     {

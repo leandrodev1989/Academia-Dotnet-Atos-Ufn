@@ -60,7 +60,6 @@ do
            UtilServico.CadastrarVeiculos("Cadastrando Veículo", listaveiculos);
             break;
         case "2":
-            //listar Veiculos Cadastradados;
             UtilServico.exibirLista("Exibindo a lista de Veiculos Cadastrados", listaveiculos);
             break;
         case "3":
