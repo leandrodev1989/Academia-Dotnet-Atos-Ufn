@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\bin\Debug\net6.0\ClasseDisciplina.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\bin\Debug\net6.0\ClasseDisciplina.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\bin\Debug\net6.0\ClasseDisciplina.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\bin\Debug\net6.0\ClasseDisciplina.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\bin\Debug\net6.0\ClasseDisciplina.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\refint\ClasseDisciplina.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ClasseDisciplina.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseDisciplina\obj\Debug\net6.0\ref\ClasseDisciplina.dll

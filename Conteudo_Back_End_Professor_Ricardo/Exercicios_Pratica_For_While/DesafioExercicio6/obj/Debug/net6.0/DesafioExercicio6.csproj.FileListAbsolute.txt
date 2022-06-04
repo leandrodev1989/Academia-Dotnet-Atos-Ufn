@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\bin\Debug\net6.0\DesafioExercicio6.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\bin\Debug\net6.0\DesafioExercicio6.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\bin\Debug\net6.0\DesafioExercicio6.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\bin\Debug\net6.0\DesafioExercicio6.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\bin\Debug\net6.0\DesafioExercicio6.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\refint\DesafioExercicio6.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\DesafioExercicio6.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\DesafioExercicio6\obj\Debug\net6.0\ref\DesafioExercicio6.dll

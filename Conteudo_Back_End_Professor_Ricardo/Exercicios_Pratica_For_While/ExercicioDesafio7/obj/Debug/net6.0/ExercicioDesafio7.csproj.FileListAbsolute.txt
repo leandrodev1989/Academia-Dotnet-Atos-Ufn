@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\bin\Debug\net6.0\ExercicioDesafio7.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\bin\Debug\net6.0\ExercicioDesafio7.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\bin\Debug\net6.0\ExercicioDesafio7.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\bin\Debug\net6.0\ExercicioDesafio7.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\bin\Debug\net6.0\ExercicioDesafio7.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\refint\ExercicioDesafio7.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ExercicioDesafio7.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\ExercicioDesafio7\obj\Debug\net6.0\ref\ExercicioDesafio7.dll

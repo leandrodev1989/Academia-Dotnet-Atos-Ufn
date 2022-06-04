@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\bin\Debug\net6.0\ClasseMotor.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\bin\Debug\net6.0\ClasseMotor.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\bin\Debug\net6.0\ClasseMotor.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\bin\Debug\net6.0\ClasseMotor.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\bin\Debug\net6.0\ClasseMotor.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\refint\ClasseMotor.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ClasseMotor.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\OOP-C#\ClasseMotor\obj\Debug\net6.0\ref\ClasseMotor.dll

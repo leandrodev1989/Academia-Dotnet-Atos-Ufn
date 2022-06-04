@@ -1,0 +1,11 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\bin\Debug\CadastroUsuario.exe.config
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\bin\Debug\CadastroUsuario.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\bin\Debug\CadastroUsuario.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.Form1.resources
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.Properties.Resources.resources
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.GenerateResource.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\CadastroUsuario\obj\Debug\CadastroUsuario.pdb

@@ -1,0 +1,15 @@
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\bin\Debug\net6.0\LigarDesligarCarroOOP.exe
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\bin\Debug\net6.0\LigarDesligarCarroOOP.deps.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\bin\Debug\net6.0\LigarDesligarCarroOOP.runtimeconfig.json
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\bin\Debug\net6.0\LigarDesligarCarroOOP.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\bin\Debug\net6.0\LigarDesligarCarroOOP.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.csproj.AssemblyReference.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.AssemblyInfoInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.AssemblyInfo.cs
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\refint\LigarDesligarCarroOOP.dll
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.pdb
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\LigarDesligarCarroOOP.genruntimeconfig.cache
+C:\Users\Usuário\ExerciciosAcademiaDotNetAtosProfRicardo\LigarDesligarCarroOOP\obj\Debug\net6.0\ref\LigarDesligarCarroOOP.dll
