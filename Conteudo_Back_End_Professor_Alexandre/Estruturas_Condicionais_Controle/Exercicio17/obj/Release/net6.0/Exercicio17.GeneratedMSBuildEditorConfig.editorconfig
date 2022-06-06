@@ -6,10 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-<<<<<<<< HEAD:Estruturas_Condicionais_Controle/Exercicio17/obj/Release/net6.0/Exercicio17.GeneratedMSBuildEditorConfig.editorconfig
 build_property.RootNamespace = Exercicio17
-build_property.ProjectDir = C:\Users\Usuário\Academia-DOT-NET-Atos-ConteudoProF-Alexandre\Estruturas-Condicionais\Exercicio17\
-========
-build_property.RootNamespace = Exercicio18
-build_property.ProjectDir = C:\Users\Usuário\AcademiaAtosWhileFor\Estruturas-Condicionais\Exercicio18\
->>>>>>>> 36533bca4632f67392c486c79c73fa6a9a276d22:Estruturas_Condicionais_Controle/Exercicio18/obj/Debug/net6.0/Exercicio18.GeneratedMSBuildEditorConfig.editorconfig
+build_property.ProjectDir = C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\Estruturas_Condicionais_Controle\Exercicio17\

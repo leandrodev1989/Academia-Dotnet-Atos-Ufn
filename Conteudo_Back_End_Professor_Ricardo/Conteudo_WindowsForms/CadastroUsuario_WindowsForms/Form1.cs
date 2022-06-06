@@ -18,7 +18,7 @@ namespace CadastroUsuario
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
            
-           
+
             string ativoinativo = "";
 
             if (cbStatus.Text == "Ativo")
@@ -43,13 +43,27 @@ namespace CadastroUsuario
                 tipousuario = "Usuário";
             }
 
+           
             
-            Usuario usuario = new Usuario(tbNome.Text, tbCpf.Text, tbTelefone.Text,tbUsuario.Text,tbSenha.Text, tipousuario,ativoinativo);
+            
+            Usuario usuario = new Usuario(tbNome.Text, tbtelefone.Text, tbCpf.Text,  tbUsuario.Text,tbSenha.Text, tipousuario, ativoinativo);
             usuario.Exibir();
 
 
 
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            tbNome.Text = "";
+            tbCpf.Text = "";
+            tbtelefone.Text = "";
+            tbUsuario.Text = "";
+            tbSenha.Text = "";
+            cbTipos.Text = "";
+            cbStatus.Text = "";
+            btnLimpar.Focus();
         }
     }
 }

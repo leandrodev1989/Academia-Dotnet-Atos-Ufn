@@ -40,11 +40,10 @@
             this.cbTipos = new System.Windows.Forms.ComboBox();
             this.lbTiposUsuario = new System.Windows.Forms.Label();
             this.tbSenha = new System.Windows.Forms.MaskedTextBox();
-            this.tbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.tbtelefone = new System.Windows.Forms.MaskedTextBox();
             this.tbCpf = new System.Windows.Forms.MaskedTextBox();
             this.cbStatus = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbNome
@@ -118,7 +117,7 @@
             // 
             this.btnCadastrar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(49, 10);
+            this.btnCadastrar.Location = new System.Drawing.Point(15, 269);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(132, 47);
             this.btnCadastrar.TabIndex = 7;
@@ -167,14 +166,14 @@
             this.tbSenha.Size = new System.Drawing.Size(109, 20);
             this.tbSenha.TabIndex = 4;
             // 
-            // tbTelefone
+            // tbtelefone
             // 
-            this.tbTelefone.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbTelefone.Location = new System.Drawing.Point(177, 86);
-            this.tbTelefone.Mask = "(00)00000-0000";
-            this.tbTelefone.Name = "tbTelefone";
-            this.tbTelefone.Size = new System.Drawing.Size(109, 20);
-            this.tbTelefone.TabIndex = 2;
+            this.tbtelefone.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tbtelefone.Location = new System.Drawing.Point(177, 86);
+            this.tbtelefone.Mask = "(00)00000-0000";
+            this.tbtelefone.Name = "tbtelefone";
+            this.tbtelefone.Size = new System.Drawing.Size(109, 20);
+            this.tbtelefone.TabIndex = 2;
             // 
             // tbCpf
             // 
@@ -198,25 +197,31 @@
             this.cbStatus.Size = new System.Drawing.Size(109, 21);
             this.cbStatus.TabIndex = 6;
             // 
-            // panel1
+            // btnLimpar
             // 
-            this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 316);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(361, 134);
-            this.panel1.TabIndex = 17;
+            this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLimpar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnLimpar.Location = new System.Drawing.Point(176, 269);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(109, 46);
+            this.btnLimpar.TabIndex = 17;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnCadastrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(361, 450);
-            this.Controls.Add(this.panel1);
+            this.CancelButton = this.btnLimpar;
+            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.tbCpf);
-            this.Controls.Add(this.tbTelefone);
+            this.Controls.Add(this.tbtelefone);
             this.Controls.Add(this.tbSenha);
             this.Controls.Add(this.lbTiposUsuario);
             this.Controls.Add(this.cbTipos);
@@ -228,10 +233,13 @@
             this.Controls.Add(this.lbCpf);
             this.Controls.Add(this.tbNome);
             this.Controls.Add(this.lbNome);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Cadastro Usuário";
-            this.panel1.ResumeLayout(false);
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,10 +259,10 @@
         private System.Windows.Forms.ComboBox cbTipos;
         private System.Windows.Forms.Label lbTiposUsuario;
         private System.Windows.Forms.MaskedTextBox tbSenha;
-        private System.Windows.Forms.MaskedTextBox tbTelefone;
+        private System.Windows.Forms.MaskedTextBox tbtelefone;
         private System.Windows.Forms.MaskedTextBox tbCpf;
         private System.Windows.Forms.ComboBox cbStatus;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 
