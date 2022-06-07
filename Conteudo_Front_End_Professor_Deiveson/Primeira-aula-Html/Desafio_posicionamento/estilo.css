@@ -1,0 +1,65 @@
+
+
+.elemento1 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    border-radius:   0px 30px 0px  0px ;
+    right: 0px;
+    
+   
+}
+
+
+.elemento2 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    
+    
+   
+}
+
+.elemento3 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    justify-content:space-between;
+    top: 222px;
+    right: 0px;
+    
+    
+   
+}
+
+
+.elemento4{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    border-radius:   0px 0px 30px  0px  ;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+.container{
+
+    
+    border-radius: 31px;
+   
+    width: 455px;
+    height: 385px;
+    background-color: blue;
+    margin: 30px auto;
+    position: relative;
+
+    
+}
