@@ -1,0 +1,12 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\bin\Debug\FormCadastroVeiculos.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\bin\Debug\FormCadastroVeiculos.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\bin\Debug\FormCadastroVeiculos.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.frmAutomovel.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\FormCadastroVeiculos\obj\Debug\FormCadastroVeiculos.Principal.resources
