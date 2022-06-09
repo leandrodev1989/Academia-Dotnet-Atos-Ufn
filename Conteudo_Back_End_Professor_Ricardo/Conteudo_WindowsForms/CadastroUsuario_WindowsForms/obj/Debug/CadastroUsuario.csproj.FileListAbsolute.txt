@@ -20,3 +20,4 @@ C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\C
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Conteudo_WindowsForms\CadastroUsuario_WindowsForms\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Conteudo_WindowsForms\CadastroUsuario_WindowsForms\obj\Debug\CadastroUsuario.exe
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Conteudo_WindowsForms\CadastroUsuario_WindowsForms\obj\Debug\CadastroUsuario.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Conteudo_WindowsForms\CadastroUsuario_WindowsForms\obj\Debug\CadastroUsuario.frmCadastro.resources

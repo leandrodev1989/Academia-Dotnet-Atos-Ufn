@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Exercicios_Orientação_Objetos"
+    "\\Conteudo_WindowsForms",
+    "\\Conteudo_WindowsForms\\WindowsFormsMeuApp"
   ],
-  "SelectedNode": "\\Exercicios_Orientação_Objetos\\LigarDesligarCarroOOP",
+  "SelectedNode": "\\Conteudo_WindowsForms\\WindowsFormsMeuApp\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

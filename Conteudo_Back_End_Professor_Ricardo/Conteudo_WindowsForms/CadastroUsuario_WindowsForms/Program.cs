@@ -8,6 +8,7 @@ namespace CadastroUsuario
 {
     internal static class Program
     {
+        internal static  List<Usuario> usuarios = new List<Usuario>();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,8 @@ namespace CadastroUsuario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new frmCadastro());
         }
     }
 }

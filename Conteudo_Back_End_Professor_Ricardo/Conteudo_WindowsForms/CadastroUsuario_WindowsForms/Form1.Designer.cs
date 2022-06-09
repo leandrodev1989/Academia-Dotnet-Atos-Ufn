@@ -43,7 +43,17 @@
             this.tbtelefone = new System.Windows.Forms.MaskedTextBox();
             this.tbCpf = new System.Windows.Forms.MaskedTextBox();
             this.cbStatus = new System.Windows.Forms.ComboBox();
-            this.btnLimpar = new System.Windows.Forms.Button();
+            this.dgAutomoveis = new System.Windows.Forms.DataGridView();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btbClear = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgAutomoveis)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNome
@@ -197,27 +207,92 @@
             this.cbStatus.Size = new System.Drawing.Size(109, 21);
             this.cbStatus.TabIndex = 6;
             // 
-            // btnLimpar
+            // dgAutomoveis
             // 
-            this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnLimpar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnLimpar.Location = new System.Drawing.Point(176, 269);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(109, 46);
-            this.btnLimpar.TabIndex = 17;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.dgAutomoveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgAutomoveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nome,
+            this.cpf,
+            this.telefone,
+            this.usuario,
+            this.senha,
+            this.Tipo,
+            this.Status});
+            this.dgAutomoveis.Location = new System.Drawing.Point(304, 36);
+            this.dgAutomoveis.Name = "dgAutomoveis";
+            this.dgAutomoveis.Size = new System.Drawing.Size(724, 279);
+            this.dgAutomoveis.TabIndex = 19;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome";
+            this.nome.Name = "nome";
+            // 
+            // cpf
+            // 
+            this.cpf.HeaderText = "Cpf";
+            this.cpf.Name = "cpf";
+            // 
+            // telefone
+            // 
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.Name = "telefone";
+            // 
+            // usuario
+            // 
+            this.usuario.HeaderText = "Usuario";
+            this.usuario.Name = "usuario";
+            // 
+            // senha
+            // 
+            this.senha.HeaderText = "Senha";
+            this.senha.Name = "senha";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo Usuario";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Tipo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // btbClear
+            // 
+            this.btbClear.Location = new System.Drawing.Point(172, 275);
+            this.btbClear.Name = "btbClear";
+            this.btbClear.Size = new System.Drawing.Size(113, 39);
+            this.btbClear.TabIndex = 20;
+            this.btbClear.Text = "Limpar";
+            this.btbClear.UseVisualStyleBackColor = true;
+            this.btbClear.Click += new System.EventHandler(this.btbClear_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Location = new System.Drawing.Point(741, 374);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 39);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Voltar Para o menu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
             this.AcceptButton = this.btnCadastrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.CancelButton = this.btnLimpar;
-            this.ClientSize = new System.Drawing.Size(480, 450);
-            this.Controls.Add(this.btnLimpar);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(1072, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btbClear);
+            this.Controls.Add(this.dgAutomoveis);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.tbCpf);
@@ -240,6 +315,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Cadastro Usuário";
             this.TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)(this.dgAutomoveis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,7 +338,16 @@
         private System.Windows.Forms.MaskedTextBox tbtelefone;
         private System.Windows.Forms.MaskedTextBox tbCpf;
         private System.Windows.Forms.ComboBox cbStatus;
-        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.DataGridView dgAutomoveis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Button btbClear;
+        private System.Windows.Forms.Button button1;
     }
 }
 
