@@ -1,0 +1,11 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\bin\Debug\GestaoGaragemForms.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\bin\Debug\GestaoGaragemForms.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\bin\Debug\GestaoGaragemForms.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.Form1.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\GestaoGaragemForms\obj\Debug\GestaoGaragemForms.pdb
