@@ -33,9 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbplaca = new System.Windows.Forms.Label();
             this.tbplaca = new System.Windows.Forms.TextBox();
-            this.lbopcional = new System.Windows.Forms.Label();
-            this.cbopcional = new System.Windows.Forms.ComboBox();
-            this.btncadastrar = new System.Windows.Forms.Button();
+            this.btnentrada = new System.Windows.Forms.Button();
             this.btnlimpar = new System.Windows.Forms.Button();
             this.tbentrada = new System.Windows.Forms.TextBox();
             this.tbsaida = new System.Windows.Forms.TextBox();
@@ -46,6 +44,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnsaida = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label_horasaida = new System.Windows.Forms.Label();
+            this.tbdataentrada = new System.Windows.Forms.TextBox();
+            this.label_dataentrada = new System.Windows.Forms.Label();
+            this.tbhoraentrada = new System.Windows.Forms.TextBox();
+            this.tbhorasaida = new System.Windows.Forms.TextBox();
+            this.label_datasaida = new System.Windows.Forms.Label();
+            this.tbdatasaida = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbplacasaida = new System.Windows.Forms.TextBox();
+            this.label_placasaida = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +66,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(246, 11);
+            this.label1.Location = new System.Drawing.Point(280, -9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(314, 63);
             this.label1.TabIndex = 1;
@@ -66,7 +78,7 @@
             this.btnFechar.BackColor = System.Drawing.Color.Navy;
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFechar.Location = new System.Drawing.Point(796, 517);
+            this.btnFechar.Location = new System.Drawing.Point(865, 64);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(53, 36);
             this.btnFechar.TabIndex = 2;
@@ -80,14 +92,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(861, 83);
+            this.panel1.Size = new System.Drawing.Size(928, 55);
             this.panel1.TabIndex = 3;
             // 
             // lbplaca
             // 
             this.lbplaca.AutoSize = true;
             this.lbplaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbplaca.Location = new System.Drawing.Point(87, 134);
+            this.lbplaca.Location = new System.Drawing.Point(32, 70);
             this.lbplaca.Name = "lbplaca";
             this.lbplaca.Size = new System.Drawing.Size(212, 20);
             this.lbplaca.TabIndex = 4;
@@ -96,55 +108,31 @@
             // tbplaca
             // 
             this.tbplaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbplaca.Location = new System.Drawing.Point(322, 136);
+            this.tbplaca.Location = new System.Drawing.Point(247, 72);
             this.tbplaca.Multiline = true;
             this.tbplaca.Name = "tbplaca";
-            this.tbplaca.Size = new System.Drawing.Size(164, 27);
+            this.tbplaca.Size = new System.Drawing.Size(120, 27);
             this.tbplaca.TabIndex = 5;
             // 
-            // lbopcional
+            // btnentrada
             // 
-            this.lbopcional.AutoSize = true;
-            this.lbopcional.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbopcional.Location = new System.Drawing.Point(32, 100);
-            this.lbopcional.Name = "lbopcional";
-            this.lbopcional.Size = new System.Drawing.Size(276, 20);
-            this.lbopcional.TabIndex = 6;
-            this.lbopcional.Text = "Qual Operação Deseja Executar?";
-            // 
-            // cbopcional
-            // 
-            this.cbopcional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbopcional.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbopcional.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbopcional.FormattingEnabled = true;
-            this.cbopcional.Items.AddRange(new object[] {
-            "ENTRADA",
-            "SAIDA"});
-            this.cbopcional.Location = new System.Drawing.Point(322, 99);
-            this.cbopcional.Name = "cbopcional";
-            this.cbopcional.Size = new System.Drawing.Size(164, 21);
-            this.cbopcional.TabIndex = 7;
-            // 
-            // btncadastrar
-            // 
-            this.btncadastrar.BackColor = System.Drawing.Color.Navy;
-            this.btncadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btncadastrar.Location = new System.Drawing.Point(249, 191);
-            this.btncadastrar.Name = "btncadastrar";
-            this.btncadastrar.Size = new System.Drawing.Size(112, 40);
-            this.btncadastrar.TabIndex = 8;
-            this.btncadastrar.Text = "Cadastrar";
-            this.btncadastrar.UseVisualStyleBackColor = false;
-            this.btncadastrar.Click += new System.EventHandler(this.btncadastrar_Click);
+            this.btnentrada.BackColor = System.Drawing.Color.Navy;
+            this.btnentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnentrada.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnentrada.Location = new System.Drawing.Point(247, 192);
+            this.btnentrada.Name = "btnentrada";
+            this.btnentrada.Size = new System.Drawing.Size(120, 40);
+            this.btnentrada.TabIndex = 8;
+            this.btnentrada.Text = "ENTRADA";
+            this.btnentrada.UseVisualStyleBackColor = false;
+            this.btnentrada.Click += new System.EventHandler(this.btncadastrar_Click);
             // 
             // btnlimpar
             // 
             this.btnlimpar.BackColor = System.Drawing.Color.Navy;
             this.btnlimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlimpar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnlimpar.Location = new System.Drawing.Point(374, 191);
+            this.btnlimpar.Location = new System.Drawing.Point(417, 192);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(112, 40);
             this.btnlimpar.TabIndex = 9;
@@ -156,22 +144,22 @@
             // 
             this.tbentrada.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbentrada.Enabled = false;
-            this.tbentrada.Location = new System.Drawing.Point(27, 268);
+            this.tbentrada.Location = new System.Drawing.Point(27, 304);
             this.tbentrada.Multiline = true;
             this.tbentrada.Name = "tbentrada";
             this.tbentrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbentrada.Size = new System.Drawing.Size(252, 285);
+            this.tbentrada.Size = new System.Drawing.Size(342, 249);
             this.tbentrada.TabIndex = 10;
             // 
             // tbsaida
             // 
             this.tbsaida.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbsaida.Enabled = false;
-            this.tbsaida.Location = new System.Drawing.Point(452, 268);
+            this.tbsaida.Location = new System.Drawing.Point(417, 304);
             this.tbsaida.Multiline = true;
             this.tbsaida.Name = "tbsaida";
             this.tbsaida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbsaida.Size = new System.Drawing.Size(338, 285);
+            this.tbsaida.Size = new System.Drawing.Size(501, 249);
             this.tbsaida.TabIndex = 11;
             // 
             // labelplaca
@@ -180,7 +168,7 @@
             this.labelplaca.BackColor = System.Drawing.Color.Navy;
             this.labelplaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelplaca.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelplaca.Location = new System.Drawing.Point(33, 249);
+            this.labelplaca.Location = new System.Drawing.Point(33, 285);
             this.labelplaca.Name = "labelplaca";
             this.labelplaca.Size = new System.Drawing.Size(55, 16);
             this.labelplaca.TabIndex = 12;
@@ -192,31 +180,31 @@
             this.labeldatahora.BackColor = System.Drawing.Color.Navy;
             this.labeldatahora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeldatahora.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labeldatahora.Location = new System.Drawing.Point(105, 249);
+            this.labeldatahora.Location = new System.Drawing.Point(94, 285);
             this.labeldatahora.Name = "labeldatahora";
-            this.labeldatahora.Size = new System.Drawing.Size(174, 16);
+            this.labeldatahora.Size = new System.Drawing.Size(126, 16);
             this.labeldatahora.TabIndex = 13;
-            this.labeldatahora.Text = "DATA-HORA-ENTRADA";
+            this.labeldatahora.Text = "DATA-ENTRADA";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Navy;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(27, 191);
+            this.button1.Location = new System.Drawing.Point(27, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 40);
             this.button1.TabIndex = 14;
             this.button1.Text = "Listar Entrada";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.buttonListarEntrada_Click);
             // 
             // btnlistarsaisa
             // 
             this.btnlistarsaisa.BackColor = System.Drawing.Color.Navy;
             this.btnlistarsaisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlistarsaisa.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnlistarsaisa.Location = new System.Drawing.Point(607, 191);
+            this.btnlistarsaisa.Location = new System.Drawing.Point(754, 242);
             this.btnlistarsaisa.Name = "btnlistarsaisa";
             this.btnlistarsaisa.Size = new System.Drawing.Size(164, 40);
             this.btnlistarsaisa.TabIndex = 15;
@@ -229,7 +217,7 @@
             this.label2.BackColor = System.Drawing.Color.Navy;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(458, 249);
+            this.label2.Location = new System.Drawing.Point(418, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 16;
@@ -241,7 +229,7 @@
             this.label3.BackColor = System.Drawing.Color.Navy;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(644, 249);
+            this.label3.Location = new System.Drawing.Point(791, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 16);
             this.label3.TabIndex = 17;
@@ -253,17 +241,175 @@
             this.label4.BackColor = System.Drawing.Color.Navy;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(532, 249);
+            this.label4.Location = new System.Drawing.Point(583, 285);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.Size = new System.Drawing.Size(100, 16);
             this.label4.TabIndex = 18;
-            this.label4.Text = "QTD-HORAS";
+            this.label4.Text = "HORA-SAIDA";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Navy;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(479, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 16);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "DATA-SAIDA";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Navy;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(689, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 16);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "TP-PERMAN\r\n";
+            // 
+            // btnsaida
+            // 
+            this.btnsaida.BackColor = System.Drawing.Color.Navy;
+            this.btnsaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsaida.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnsaida.Location = new System.Drawing.Point(643, 192);
+            this.btnsaida.Name = "btnsaida";
+            this.btnsaida.Size = new System.Drawing.Size(112, 40);
+            this.btnsaida.TabIndex = 21;
+            this.btnsaida.Text = "SAIDA";
+            this.btnsaida.UseVisualStyleBackColor = false;
+            this.btnsaida.Click += new System.EventHandler(this.btnsaida_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Navy;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(226, 285);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 16);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "HORA-ENTRADA";
+            // 
+            // label_horasaida
+            // 
+            this.label_horasaida.AutoSize = true;
+            this.label_horasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_horasaida.Location = new System.Drawing.Point(35, 149);
+            this.label_horasaida.Name = "label_horasaida";
+            this.label_horasaida.Size = new System.Drawing.Size(209, 20);
+            this.label_horasaida.TabIndex = 24;
+            this.label_horasaida.Text = "Digite a Hora de Entrada";
+            // 
+            // tbdataentrada
+            // 
+            this.tbdataentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbdataentrada.Location = new System.Drawing.Point(247, 105);
+            this.tbdataentrada.Multiline = true;
+            this.tbdataentrada.Name = "tbdataentrada";
+            this.tbdataentrada.Size = new System.Drawing.Size(120, 27);
+            this.tbdataentrada.TabIndex = 25;
+            // 
+            // label_dataentrada
+            // 
+            this.label_dataentrada.AutoSize = true;
+            this.label_dataentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dataentrada.Location = new System.Drawing.Point(32, 110);
+            this.label_dataentrada.Name = "label_dataentrada";
+            this.label_dataentrada.Size = new System.Drawing.Size(209, 20);
+            this.label_dataentrada.TabIndex = 26;
+            this.label_dataentrada.Text = "Digite a Data de Entrada";
+            // 
+            // tbhoraentrada
+            // 
+            this.tbhoraentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbhoraentrada.Location = new System.Drawing.Point(247, 149);
+            this.tbhoraentrada.Multiline = true;
+            this.tbhoraentrada.Name = "tbhoraentrada";
+            this.tbhoraentrada.Size = new System.Drawing.Size(120, 27);
+            this.tbhoraentrada.TabIndex = 27;
+            // 
+            // tbhorasaida
+            // 
+            this.tbhorasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbhorasaida.Location = new System.Drawing.Point(635, 143);
+            this.tbhorasaida.Multiline = true;
+            this.tbhorasaida.Name = "tbhorasaida";
+            this.tbhorasaida.Size = new System.Drawing.Size(120, 27);
+            this.tbhorasaida.TabIndex = 33;
+            // 
+            // label_datasaida
+            // 
+            this.label_datasaida.AutoSize = true;
+            this.label_datasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_datasaida.Location = new System.Drawing.Point(417, 112);
+            this.label_datasaida.Name = "label_datasaida";
+            this.label_datasaida.Size = new System.Drawing.Size(191, 20);
+            this.label_datasaida.TabIndex = 32;
+            this.label_datasaida.Text = "Digite a Data de Saida";
+            // 
+            // tbdatasaida
+            // 
+            this.tbdatasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbdatasaida.Location = new System.Drawing.Point(635, 110);
+            this.tbdatasaida.Multiline = true;
+            this.tbdatasaida.Name = "tbdatasaida";
+            this.tbdatasaida.Size = new System.Drawing.Size(120, 27);
+            this.tbdatasaida.TabIndex = 31;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(417, 147);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(191, 20);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Digite a Hora de Saida";
+            // 
+            // tbplacasaida
+            // 
+            this.tbplacasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbplacasaida.Location = new System.Drawing.Point(635, 70);
+            this.tbplacasaida.Multiline = true;
+            this.tbplacasaida.Name = "tbplacasaida";
+            this.tbplacasaida.Size = new System.Drawing.Size(120, 27);
+            this.tbplacasaida.TabIndex = 29;
+            // 
+            // label_placasaida
+            // 
+            this.label_placasaida.AutoSize = true;
+            this.label_placasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_placasaida.Location = new System.Drawing.Point(417, 72);
+            this.label_placasaida.Name = "label_placasaida";
+            this.label_placasaida.Size = new System.Drawing.Size(212, 20);
+            this.label_placasaida.TabIndex = 28;
+            this.label_placasaida.Text = "Digite a Placa Do Veiculo";
             // 
             // FrmCadastroVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(860, 565);
+            this.ClientSize = new System.Drawing.Size(920, 565);
+            this.Controls.Add(this.tbhorasaida);
+            this.Controls.Add(this.label_datasaida);
+            this.Controls.Add(this.tbdatasaida);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.tbplacasaida);
+            this.Controls.Add(this.label_placasaida);
+            this.Controls.Add(this.tbhoraentrada);
+            this.Controls.Add(this.label_dataentrada);
+            this.Controls.Add(this.tbdataentrada);
+            this.Controls.Add(this.label_horasaida);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnsaida);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -274,9 +420,7 @@
             this.Controls.Add(this.tbsaida);
             this.Controls.Add(this.tbentrada);
             this.Controls.Add(this.btnlimpar);
-            this.Controls.Add(this.btncadastrar);
-            this.Controls.Add(this.cbopcional);
-            this.Controls.Add(this.lbopcional);
+            this.Controls.Add(this.btnentrada);
             this.Controls.Add(this.tbplaca);
             this.Controls.Add(this.lbplaca);
             this.Controls.Add(this.panel1);
@@ -298,9 +442,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbplaca;
         private System.Windows.Forms.TextBox tbplaca;
-        private System.Windows.Forms.Label lbopcional;
-        private System.Windows.Forms.ComboBox cbopcional;
-        private System.Windows.Forms.Button btncadastrar;
+        private System.Windows.Forms.Button btnentrada;
         private System.Windows.Forms.Button btnlimpar;
         private System.Windows.Forms.TextBox tbentrada;
         private System.Windows.Forms.TextBox tbsaida;
@@ -311,5 +453,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnsaida;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_horasaida;
+        private System.Windows.Forms.TextBox tbdataentrada;
+        private System.Windows.Forms.Label label_dataentrada;
+        private System.Windows.Forms.TextBox tbhoraentrada;
+        private System.Windows.Forms.TextBox tbhorasaida;
+        private System.Windows.Forms.Label label_datasaida;
+        private System.Windows.Forms.TextBox tbdatasaida;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbplacasaida;
+        private System.Windows.Forms.Label label_placasaida;
     }
 }

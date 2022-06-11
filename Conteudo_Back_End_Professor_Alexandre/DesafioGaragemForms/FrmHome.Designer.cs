@@ -43,7 +43,6 @@
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelForm.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -57,7 +56,7 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(151, 565);
+            this.panelPrincipal.Size = new System.Drawing.Size(97, 565);
             this.panelPrincipal.TabIndex = 0;
             // 
             // btnSair
@@ -72,7 +71,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.White;
             this.btnSair.Location = new System.Drawing.Point(0, 292);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(151, 68);
+            this.btnSair.Size = new System.Drawing.Size(97, 68);
             this.btnSair.TabIndex = 4;
             this.btnSair.Text = "Sair";
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -91,7 +90,7 @@
             this.btnExibirVeiculos.ForeColor = System.Drawing.Color.White;
             this.btnExibirVeiculos.Location = new System.Drawing.Point(0, 224);
             this.btnExibirVeiculos.Name = "btnExibirVeiculos";
-            this.btnExibirVeiculos.Size = new System.Drawing.Size(151, 68);
+            this.btnExibirVeiculos.Size = new System.Drawing.Size(97, 68);
             this.btnExibirVeiculos.TabIndex = 3;
             this.btnExibirVeiculos.Text = "Exibir Veiculos Cadastro Entrada";
             this.btnExibirVeiculos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -110,7 +109,7 @@
             this.btnCadastrarVeiculo.ForeColor = System.Drawing.Color.White;
             this.btnCadastrarVeiculo.Location = new System.Drawing.Point(0, 148);
             this.btnCadastrarVeiculo.Name = "btnCadastrarVeiculo";
-            this.btnCadastrarVeiculo.Size = new System.Drawing.Size(151, 76);
+            this.btnCadastrarVeiculo.Size = new System.Drawing.Size(97, 76);
             this.btnCadastrarVeiculo.TabIndex = 2;
             this.btnCadastrarVeiculo.Text = "Cadastrar Veiculos";
             this.btnCadastrarVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -129,7 +128,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Location = new System.Drawing.Point(0, 80);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(151, 68);
+            this.btnHome.Size = new System.Drawing.Size(97, 68);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -142,7 +141,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(151, 80);
+            this.panelLogo.Size = new System.Drawing.Size(97, 80);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -150,28 +149,27 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(98, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panelForm
             // 
+            this.panelForm.Controls.Add(this.label1);
             this.panelForm.Controls.Add(this.panel1);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(151, 0);
+            this.panelForm.Location = new System.Drawing.Point(95, 0);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(849, 565);
+            this.panelForm.Size = new System.Drawing.Size(942, 565);
             this.panelForm.TabIndex = 1;
             this.panelForm.Paint += new System.Windows.Forms.PaintEventHandler(this.btnHome_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-353, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(849, 80);
+            this.panel1.Size = new System.Drawing.Size(1294, 80);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -179,7 +177,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(192, 9);
+            this.label1.Location = new System.Drawing.Point(193, 294);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 56);
             this.label1.TabIndex = 0;
@@ -190,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1000, 565);
+            this.ClientSize = new System.Drawing.Size(1038, 565);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelPrincipal);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -203,7 +201,6 @@
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelForm.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

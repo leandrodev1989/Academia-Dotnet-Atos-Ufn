@@ -15,37 +15,66 @@ namespace Garagemteste
         /// Atributos para serem utilizado
         /// </summary>
         string placaveiculo;
-        DateTime datahoraentrada;
-        float tempopermanencia;
-        float valorcobrado;
+        string dataentrada;
+        int tempopermanencia;
+        double valorcobrado;
+        string horasaida;
+        string datasaida;
+        string horaentrada;
 
 
         /// <summary>
-        /// Construtor dos atributos
+        /// Construtor dos atributos utilizado na leitura do arquivo para popular a lista
         /// </summary>
         /// <param name="placaveiculo"></param>
         /// <param name="datahoraentrada"></param>
         /// <param name="tempopermanencia"></param>
         /// <param name="valorcobrado"></param>
-        public Veiculo(string placaveiculo, DateTime datahoraentrada)
+        public Veiculo(string placaveiculo, string dataentrada, string horaentrada)
         {
             this.Placaveiculo = placaveiculo;
-            this.Datahoraentrada = datahoraentrada;
-           // this.tempopermanencia = tempopermanencia;
-            //this.valorcobrado = valorcobrado;
+            this.Dataentrada = dataentrada;
+            this.Horaentrada = horaentrada;
+           
 
         }
 
-        public void Gerardatahora()
+        public Veiculo(string placaveiculo,string datasaida, string horasaida, int tempopermanencia, double valorcobrado)
         {
-            this.Datahoraentrada = DateTime.Now;
+            this.Placaveiculo = placaveiculo;
+            this.Datasaida = datasaida;
+            this.Horasaida = horasaida;
+            this.Tempopermanencia = tempopermanencia;
+            this.Valorcobrado = valorcobrado;
         }
+
+
+
+
+
+
+        public void Gerardatahora( string tipo)
+        {
+            DateTime datetime = DateTime.Now;
+            string[] vetorDados = datetime.ToString().Split(' ');
+
+            switch (tipo)
+            {
+                case "entrada":
+                    this.dataentrada = vetorDados[0];
+                    this.horaentrada = vetorDados[1];
+                    break;
+
+            }
+
+        }
+
+       
 
         public Veiculo(string placa)
         {
-            Placaveiculo = placa;
-            this.Gerardatahora();
-
+            this.Placaveiculo = placa;
+          
         }
 
 
@@ -53,8 +82,13 @@ namespace Garagemteste
         /// 
         /// </summary>
         public string Placaveiculo { get => placaveiculo; set => placaveiculo = value; }
-        public DateTime Datahoraentrada { get => datahoraentrada; set => datahoraentrada = value; }
-
+        public string Dataentrada { get => dataentrada; set => dataentrada = value; }
+        public string Datasaida { get => datasaida; set => datasaida = value; }
+        public string Horaentrada { get => horaentrada; set => horaentrada = value; }
+        public string Horasaida { get => horasaida; set => horasaida = value; }
+        public double Valorcobrado { get => valorcobrado; set => valorcobrado = value; }
+        public int Tempopermanencia { get => tempopermanencia; set => tempopermanencia = value; }
+       
 
 
 
@@ -65,17 +99,27 @@ namespace Garagemteste
         /// <param name="nome"></param>
         /// <param name="lista"></param>
         /// <returns></returns>
-        public static bool jacdastrado(string nome, List<Veiculo> listaveiculos)
+        public static bool jacdastrado(string placaveiculo, List<Veiculo> listaveiculos)
         {
             foreach (Veiculo i in listaveiculos)
             {
-                if (nome.Equals(i.placaveiculo))
+                if (placaveiculo.Equals(i.Placaveiculo))
                 {
                     return true;
+                    // .IndexOf();
                 }
 
             }
             return false;
+
+            //foreach (Veiculo i in listaveiculos)
+            //{
+            //    if (i.Placaveiculo.Equals(placa))
+            //    {
+            //        return listaveiculos.IndexOf(i);
+            //    }
+            //}
+            //return -27; //codigo do ESC, ou seja, veiculo nao localizado
         }
 
        

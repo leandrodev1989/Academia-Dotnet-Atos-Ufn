@@ -14,20 +14,24 @@ namespace Garagemteste
     public partial class FrmCadastroVeiculos : Form
     {
         static List<Veiculo> listaveiculos = new List<Veiculo>();
-
+        static List<Veiculo> listaveiculosSaida = new List<Veiculo>();
+       
 
         public FrmCadastroVeiculos()
         {
             InitializeComponent();
             //EntityDados.carregarLista(listaveiculos);
-
-            //
+           
             
         }
 
 
 
-
+        /// <summary>
+        /// Botão para fechar a plicação
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -52,49 +56,62 @@ namespace Garagemteste
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-               
+            
+                 string dataentrada = tbdataentrada.Text;
+                 string horaentrada = tbhoraentrada.Text;
                
 
-                /// Validando o campo para que não fique vazio
+                // Validando o campo para que não fique vazio
                 if (tbplaca.Text.Equals(""))
                 {
                     MessageBox.Show("É preciso digitar a Placa e escolher uma opção!", "Alerta");
                     return;
                 }
 
-                string placa;
-                ///Alterando a fonta para Maiusculo
+                 string placaveiculo;
+                //Alterando a fonta para Maiusculo
                 tbplaca.Text = tbplaca.Text.ToUpper();
 
-                DateTime Datahoraentrada = DateTime.Now;
-                //gravar na lista desde que não estave na lista
-                if (Veiculo.jacdastrado(tbplaca.Text, listaveiculos))
-                {
-                    MessageBox.Show("Veiculo já Cadastrado!", "Alerta");
-                }
-                else
-                {
-                    
-                 
-                      listaveiculos.Add(new Veiculo(tbplaca.Text, Datahoraentrada));
+
+                    //gravar na lista desde que não estave na lista
+                    if(Veiculo.jacdastrado(tbplaca.Text, listaveiculos))
+                    {
+                        MessageBox.Show("Veiculo já Cadastrado!", "Alerta");
+                    }
+                    else
+                    {
+
+                        //Adiciona os Dados na Lista
+                        listaveiculos.Add(new Veiculo(tbplaca.Text, dataentrada, horaentrada));
+
+                        //escreve os dados na lista e arquivo fazendo o append escrevendo um em baixo do outro
+                        tbentrada.AppendText(tbplaca.Text + " - " + dataentrada + " - " + horaentrada + Environment.NewLine);
+
+                        EntityDados.gravarNoarquivoEntrada(listaveiculos);
 
 
-                      tbentrada.AppendText(tbplaca.Text + " - " + Datahoraentrada + Environment.NewLine);
+                         tbplaca.Text = "";
+                         tbdataentrada.Text = "";
+                         tbhoraentrada.Text = "";
+                    }
+                
+                  
+               
+                
+                
+                   
 
-                      StreamWriter escritor = new StreamWriter("veiculosEntrada.txt", true);
-
-                      escritor.WriteLine(tbplaca.Text + " - " + Datahoraentrada);
-
-                      escritor.Close();
-
-                      tbplaca.Text = "";
-
-                }
+                
             
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Função para exibir na tela os os dados escritos no arquivo de Entrada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonListarEntrada_Click(object sender, EventArgs e)
         {
 
 
@@ -121,6 +138,39 @@ namespace Garagemteste
 
             }
 
+
+        }
+
+
+        /// <summary>
+        /// Função para exibir na tela os os dados escritos no arquivo de Saida da Garagem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        
+
+        private void btnsaida_Click(object sender, EventArgs e)
+        {
+            string placaveiculo;
+            string horasaida = tbhoraentrada.Text;
+            string datasaida = tbdatasaida.Text;
+            double velorcobrado  = 0;
+            double tempopermanencia = 0;
+            string dataentrada =   String.Format("{0:dd/MM/yyyy}");
+            string horaentrada = String.Format("{0:dd/MM/yyyy}");
+
+
+
+            //this.Datasaida = datasaida;
+            //this.Horasaida = horasaida;
+            //this.Tempopermanencia = tempopermanencia;
+            //this.Valorcobrado = valorcobrado;
+
+           
+
+            //Adiciona os Dados na Lista,
+          
+            EntityDados.gravarNoArquivoSaida(listaveiculos);
 
         }
     }
