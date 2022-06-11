@@ -92,6 +92,7 @@ namespace GestaoGaragemForms
             textBox_listadejogadores.Text = "";
             listaJogadores.Clear();
         }
+
          static List<Jogador> listaJogadores = new List<Jogador>();
     }
 }

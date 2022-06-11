@@ -1,0 +1,13 @@
+C:\Dev\Garagemteste\bin\Debug\Garagemteste.exe.config
+C:\Dev\Garagemteste\bin\Debug\Garagemteste.exe
+C:\Dev\Garagemteste\bin\Debug\Garagemteste.pdb
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.csproj.AssemblyReference.cache
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.csproj.SuggestedBindingRedirects.cache
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.Properties.Resources.resources
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.csproj.GenerateResource.cache
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.csproj.CoreCompileInputs.cache
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.exe
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.pdb
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.FrmCadastroVeiculos.resources
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.FrmHome.resources
+C:\Dev\Garagemteste\obj\Debug\Garagemteste.FrmExibirGaragem.resources
