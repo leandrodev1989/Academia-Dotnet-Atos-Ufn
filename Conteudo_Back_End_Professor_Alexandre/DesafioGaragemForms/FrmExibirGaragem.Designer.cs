@@ -80,6 +80,7 @@
             this.tbentrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbentrada.Size = new System.Drawing.Size(403, 341);
             this.tbentrada.TabIndex = 6;
+            this.tbentrada.TextChanged += new System.EventHandler(this.tbentrada_TextChanged);
             // 
             // FrmExibirGaragem
             // 

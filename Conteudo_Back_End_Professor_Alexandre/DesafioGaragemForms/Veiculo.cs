@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Garagemteste
 {
-    
+
     class Veiculo
     {
 
@@ -39,14 +35,22 @@ namespace Garagemteste
 
         }
 
-        public Veiculo(string placaveiculo,string datasaida, string horasaida, int tempopermanencia, double valorcobrado)
+        public Veiculo(string placaveiculo, string datasaida, string horasaida, int tempopermanencia, 
+            double valorcobrado, string dataentrada, string horaentrada)
         {
             this.Placaveiculo = placaveiculo;
             this.Datasaida = datasaida;
             this.Horasaida = horasaida;
             this.Tempopermanencia = tempopermanencia;
             this.Valorcobrado = valorcobrado;
+            this.Dataentrada = dataentrada;
+            this.Horaentrada = horaentrada;
+
         }
+
+
+
+
 
 
 
@@ -103,7 +107,7 @@ namespace Garagemteste
         {
             foreach (Veiculo i in listaveiculos)
             {
-                if (placaveiculo.Equals(i.Placaveiculo))
+                if (i.Placaveiculo.Equals(placaveiculo))
                 {
                     return true;
                     // .IndexOf();
@@ -114,7 +118,7 @@ namespace Garagemteste
 
             //foreach (Veiculo i in listaveiculos)
             //{
-            //    if (i.Placaveiculo.Equals(placa))
+            //    if (i.Placaveiculo.Equals(placaveiculo))
             //    {
             //        return listaveiculos.IndexOf(i);
             //    }
@@ -122,6 +126,6 @@ namespace Garagemteste
             //return -27; //codigo do ESC, ou seja, veiculo nao localizado
         }
 
-       
+      
     }
 }

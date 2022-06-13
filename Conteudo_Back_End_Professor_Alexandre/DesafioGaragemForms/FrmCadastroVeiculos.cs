@@ -13,16 +13,50 @@ namespace Garagemteste
 {
     public partial class FrmCadastroVeiculos : Form
     {
-        static List<Veiculo> listaveiculos = new List<Veiculo>();
-        static List<Veiculo> listaveiculosSaida = new List<Veiculo>();
-       
+         List<Veiculo> listaveiculosEntrada = new List<Veiculo>();
+         List<Veiculo> listaveiculosSaida = new List<Veiculo>();
 
         public FrmCadastroVeiculos()
         {
             InitializeComponent();
-            //EntityDados.carregarLista(listaveiculos);
            
             
+            EntityDados.LerdoArquivoEntrada(listaveiculosEntrada);
+            PopularListatextBoxListagaragem(listaveiculosEntrada);
+
+            EntityDados.LerdoArquivoSaida(listaveiculosSaida);
+            PopularListatextBoxListaSaida(listaveiculosSaida);
+           
+        }
+
+
+
+        /// <summary>
+        /// Metodo para Popular a text box lista veiculos Saida do estacionamento
+        /// </summary>
+        /// <param name="listaveiculosSaida"></param>
+        private void PopularListatextBoxListaSaida(List<Veiculo> lista)
+        {
+            textBox_listaveiculosSaida.Text = "";
+            foreach (Veiculo i in lista)
+            {
+                textBox_listaveiculosSaida.AppendText(i.Placaveiculo + " - " + i.Datasaida + " - " + i.Horasaida + " - " + i.Tempopermanencia + " - " + i.Valorcobrado + 
+                    " - " + i.Dataentrada + " - " + i.Horaentrada  + Environment.NewLine);
+            }
+        }
+
+
+        /// <summary>
+        /// Metodo para Popular a text box lista veiculos entrada
+        /// </summary>
+        /// <param name="listaveiculosEntrada"></param>
+        private void PopularListatextBoxListagaragem(List<Veiculo> lista)
+        {
+            textBox_listaVeiculosEntrada.Text = "";
+            foreach (Veiculo i in lista)
+            {
+                textBox_listaVeiculosEntrada.AppendText(i.Placaveiculo + " - " + i.Dataentrada + " - " + i.Horaentrada + Environment.NewLine);
+            }
         }
 
 
@@ -49,61 +83,61 @@ namespace Garagemteste
         private void btnlimpar_Click(object sender, EventArgs e)
         {
             tbplaca.Text = "";
-            listaveiculos.Clear();
+            listaveiculosEntrada.Clear();
         }
 
        
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btncadastrar_Click(object sender, EventArgs e)
         {
+
+            string  dataentrada = DateTime.Now.ToString("dd-MM-yyyy");
+            string horaentrada = tbhoraentrada.Text;
+            // Validando o campo para que não fique vazio
+            if (tbplaca.Text.Equals(""))
+            {
+                MessageBox.Show("É preciso digitar a Placa e escolher uma opção!", "Alerta");
+                return;
+            }
+
+            if (tbplaca.Text.Length != 7 )
+            {
+                MessageBox.Show("É preciso digitar a Placa Com 7 Caracteres!", "Alerta");
+                return;
+            }
             
-                 string dataentrada = tbdataentrada.Text;
-                 string horaentrada = tbhoraentrada.Text;
-               
+            //Alterando a fonta para Maiusculo
+            tbplaca.Text = tbplaca.Text.ToUpper();
 
-                // Validando o campo para que não fique vazio
-                if (tbplaca.Text.Equals(""))
-                {
-                    MessageBox.Show("É preciso digitar a Placa e escolher uma opção!", "Alerta");
-                    return;
-                }
+            //gravar na lista desde que não estave na lista
+            if (Veiculo.jacdastrado(tbplaca.Text, listaveiculosEntrada))
+            {
+                MessageBox.Show("Veiculo já Cadastrado!", "Alerta");
+            }
+            else
+            {
 
-                 string placaveiculo;
-                //Alterando a fonta para Maiusculo
-                tbplaca.Text = tbplaca.Text.ToUpper();
+                //Adiciona os Dados na Lista
+                listaveiculosEntrada.Add(new Veiculo(tbplaca.Text, dataentrada, horaentrada));
 
+                //escreve os dados na lista e arquivo fazendo o append escrevendo um em baixo do outro
+                textBox_listaVeiculosEntrada.AppendText(tbplaca.Text + " - " + dataentrada + " - " + horaentrada + Environment.NewLine);
 
-                    //gravar na lista desde que não estave na lista
-                    if(Veiculo.jacdastrado(tbplaca.Text, listaveiculos))
-                    {
-                        MessageBox.Show("Veiculo já Cadastrado!", "Alerta");
-                    }
-                    else
-                    {
+                EntityDados.GravarNoarquivoEntrada(listaveiculosEntrada);
 
-                        //Adiciona os Dados na Lista
-                        listaveiculos.Add(new Veiculo(tbplaca.Text, dataentrada, horaentrada));
+                MessageBox.Show("Entrada  Registrada!\n" +  "PLACA:"+ tbplaca.Text + 
+                    "\n" + "DATA:" + dataentrada  + "\n" + "HORA:" 
+                    + horaentrada + "\n" + "Valor Por Hora: 5,00","Alerta" );
 
-                        //escreve os dados na lista e arquivo fazendo o append escrevendo um em baixo do outro
-                        tbentrada.AppendText(tbplaca.Text + " - " + dataentrada + " - " + horaentrada + Environment.NewLine);
+                tbplaca.Text = "";
+                tbhoraentrada.Text = "";
 
-                        EntityDados.gravarNoarquivoEntrada(listaveiculos);
-
-
-                         tbplaca.Text = "";
-                         tbdataentrada.Text = "";
-                         tbhoraentrada.Text = "";
-                    }
-                
-                  
-               
-                
-                
-                   
-
-                
-            
-           
+              
+            }
         }
 
         /// <summary>
@@ -123,7 +157,7 @@ namespace Garagemteste
                 {
                     using (StreamReader sr = File.OpenText("veiculosEntrada.txt"))
                     {
-                        tbentrada.Text = sr.ReadToEnd();
+                        textBox_listaVeiculosEntrada.Text = sr.ReadToEnd();
                     }
 
                 }
@@ -151,27 +185,48 @@ namespace Garagemteste
 
         private void btnsaida_Click(object sender, EventArgs e)
         {
-            string placaveiculo;
-            string horasaida = tbhoraentrada.Text;
-            string datasaida = tbdatasaida.Text;
-            double velorcobrado  = 0;
-            double tempopermanencia = 0;
-            string dataentrada =   String.Format("{0:dd/MM/yyyy}");
-            string horaentrada = String.Format("{0:dd/MM/yyyy}");
 
 
+            string horasaida = tbhorasaida.Text;
+            string datasaida = DateTime.Now.ToString("dd-MM-yyyy");
+            int tempopermanencia = 0;
+            double valorcobrado = 0;
+            string dataentrada = DateTime.Now.ToString("dd-MM-yyyy");
+            string horaentrada = DateTime.Now.ToString("HH-mm"); 
 
-            //this.Datasaida = datasaida;
-            //this.Horasaida = horasaida;
-            //this.Tempopermanencia = tempopermanencia;
-            //this.Valorcobrado = valorcobrado;
+
 
            
+            //Alterando a fonta para Maiusculo
+            tbplacasaida.Text = tbplacasaida.Text.ToUpper();
 
-            //Adiciona os Dados na Lista,
-          
-            EntityDados.gravarNoArquivoSaida(listaveiculos);
+            // Validando o campo para que não fique vazio
+            if (tbplacasaida.Text.Equals(""))
+            {
+                MessageBox.Show("É preciso digitar a Placa e escolher uma opção!", "Alerta");
+                return;
+            }
+
+            if (tbplacasaida.Text.Length != 7)
+            {
+                MessageBox.Show("É preciso digitar a Placa Com 7 Caracteres!", "Alerta");
+                return;
+            }
+
+
+            listaveiculosSaida.Add(new Veiculo(tbplacasaida.Text, datasaida, horasaida,tempopermanencia,valorcobrado,dataentrada,horaentrada));
+
+            textBox_listaveiculosSaida.AppendText(tbplacasaida.Text + " - " + datasaida + " - " + horasaida + " - " + tempopermanencia + " - " +
+                valorcobrado + " - " + dataentrada +" - " + horaentrada + Environment.NewLine);
+            //Adiciona os Dados na Text box Saiad da garagem,
+
+            EntityDados.GravarNoarquivoSaida(listaveiculosSaida);
+
+            tbplacasaida.Text = "";
+            tbhorasaida.Text = "";
 
         }
+
+
     }
 }

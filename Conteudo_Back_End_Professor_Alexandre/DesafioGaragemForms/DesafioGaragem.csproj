@@ -68,6 +68,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Veiculo.cs" />
+    <Compile Include="VeiculoBase.cs" />
     <EmbeddedResource Include="FrmCadastroVeiculos.resx">
       <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
     </EmbeddedResource>
