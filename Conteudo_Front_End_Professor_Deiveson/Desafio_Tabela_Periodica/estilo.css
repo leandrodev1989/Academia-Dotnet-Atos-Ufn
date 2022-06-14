@@ -1,0 +1,50 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
+/* GLOBAL STYLES */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;	
+    background-color: rgb(245, 217, 217);
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+}
+
+.naometais li{
+    
+    
+    height:7em;
+	background:var(--bg-preto);	
+	border:.125rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	margin-bottom:.5em;
+	position:relative;	
+    display: inline-block;
+	
+	justify-content:center;
+  
+    width: 60px;
+    height: 80px;
+    left: 30px;
+    font-size: 11px;
+    
+}
+
+.naometais li:hover{
+    color: #c78c19;
+    
+}
+
+.naometais li:active{
+    border-color: #088C19;
+}
+
+
