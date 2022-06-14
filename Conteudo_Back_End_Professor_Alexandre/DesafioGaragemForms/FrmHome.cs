@@ -70,5 +70,10 @@ namespace Garagemteste
         }
 
         List<Veiculo> listaveiculos = new List<Veiculo>();
+
+        private void btnHome_Click(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

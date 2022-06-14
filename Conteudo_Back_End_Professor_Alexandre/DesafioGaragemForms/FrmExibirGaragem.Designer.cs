@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(862, 565);
+            this.ClientSize = new System.Drawing.Size(868, 565);
             this.Controls.Add(this.tbentrada);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnFecharExibir);

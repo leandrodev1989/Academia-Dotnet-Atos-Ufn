@@ -17,7 +17,7 @@ h1{
     padding: 50px;
 }
 
-.naometais li{
+.naometais {
     
     
     height:7em;
@@ -33,18 +33,36 @@ h1{
   
     width: 60px;
     height: 80px;
-    left: 30px;
+    left: 5px;
     font-size: 11px;
     
-}
+ }
 
-.naometais li:hover{
+
+   .mae :hover{
     color: #c78c19;
     
-}
+ }
 
-.naometais li:active{
+ .naometais :active{
     border-color: #088C19;
-}
+ }
 
+ .naometais1{
+    height:7em;
+	background:var(--bg-preto);	
+	border:.125rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	margin-bottom:.5em;
+	position:fixed;	
+    display: inline-block;
+	
+	justify-content:center;
+  
+    width: 60px;
+    height: 80px;
+    left: 5px;
+    font-size: 11px;
+ }
 

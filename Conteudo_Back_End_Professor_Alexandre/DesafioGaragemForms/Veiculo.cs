@@ -103,28 +103,50 @@ namespace Garagemteste
         /// <param name="nome"></param>
         /// <param name="lista"></param>
         /// <returns></returns>
-        public static bool jacdastrado(string placaveiculo, List<Veiculo> listaveiculos)
+        public static bool jacdastrado(string placaveiculo, List<Veiculo> lista)
         {
-            foreach (Veiculo i in listaveiculos)
+            foreach (Veiculo i in lista)
             {
                 if (i.Placaveiculo.Equals(placaveiculo))
                 {
                     return true;
-                    // .IndexOf();
+                   
                 }
 
             }
-            return false;
-
-            //foreach (Veiculo i in listaveiculos)
-            //{
-            //    if (i.Placaveiculo.Equals(placaveiculo))
-            //    {
-            //        return listaveiculos.IndexOf(i);
-            //    }
-            //}
-            //return -27; //codigo do ESC, ou seja, veiculo nao localizado
+            return false;           
         }
+
+        public static int Localizado(string placaveiculo, List<Veiculo> lista)
+        {
+            foreach(Veiculo i in lista)
+            {
+                if (i.Placaveiculo.Equals(placaveiculo))
+                {
+                    return lista.IndexOf(i);
+                }
+            }
+            return -27;
+        }
+
+        //public  static double  RealizarCobraca(double valorhora , string horaentrada , string horasaida)
+        //{
+        //    string[] vetorDados = horaentrada.Split(':');
+        //    int hora = int.Parse(vetorDados[0]);
+        //    int minutos = int.Parse(vetorDados[1]);
+        //    int entrada = hora * 60 + minutos;
+
+        //    vetorDados = horasaida.Split(':');
+        //    hora = int.Parse(vetorDados[0]);
+        //    minutos = int.Parse(vetorDados[1]);
+        //    int saida = hora * 60 + minutos;
+
+        //    this.Tempopermanencia = saida - entrada;
+        //    double resultado = (double)this.Tempopermanencia / 60;
+        //    double qthorasgaregem = Math.Ceiling(resultado);
+
+        //    this.valorcobrado = (int)qthorasgaregem * valorhora;
+        //}
 
       
     }
