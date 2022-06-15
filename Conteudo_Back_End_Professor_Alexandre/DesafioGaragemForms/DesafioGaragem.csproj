@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityDados.cs" />
+    <Compile Include="Persistencia\EntityDados.cs" />
     <Compile Include="FrmExibirGaragem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\UtilVeiculo.cs" />
     <Compile Include="Veiculo.cs" />
     <EmbeddedResource Include="FrmCadastroVeiculos.resx">
       <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>

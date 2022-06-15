@@ -9,7 +9,7 @@
 	padding:0;
 	list-style:none;
 	box-sizing:border-box;	
-    background-color: rgb(245, 217, 217);
+    background-color: rgb(247, 83, 83);
 }
 
 h1{
@@ -21,7 +21,7 @@ h1{
     
     
     height:7em;
-	background:var(--bg-preto);	
+	background:var(--bg-laranja);	
 	border:.125rem solid;
 	border-radius:.25rem;	
 	line-height:1.25;
@@ -32,7 +32,7 @@ h1{
 	justify-content:center;
   
     width: 60px;
-    height: 80px;
+    height: 70px;
     left: 5px;
     font-size: 11px;
     
@@ -60,8 +60,8 @@ h1{
 	
 	justify-content:center;
   
-    width: 60px;
-    height: 80px;
+    width: 55px;
+    height: 75px;
     left: 5px;
     font-size: 11px;
  }

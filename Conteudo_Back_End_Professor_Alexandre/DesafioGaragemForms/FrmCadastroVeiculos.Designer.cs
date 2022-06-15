@@ -46,16 +46,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnsaida = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label_horasaida = new System.Windows.Forms.Label();
-            this.tbhoraentrada = new System.Windows.Forms.TextBox();
-            this.tbhorasaida = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label_placasaida = new System.Windows.Forms.Label();
-            this.tbplacasaida = new System.Windows.Forms.TextBox();
             this.tbplaca = new System.Windows.Forms.TextBox();
-            this.btndatahora = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtHora = new System.Windows.Forms.DateTimePicker();
+            this.dtData = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +73,7 @@
             this.btnFechar.BackColor = System.Drawing.Color.Navy;
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFechar.Location = new System.Drawing.Point(424, 155);
+            this.btnFechar.Location = new System.Drawing.Point(817, 54);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(53, 36);
             this.btnFechar.TabIndex = 2;
@@ -87,7 +84,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.btndatahora);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
@@ -109,7 +105,7 @@
             this.btnentrada.BackColor = System.Drawing.Color.Navy;
             this.btnentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnentrada.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnentrada.Location = new System.Drawing.Point(180, 223);
+            this.btnentrada.Location = new System.Drawing.Point(222, 223);
             this.btnentrada.Name = "btnentrada";
             this.btnentrada.Size = new System.Drawing.Size(120, 40);
             this.btnentrada.TabIndex = 3;
@@ -125,7 +121,7 @@
             this.textBox_listaVeiculosEntrada.Multiline = true;
             this.textBox_listaVeiculosEntrada.Name = "textBox_listaVeiculosEntrada";
             this.textBox_listaVeiculosEntrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_listaVeiculosEntrada.Size = new System.Drawing.Size(272, 249);
+            this.textBox_listaVeiculosEntrada.Size = new System.Drawing.Size(342, 249);
             this.textBox_listaVeiculosEntrada.TabIndex = 10;
             // 
             // textBox_listaveiculosSaida
@@ -157,7 +153,7 @@
             this.labeldatahora.BackColor = System.Drawing.Color.Navy;
             this.labeldatahora.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeldatahora.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labeldatahora.Location = new System.Drawing.Point(91, 289);
+            this.labeldatahora.Location = new System.Drawing.Point(119, 289);
             this.labeldatahora.Name = "labeldatahora";
             this.labeldatahora.Size = new System.Drawing.Size(92, 12);
             this.labeldatahora.TabIndex = 13;
@@ -181,7 +177,7 @@
             this.btnlistarsaisa.BackColor = System.Drawing.Color.Navy;
             this.btnlistarsaisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlistarsaisa.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnlistarsaisa.Location = new System.Drawing.Point(567, 223);
+            this.btnlistarsaisa.Location = new System.Drawing.Point(574, 223);
             this.btnlistarsaisa.Name = "btnlistarsaisa";
             this.btnlistarsaisa.Size = new System.Drawing.Size(121, 40);
             this.btnlistarsaisa.TabIndex = 15;
@@ -268,49 +264,11 @@
             this.label7.BackColor = System.Drawing.Color.Navy;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(206, 289);
+            this.label7.Location = new System.Drawing.Point(248, 289);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 12);
             this.label7.TabIndex = 23;
             this.label7.Text = "HORA-ENTRADA";
-            // 
-            // label_horasaida
-            // 
-            this.label_horasaida.AutoSize = true;
-            this.label_horasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_horasaida.Location = new System.Drawing.Point(32, 114);
-            this.label_horasaida.Name = "label_horasaida";
-            this.label_horasaida.Size = new System.Drawing.Size(209, 20);
-            this.label_horasaida.TabIndex = 24;
-            this.label_horasaida.Text = "Digite a Hora de Entrada";
-            // 
-            // tbhoraentrada
-            // 
-            this.tbhoraentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbhoraentrada.Location = new System.Drawing.Point(247, 110);
-            this.tbhoraentrada.Multiline = true;
-            this.tbhoraentrada.Name = "tbhoraentrada";
-            this.tbhoraentrada.Size = new System.Drawing.Size(120, 27);
-            this.tbhoraentrada.TabIndex = 1;
-            // 
-            // tbhorasaida
-            // 
-            this.tbhorasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbhorasaida.Location = new System.Drawing.Point(635, 107);
-            this.tbhorasaida.Multiline = true;
-            this.tbhorasaida.Name = "tbhorasaida";
-            this.tbhorasaida.Size = new System.Drawing.Size(120, 27);
-            this.tbhorasaida.TabIndex = 33;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(417, 114);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 20);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Digite a Hora de Saida";
             // 
             // label8
             // 
@@ -336,63 +294,65 @@
             this.label10.TabIndex = 35;
             this.label10.Text = "HR-ENTRA";
             // 
-            // label_placasaida
-            // 
-            this.label_placasaida.AutoSize = true;
-            this.label_placasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_placasaida.Location = new System.Drawing.Point(417, 72);
-            this.label_placasaida.Name = "label_placasaida";
-            this.label_placasaida.Size = new System.Drawing.Size(212, 20);
-            this.label_placasaida.TabIndex = 28;
-            this.label_placasaida.Text = "Digite a Placa Do Veiculo";
-            // 
-            // tbplacasaida
-            // 
-            this.tbplacasaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbplacasaida.Location = new System.Drawing.Point(635, 70);
-            this.tbplacasaida.Multiline = true;
-            this.tbplacasaida.Name = "tbplacasaida";
-            this.tbplacasaida.Size = new System.Drawing.Size(120, 27);
-            this.tbplacasaida.TabIndex = 29;
-            // 
             // tbplaca
             // 
             this.tbplaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbplaca.Location = new System.Drawing.Point(247, 72);
+            this.tbplaca.Location = new System.Drawing.Point(250, 70);
             this.tbplaca.Multiline = true;
             this.tbplaca.Name = "tbplaca";
-            this.tbplaca.Size = new System.Drawing.Size(120, 27);
+            this.tbplaca.Size = new System.Drawing.Size(120, 21);
             this.tbplaca.TabIndex = 0;
             // 
-            // btndatahora
+            // label9
             // 
-            this.btndatahora.BackColor = System.Drawing.Color.Navy;
-            this.btndatahora.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btndatahora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btndatahora.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btndatahora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndatahora.ForeColor = System.Drawing.Color.White;
-            this.btndatahora.Location = new System.Drawing.Point(0, 3);
-            this.btndatahora.Name = "btndatahora";
-            this.btndatahora.Size = new System.Drawing.Size(147, 62);
-            this.btndatahora.TabIndex = 36;
-            this.btndatahora.Text = "Data Hora";
-            this.btndatahora.UseVisualStyleBackColor = false;
-            this.btndatahora.Click += new System.EventHandler(this.btndatahora_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(418, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 16);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "DATA";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(601, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 13);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "HORA";
+            // 
+            // dtHora
+            // 
+            this.dtHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtHora.Location = new System.Drawing.Point(649, 71);
+            this.dtHora.Name = "dtHora";
+            this.dtHora.Size = new System.Drawing.Size(104, 20);
+            this.dtHora.TabIndex = 38;
+            this.dtHora.Value = new System.DateTime(2022, 6, 15, 13, 58, 35, 0);
+            // 
+            // dtData
+            // 
+            this.dtData.Enabled = false;
+            this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtData.Location = new System.Drawing.Point(472, 70);
+            this.dtData.Name = "dtData";
+            this.dtData.Size = new System.Drawing.Size(104, 20);
+            this.dtData.TabIndex = 39;
+            this.dtData.Value = new System.DateTime(2022, 6, 15, 13, 58, 35, 0);
             // 
             // FrmCadastroVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(872, 565);
+            this.ClientSize = new System.Drawing.Size(871, 565);
+            this.Controls.Add(this.dtData);
+            this.Controls.Add(this.dtHora);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tbhorasaida);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.tbplacasaida);
-            this.Controls.Add(this.label_placasaida);
-            this.Controls.Add(this.tbhoraentrada);
-            this.Controls.Add(this.label_horasaida);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnsaida);
             this.Controls.Add(this.label6);
@@ -427,7 +387,6 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbplaca;
-        private System.Windows.Forms.Button btnentrada;
         private System.Windows.Forms.TextBox textBox_listaVeiculosEntrada;
         private System.Windows.Forms.TextBox textBox_listaveiculosSaida;
         private System.Windows.Forms.Label labelplaca;
@@ -441,15 +400,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnsaida;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label_horasaida;
-        private System.Windows.Forms.TextBox tbhoraentrada;
-        private System.Windows.Forms.TextBox tbhorasaida;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label_placasaida;
-        private System.Windows.Forms.TextBox tbplacasaida;
-        private System.Windows.Forms.TextBox tbplaca;
-        private System.Windows.Forms.Button btndatahora;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dtHora;
+        private System.Windows.Forms.DateTimePicker dtData;
+        private System.Windows.Forms.Button btnentrada;
+        public System.Windows.Forms.TextBox tbplaca;
     }
 }
