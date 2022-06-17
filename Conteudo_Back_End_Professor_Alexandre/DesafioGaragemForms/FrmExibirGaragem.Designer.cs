@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnFecharExibir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tbentrada = new System.Windows.Forms.TextBox();
+            this.tblistarentrada = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,18 +69,18 @@
             this.panel1.Size = new System.Drawing.Size(867, 85);
             this.panel1.TabIndex = 5;
             // 
-            // tbentrada
+            // tblistarentrada
             // 
-            this.tbentrada.BackColor = System.Drawing.Color.LightGray;
-            this.tbentrada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tbentrada.Enabled = false;
-            this.tbentrada.Location = new System.Drawing.Point(199, 148);
-            this.tbentrada.Multiline = true;
-            this.tbentrada.Name = "tbentrada";
-            this.tbentrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbentrada.Size = new System.Drawing.Size(403, 341);
-            this.tbentrada.TabIndex = 6;
-            this.tbentrada.TextChanged += new System.EventHandler(this.tbentrada_TextChanged);
+            this.tblistarentrada.BackColor = System.Drawing.Color.LightGray;
+            this.tblistarentrada.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tblistarentrada.Enabled = false;
+            this.tblistarentrada.Location = new System.Drawing.Point(208, 149);
+            this.tblistarentrada.Multiline = true;
+            this.tblistarentrada.Name = "tblistarentrada";
+            this.tblistarentrada.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tblistarentrada.Size = new System.Drawing.Size(403, 341);
+            this.tblistarentrada.TabIndex = 6;
+  
             // 
             // FrmExibirGaragem
             // 
@@ -88,7 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(868, 565);
-            this.Controls.Add(this.tbentrada);
+            this.Controls.Add(this.tblistarentrada);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnFecharExibir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,6 +106,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnFecharExibir;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox tbentrada;
+        private System.Windows.Forms.TextBox tblistarentrada;
     }
 }

@@ -11,13 +11,14 @@ namespace Garagemteste
         /// Atributos para serem utilizado
         /// </summary>
         string  placaveiculo;
-        DateTime dataentrada;
-        TimeSpan tempopermanencia;
+        string dataentrada;
         double valorcobrado;
-        DateTime horasaida;
-        DateTime datasaida;
-        DateTime horaentrada;
-
+        string horasaida;
+        string datasaida;
+        string horaentrada;
+        double valorhora;
+        int tempopermanenciaminuto;
+        int tempopermanenciahora;
 
 
         /// <summary>
@@ -26,11 +27,13 @@ namespace Garagemteste
         /// <param name="placaveiculo"></param>
         /// <param name="dataentrada"></param>
         /// <param name="horaentrada"></param>
-        public Veiculo(string placaveiculo, DateTime dataentrada, DateTime horaentrada)
+        /// <param name="valor"></param>
+        public Veiculo(string placaveiculo, string dataentrada, string horaentrada, double valorhora)
         {
             this.Placaveiculo = placaveiculo;
             this.Dataentrada = dataentrada;
             this.Horaentrada = horaentrada;
+            this.Valorhora = valorhora;
            
 
         }
@@ -42,53 +45,69 @@ namespace Garagemteste
         /// <param name="placaveiculo"></param>
         /// <param name="tempopermanencia"></param>
         /// <param name="valorcobrado"></param>
-        public Veiculo(string placaveiculo, TimeSpan tempopermanencia, double valorcobrado)
+        /// <param name="valorhora"></param>
+        public Veiculo(string placaveiculo,string horasaida, string datasaida, int
+            tempopermanenciaminuto, int tempopermanenciahora, double valorcobrado, double valorhora)
         {
+
             this.Placaveiculo = placaveiculo;
-            this.Tempopermanencia = tempopermanencia;
+            this.Datasaida = datasaida;
+            this.Horasaida = horasaida;
+            this.Tempopermanenciaminuto = tempopermanenciaminuto;
+            this.Tempopermanenciahora = tempopermanenciahora;
             this.Valorcobrado = valorcobrado;
+            this.Valorhora = valorhora;
+
+
 
         }
+
+        public Veiculo(string placaveiculo)
+        {
+            this.Placaveiculo = placaveiculo;
+        }
+
+      
 
 
         /// <summary>
         /// Gets Sets dos atributos recebendo as informações no construtor
         /// </summary>
         public string Placaveiculo { get => placaveiculo; set => placaveiculo = value; }
-        public DateTime Dataentrada { get => dataentrada; set => dataentrada = value; }
-        public DateTime Datasaida { get => datasaida; set => datasaida = value; }
-        public DateTime Horaentrada { get => horaentrada; set => horaentrada = value; }
-        public DateTime Horasaida { get => horasaida; set => horasaida = value; }
+        public string Dataentrada { get => dataentrada; set => dataentrada = value; }
+        public string Datasaida { get => datasaida; set => datasaida = value; }
+        public string Horaentrada { get => horaentrada; set => horaentrada = value; }
+        public string Horasaida { get => horasaida; set => horasaida = value; }
         public double Valorcobrado { get => valorcobrado; set => valorcobrado = value; }
-        public TimeSpan Tempopermanencia { get => tempopermanencia; set => tempopermanencia = value; }
-
-
-
-
-        //public void Gerardatahora( string tipo)
-        //{
-        //    DateTime datetime = DateTime.Now;
-        //    string[] vetorDados = datetime.ToString().Split(' ');
-
-        //    switch (tipo)
-        //    {
-        //        case "entrada":
-        //            this.dataentrada = vetorDados[0];
-        //            this.horaentrada = vetorDados[1];
-        //            break;
-
-        //    }
-
-        //}
-
+        public double Valorhora  { get => valorhora; set => valorhora = value; }
+        public int Tempopermanenciaminuto  { get => tempopermanenciaminuto; set => tempopermanenciaminuto = value; }
+        public int Tempopermanenciahora  { get => tempopermanenciaminuto; set => tempopermanenciahora = value; }
        
 
+        public static string RetornaDatahoraE(string placaveiculo, List<Veiculo> lista)
+        {
+            foreach (Veiculo i in lista)
+            {
+                if (i.Placaveiculo.Equals(placaveiculo))
+                {
+                    return i.Dataentrada + " - " + i.Horaentrada;
+                }
 
+            }
+            return null;
+        }
 
-       
+        public static double Retornavalorhora(string placa, List<Veiculo> lista)
+        {
+            foreach(Veiculo i in lista)
+            {
+                if (i.Placaveiculo.Equals(placa))
+                {
+                    return i.valorhora;
+                }
 
-
-
-
+            }
+            return 0;
+        }
     }
 }

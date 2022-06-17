@@ -19,7 +19,7 @@ namespace Garagemteste
                           
                     foreach (Veiculo i in listaveiculos)
                     {
-                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada);
+                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada + i.Valorcobrado);
                         escritor.Flush();
 
 
@@ -50,8 +50,8 @@ namespace Garagemteste
                     {
                         vetorDados = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDados[0], Convert.ToDateTime(vetorDados[1]), 
-                        Convert.ToDateTime(vetorDados[2])));
+                        listaveiculos.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2], Convert.ToDouble(vetorDados[3])));
+                        
                     }
 
                 } while (!leitor.EndOfStream);
@@ -74,14 +74,13 @@ namespace Garagemteste
 
             foreach (Veiculo i in listaveiculos)
             {
-                escritor.WriteLine(i.Placaveiculo + ";" + i.Tempopermanencia + ";" + i.Valorcobrado);
+                escritor.WriteLine(i.Placaveiculo + ";" + i.Datasaida + ";" + i.Horasaida + ";"  + i.Tempopermanenciahora + ";" + i.Tempopermanenciaminuto + ";" + i.Valorhora + i.Valorcobrado);
                 escritor.Flush();
             }
             escritor.Close();
         }
 
-
-
+        
 
         /// <summary>
         /// Metodo para ler os Dados para Popular a text box lista veiculos Saindo da garagem
@@ -103,10 +102,11 @@ namespace Garagemteste
                     {
                         vetorDadosSaida = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], TimeSpan.Parse(vetorDadosSaida[1]),
-                        Convert.ToDouble(vetorDadosSaida[2])));
+                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], vetorDadosSaida[2], int.Parse(vetorDadosSaida[3]), int.Parse(vetorDadosSaida[4]),
+                            Convert.ToDouble(vetorDadosSaida[5]),  Convert.ToDouble(vetorDadosSaida[6])));
                     }             
                 } while (!leitor2.EndOfStream);
+                  leitor2.Close();
             }
             else
             {

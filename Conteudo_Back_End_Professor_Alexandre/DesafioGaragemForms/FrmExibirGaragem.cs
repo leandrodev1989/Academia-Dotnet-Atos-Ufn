@@ -12,22 +12,23 @@ namespace Garagemteste
 {
     public partial class FrmExibirGaragem : Form
     {
-        
+
+
+
         public FrmExibirGaragem()
         {
             InitializeComponent();
-           
 
+            
         }
+
+
+       
 
         private void btnFecharExibir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void tbentrada_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

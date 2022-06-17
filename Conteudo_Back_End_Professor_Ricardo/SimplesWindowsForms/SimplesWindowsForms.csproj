@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F53212E3-3963-4455-9924-86CA8231CEB5}</ProjectGuid>
+    <ProjectGuid>{0573837B-F172-42AE-AD2B-13D9EEF5F995}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Garagemteste</RootNamespace>
-    <AssemblyName>Garagemteste</AssemblyName>
+    <RootNamespace>SimplesWindowsForms</RootNamespace>
+    <AssemblyName>SimplesWindowsForms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,38 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigGaragem\ConfigVaga.cs" />
-    <Compile Include="Persistencia\EntityDados.cs" />
-    <Compile Include="FrmExibirGaragem.cs">
+    <Compile Include="Banco.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmExibirGaragem.Designer.cs">
-      <DependentUpon>FrmExibirGaragem.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmHome.Designer.cs">
-      <DependentUpon>FrmHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCadastroVeiculos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCadastroVeiculos.Designer.cs">
-      <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\UtilVeiculo.cs" />
-    <Compile Include="Veiculo.cs" />
-    <EmbeddedResource Include="FrmCadastroVeiculos.resx">
-      <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmExibirGaragem.resx">
-      <DependentUpon>FrmExibirGaragem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmHome.resx">
-      <DependentUpon>FrmHome.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
