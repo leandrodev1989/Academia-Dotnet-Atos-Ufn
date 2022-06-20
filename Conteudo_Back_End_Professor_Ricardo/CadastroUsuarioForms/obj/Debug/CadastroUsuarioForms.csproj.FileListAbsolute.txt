@@ -1,0 +1,11 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\bin\Debug\CadastroUsuarioForms.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\bin\Debug\CadastroUsuarioForms.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\bin\Debug\CadastroUsuarioForms.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.Form1.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\CadastroUsuarioForms\obj\Debug\CadastroUsuarioForms.pdb
