@@ -12,6 +12,16 @@
    
 }
 
+/*----- marca com copyryght-----*/
+.copyright{
+   text-align:center;
+   color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+
+/*---- corpo ----*/
 body{
     background: #89ebf8;
     font-family: "Poppins",sans-serif;
@@ -21,13 +31,14 @@ body{
 
 }
 
+/*--- lista das classes ---*/
 li{
     display: inline-block;
     top: 100px;
     text-align:center;
     padding: 5px;
     font-weight:bold;
-    color: black;
+    color: white;
 }
 
 .opaco{
@@ -38,7 +49,7 @@ li{
 }
 
 
-
+/*----- classes da tabela periódica-----*/
 .nao-metais{
     
         
@@ -137,6 +148,7 @@ p{
     text-align: center;
 }
 
+/*----- principal -----*/
 .tabela{
 
     display: grid;
@@ -152,6 +164,7 @@ p{
 h1{
     text-align: center;
     padding: 50px;
+    color: white;
 }
 
 /*----- Nomes dos Grupos ----- */
@@ -173,7 +186,7 @@ h1{
     height: 50px;
 }
 
-.metais-reprentativos:hover{
+.metais-representativos:hover{
     width: 60px;
     height: 50px;
 }
