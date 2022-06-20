@@ -16,9 +16,9 @@ namespace Garagemteste
         string horasaida;
         string datasaida;
         string horaentrada;
-        double valorhora;
-        int tempopermanenciaminuto;
-        int tempopermanenciahora;
+        double valorhora = 5.00;
+        int tempopermanecia;
+        
 
 
         /// <summary>
@@ -28,13 +28,20 @@ namespace Garagemteste
         /// <param name="dataentrada"></param>
         /// <param name="horaentrada"></param>
         /// <param name="valor"></param>
-        public Veiculo(string placaveiculo, string dataentrada, string horaentrada, double valorhora)
+        public Veiculo(string placaveiculo, string dataentrada, string horaentrada)
         {
             this.Placaveiculo = placaveiculo;
             this.Dataentrada = dataentrada;
             this.Horaentrada = horaentrada;
-            this.Valorhora = valorhora;
-           
+            
+          
+        }
+
+        public Veiculo(string plaveiculo, int tempopermanencia, double valorcobrado)
+        {
+            this.Placaveiculo = placaveiculo;
+            this.Tempopermanencia = tempopermanencia;
+            this.Valorcobrado = valorcobrado;
 
         }
 
@@ -46,19 +53,16 @@ namespace Garagemteste
         /// <param name="tempopermanencia"></param>
         /// <param name="valorcobrado"></param>
         /// <param name="valorhora"></param>
-        public Veiculo(string placaveiculo,string horasaida, string datasaida, int
-            tempopermanenciaminuto, int tempopermanenciahora, double valorcobrado, double valorhora)
+        public Veiculo(string placaveiculo , string dataentrada, string horaentrada, int tempopermanencia,
+            double valorcobrado)
         {
 
             this.Placaveiculo = placaveiculo;
-            this.Datasaida = datasaida;
-            this.Horasaida = horasaida;
-            this.Tempopermanenciaminuto = tempopermanenciaminuto;
-            this.Tempopermanenciahora = tempopermanenciahora;
+            this.Dataentrada = dataentrada;
+            this.Horaentrada = horaentrada;
+            this.Tempopermanencia = tempopermanencia;
             this.Valorcobrado = valorcobrado;
-            this.Valorhora = valorhora;
-
-
+           
 
         }
 
@@ -67,6 +71,7 @@ namespace Garagemteste
             this.Placaveiculo = placaveiculo;
         }
 
+       
       
 
 
@@ -80,34 +85,80 @@ namespace Garagemteste
         public string Horasaida { get => horasaida; set => horasaida = value; }
         public double Valorcobrado { get => valorcobrado; set => valorcobrado = value; }
         public double Valorhora  { get => valorhora; set => valorhora = value; }
-        public int Tempopermanenciaminuto  { get => tempopermanenciaminuto; set => tempopermanenciaminuto = value; }
-        public int Tempopermanenciahora  { get => tempopermanenciaminuto; set => tempopermanenciahora = value; }
+        public int Tempopermanencia  { get => tempopermanecia; set => tempopermanecia = value; }
        
 
-        public static string RetornaDatahoraE(string placaveiculo, List<Veiculo> lista)
-        {
-            foreach (Veiculo i in lista)
-            {
-                if (i.Placaveiculo.Equals(placaveiculo))
-                {
-                    return i.Dataentrada + " - " + i.Horaentrada;
-                }
 
-            }
-            return null;
+        
+
+
+
+        /// <summary>
+        /// Metodo para Gerar data e hora
+        /// </summary>
+        /// <returns></returns>
+        public static string GerarDH()
+        {
+            DateTime date = DateTime.Now;
+            string dataformato = date.ToString("dd/MM/yyyy  HH:MMM:ss");
+            string[] vetordados = dataformato.Split(' ');
+
+            return vetordados[0];
         }
 
-        public static double Retornavalorhora(string placa, List<Veiculo> lista)
-        {
-            foreach(Veiculo i in lista)
-            {
-                if (i.Placaveiculo.Equals(placa))
-                {
-                    return i.valorhora;
-                }
 
+        /// <summary>
+        /// Metodo para Retornar o Valor cobrado pelo o tempo do veiculo no estacionamento
+        /// </summary>
+        /// <param name="horasaida"></param>
+        /// <param name="preco"></param>
+        public void  RealizaCobranca( double valorhora)
+        {
+            try
+            {
+                string[] vetorcobranca = horaentrada.Split(':');
+                int hora = int.Parse(vetorcobranca[0]);
+                int minutos = int.Parse(vetorcobranca[1]);
+                int entrada = hora * 60 + minutos;
+
+
+
+                vetorcobranca = horasaida.Split(':');
+                hora = int.Parse(vetorcobranca[0]);
+                minutos = int.Parse(vetorcobranca[1]);
+                int saida = hora * 60 + minutos;
+
+
+                this.Tempopermanencia = saida - entrada;
+                double cobranca = (double)this.Tempopermanencia / 60;
+                int tempo = (int)Math.Ceiling(cobranca);
+                this.Valorcobrado = tempo * valorhora;
             }
-            return 0;
+            catch (Exception ex)
+            {
+                
+            }
+            
+           
         }
+
+
+        public static bool Temvagas(List<Veiculo> lista, int tamanhogaragem)
+        {
+            
+
+                if (lista.Count < tamanhogaragem)
+                {
+                    return true;
+
+                }
+                else
+                {
+                    return false;
+                }  
+
+        }
+
+
     }
 }

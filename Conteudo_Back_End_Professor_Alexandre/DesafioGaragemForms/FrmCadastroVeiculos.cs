@@ -16,19 +16,10 @@ namespace Garagemteste
     public partial class FrmCadastroVeiculos : Form
     {
         
-         static List<Veiculo> listaEntrada = new List<Veiculo>();
-         static List<Veiculo> listaSaida = new List<Veiculo>();
+          static  List<Veiculo> listaEntrada = new List<Veiculo>();
+          static List<Veiculo> listaSaida = new List<Veiculo>();
 
-        string placaveiculo;
-        string dataentrada;
-        double valorcobrado;
-        string horasaida;
-        string datasaida;
-        string horaentrada;
-        double valorhora;
-        int tempopermanenciaminuto;
-        int tempopermanenciahora;
-        string placasaida;
+       
 
         /// <summary>
         /// Metodo para popular a list box de Saida
@@ -40,7 +31,7 @@ namespace Garagemteste
             foreach (Veiculo i in listaveiculos)
             {
                 textBox_listaveiculosSaida.AppendText(i.Placaveiculo + "  -  " + i.Datasaida + " - " + i.Horasaida + " - "
-                + i.Tempopermanenciahora + "horas " + i.Valorcobrado.ToString("c") + Environment.NewLine);
+                + i.Tempopermanencia+ "horas " + i.Valorcobrado.ToString("c") + Environment.NewLine);
             }
         }
 
@@ -70,16 +61,14 @@ namespace Garagemteste
             EntityDados.LerdoArquivoSaida(listaSaida);
             PopularListatextBoxListaSaida(listaSaida);
 
+            
 
             ConfigVaga configura = new ConfigVaga();
             configura.Lergravados();
 
             DateTime data = DateTime.Now;
-
-
             tbData.Text = data.ToShortDateString();
             tbHora.Text = data.ToShortTimeString();
-
 
             tbvagas.Text = configura.Tamanhogaragem.ToString();
             tbvalor.Text = configura.Valorhora.ToString("C");
@@ -104,6 +93,7 @@ namespace Garagemteste
         /// <param name="e"></param>
         private void btncadastrar_Click(object sender, EventArgs e)
         {
+           
 
             ConfigVaga configura = new ConfigVaga();
             configura.Lergravados();
@@ -137,13 +127,15 @@ namespace Garagemteste
             }
             else
             {
+
                 DateTime data = DateTime.Now;
-                
-                string dataentrada  = data.ToShortDateString();
+                string dataentrada = data.ToShortDateString();
                 string horaentrada = data.ToShortTimeString();
-                    
+
+                Veiculo.GerarDH();
+
                 //Adiciona os Dados na Lista
-                listaEntrada.Add(new Veiculo(tbplaca.Text, dataentrada, horaentrada, configura.Valorhora));
+                listaEntrada.Add(new Veiculo(tbplaca.Text, dataentrada, horaentrada));
 
                 EntityDados.GravarNoarquivoEntrada(listaEntrada);
 
@@ -159,6 +151,9 @@ namespace Garagemteste
             }
         }
 
+
+       
+
         /// <summary>
         /// Função para exibir na tela os os dados escritos no arquivo de Entrada
         /// </summary>
@@ -167,10 +162,16 @@ namespace Garagemteste
         private void buttonListarEntrada_Click(object sender, EventArgs e)
         {
 
-            if (listaEntrada.Count == 0)
+            if (listaEntrada.Count == 0 )
             {
+               
                 MessageBox.Show("Garagem Vazia!", "Alerta!");
             }
+            else if(listaEntrada.Count >= 1)
+            {
+                
+            }
+            
 
 
             try
@@ -223,17 +224,6 @@ namespace Garagemteste
             }
 
 
-
-            //gravar na lista desde que não estave na lista
-            if (UtilVeiculo.jacdastrado(tbplaca.Text, listaEntrada))
-            {
-               // MessageBox.Show("Veiculo Saindo da Garagem!", "Alerta");
-            }
-            if(listaEntrada.Count == 0)
-            {
-                MessageBox.Show("Lista Vazia", "Alerta");
-            }
-
             int procuraveiculo = UtilVeiculo.Localizado(tbplaca.Text, listaEntrada);
 
             if (procuraveiculo == -27)
@@ -242,38 +232,30 @@ namespace Garagemteste
                 return;
             }
 
+            
 
-            RealizarCobraca();
+           
+
+            Veiculo veiculoTP = listaEntrada[procuraveiculo];
+         
+            veiculoTP.RealizaCobranca(5);
+
+            listaSaida.Add(veiculoTP);
+            Veiculo.GerarDH();
+            EntityDados.GravarNoarquivoSaida(listaSaida);
+            PopularListatextBoxListaSaida(listaSaida);
+
+            listaEntrada.RemoveAt(procuraveiculo);
+            EntityDados.GravarNoarquivoEntrada(listaEntrada);
+
+            Saidagaragem();
+            
 
             tbplaca.Text = "";
         }
 
-        private  void RealizarCobraca()
+        private void Saidagaragem()
         {
-
-
-            try
-            {
-                placasaida = tbplaca.Text;
-
-                DateTime dataHoraEntrada = DateTime.Parse(Veiculo.RetornaDatahoraE(placasaida, listaEntrada));
-                DateTime dataHoraSaida = DateTime.Now;
-                datasaida = dataHoraSaida.ToShortDateString();
-                horasaida = dataHoraSaida.ToShortTimeString();
-
-                TimeSpan intervalo;
-                intervalo = dataHoraSaida - dataHoraEntrada;
-                tempopermanenciaminuto = (int)Math.Round(intervalo.TotalMinutes);
-                tempopermanenciahora = (int)Math.Ceiling(intervalo.TotalHours);
-
-                valorhora = Veiculo.Retornavalorhora(tbplaca.Text, listaEntrada);
-                valorcobrado = (double)(Math.Ceiling(intervalo.TotalHours)) * valorhora;
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.);
-            }
-
 
         }
 

@@ -56,8 +56,8 @@
             this.tb_numerovagas = new System.Windows.Forms.TextBox();
             this.tbvalor = new System.Windows.Forms.TextBox();
             this.tbvagas = new System.Windows.Forms.TextBox();
-            this.tbHora = new System.Windows.Forms.TextBox();
             this.tbData = new System.Windows.Forms.TextBox();
+            this.tbHora = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -375,31 +375,27 @@
             this.tbvagas.Size = new System.Drawing.Size(45, 21);
             this.tbvagas.TabIndex = 48;
             // 
-            // tbHora
-            // 
-            this.tbHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHora.Location = new System.Drawing.Point(660, 169);
-            this.tbHora.Multiline = true;
-            this.tbHora.Name = "tbHora";
-            this.tbHora.Size = new System.Drawing.Size(120, 21);
-            this.tbHora.TabIndex = 49;
-            // 
             // tbData
             // 
-            this.tbData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbData.Location = new System.Drawing.Point(475, 169);
-            this.tbData.Multiline = true;
+            this.tbData.Location = new System.Drawing.Point(492, 169);
             this.tbData.Name = "tbData";
-            this.tbData.Size = new System.Drawing.Size(120, 21);
-            this.tbData.TabIndex = 50;
+            this.tbData.Size = new System.Drawing.Size(100, 20);
+            this.tbData.TabIndex = 49;
+            // 
+            // tbHora
+            // 
+            this.tbHora.Location = new System.Drawing.Point(674, 169);
+            this.tbHora.Name = "tbHora";
+            this.tbHora.Size = new System.Drawing.Size(100, 20);
+            this.tbHora.TabIndex = 50;
             // 
             // FrmCadastroVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(871, 565);
-            this.Controls.Add(this.tbData);
             this.Controls.Add(this.tbHora);
+            this.Controls.Add(this.tbData);
             this.Controls.Add(this.tbvagas);
             this.Controls.Add(this.tbvalor);
             this.Controls.Add(this.btn_Confirmar);
@@ -430,7 +426,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "FrmCadastroVeiculos";
-            this.Text = "FrmCadastroVeiculos";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -467,7 +462,7 @@
         public System.Windows.Forms.TextBox tb_numerovagas;
         public System.Windows.Forms.TextBox tbvalor;
         public System.Windows.Forms.TextBox tbvagas;
-        public System.Windows.Forms.TextBox tbHora;
-        public System.Windows.Forms.TextBox tbData;
+        private System.Windows.Forms.TextBox tbData;
+        private System.Windows.Forms.TextBox tbHora;
     }
 }

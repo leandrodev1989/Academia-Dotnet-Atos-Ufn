@@ -19,7 +19,7 @@ namespace Garagemteste
                           
                     foreach (Veiculo i in listaveiculos)
                     {
-                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada + i.Valorcobrado);
+                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada);
                         escritor.Flush();
 
 
@@ -40,28 +40,37 @@ namespace Garagemteste
             string linha;
             string[] vetorDados;
 
-            if (File.Exists("veiculosEntrada.txt"))
+
+            try
             {
-                leitor = new StreamReader("veiculosEntrada.txt");
-                do
+                if (File.Exists("veiculosEntrada.txt"))
                 {
-                    linha = leitor.ReadLine();
-                    if (linha != null)
+                    leitor = new StreamReader("veiculosEntrada.txt");
+                    do
                     {
-                        vetorDados = linha.Split(';');
+                        linha = leitor.ReadLine();
+                        if (linha != null)
+                        {
+                            vetorDados = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2], Convert.ToDouble(vetorDados[3])));
-                        
-                    }
+                            listaveiculos.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2]));
 
-                } while (!leitor.EndOfStream);
+                        }
 
-                leitor.Close();
+                    } while (!leitor.EndOfStream);
+
+                    leitor.Close();
+                }
+                else
+                {
+
+                }
             }
-            else
+            catch(Exception e)
             {
-               
-            }                                
+                MessageBox.Show("Continue");    
+            }
+                                    
         }
 
         /// <summary>
@@ -74,7 +83,7 @@ namespace Garagemteste
 
             foreach (Veiculo i in listaveiculos)
             {
-                escritor.WriteLine(i.Placaveiculo + ";" + i.Datasaida + ";" + i.Horasaida + ";"  + i.Tempopermanenciahora + ";" + i.Tempopermanenciaminuto + ";" + i.Valorhora + i.Valorcobrado);
+                escritor.WriteLine(i.Placaveiculo + ";" + i.Datasaida + ";" + i.Horasaida + ";"  + i.Tempopermanencia + ";" + i.Valorcobrado);
                 escritor.Flush();
             }
             escritor.Close();
@@ -102,8 +111,8 @@ namespace Garagemteste
                     {
                         vetorDadosSaida = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], vetorDadosSaida[2], int.Parse(vetorDadosSaida[3]), int.Parse(vetorDadosSaida[4]),
-                            Convert.ToDouble(vetorDadosSaida[5]),  Convert.ToDouble(vetorDadosSaida[6])));
+                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], vetorDadosSaida[2], int.Parse(vetorDadosSaida[4]),
+                           double.Parse(vetorDadosSaida[5])));
                     }             
                 } while (!leitor2.EndOfStream);
                   leitor2.Close();
