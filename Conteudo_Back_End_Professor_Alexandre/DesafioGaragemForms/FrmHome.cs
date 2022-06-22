@@ -56,12 +56,6 @@ namespace Garagemteste
             FormShow(new FrmCadastroVeiculos());
         }
 
-        private void btnExibirVeiculos_Click(object sender, EventArgs e)
-        {
-            ActiveButton(btnExibirVeiculos);
-            FormShow(new FrmExibirGaragem());
-        }
-
         private void btnSair_Click(object sender, EventArgs e)
         {
             ActiveButton(btnSair);

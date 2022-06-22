@@ -8,8 +8,6 @@ namespace Garagemteste.Util
 {
     class UtilVeiculo
     {
-       
-
         /// <summary>
         /// Metodo Para Verificar se A placa do veiculo já estar cadastrada
         /// </summary>
@@ -32,7 +30,7 @@ namespace Garagemteste.Util
 
 
         /// <summary>
-        /// 
+        /// Metodo para verificar e localizar o veiculo na Lista
         /// </summary>
         /// <param name="placaveiculo"></param>
         /// <param name="lista"></param>
@@ -47,15 +45,27 @@ namespace Garagemteste.Util
                 }
             }
             return -27;
-        }  
+        }
 
 
-       
-        
+        /// <summary>
+        /// Metodo para verificar se tem vagas na garagem
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <param name="tamanhogaragem"></param>
+        /// <returns></returns>
+        public static bool Temvagas(List<Veiculo> lista, int tamanhogaragem)
+        {
+            if (lista.Count < tamanhogaragem)
+            {
+                return true;
 
+            }
+            else
+            {
+                return false;
+            }
 
-
-
-        
+        }
     }
 }

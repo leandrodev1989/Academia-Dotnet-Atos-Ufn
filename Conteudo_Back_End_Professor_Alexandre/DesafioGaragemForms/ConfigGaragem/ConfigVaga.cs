@@ -7,7 +7,7 @@ namespace Garagemteste.ConfigGaragem
      {
 
         /// <summary>
-        /// Atributos
+        /// Atributos para Configurar o tamanho e o valor da hora na garagem
         /// </summary>
         int tamanhogaragem;
         double valorhora;

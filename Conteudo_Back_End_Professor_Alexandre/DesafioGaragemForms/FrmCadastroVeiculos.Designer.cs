@@ -110,7 +110,7 @@
             this.btnentrada.BackColor = System.Drawing.Color.Navy;
             this.btnentrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnentrada.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnentrada.Location = new System.Drawing.Point(222, 223);
+            this.btnentrada.Location = new System.Drawing.Point(250, 223);
             this.btnentrada.Name = "btnentrada";
             this.btnentrada.Size = new System.Drawing.Size(120, 40);
             this.btnentrada.TabIndex = 3;
@@ -196,7 +196,7 @@
             this.label2.BackColor = System.Drawing.Color.Navy;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(389, 289);
+            this.label2.Location = new System.Drawing.Point(398, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 12);
             this.label2.TabIndex = 16;
@@ -278,7 +278,7 @@
             // tbplaca
             // 
             this.tbplaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbplaca.Location = new System.Drawing.Point(262, 172);
+            this.tbplaca.Location = new System.Drawing.Point(250, 172);
             this.tbplaca.Multiline = true;
             this.tbplaca.Name = "tbplaca";
             this.tbplaca.Size = new System.Drawing.Size(120, 21);

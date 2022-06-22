@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnExibirVeiculos = new System.Windows.Forms.Button();
             this.btnCadastrarVeiculo = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -49,7 +48,6 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
             this.panelPrincipal.Controls.Add(this.btnSair);
-            this.panelPrincipal.Controls.Add(this.btnExibirVeiculos);
             this.panelPrincipal.Controls.Add(this.btnCadastrarVeiculo);
             this.panelPrincipal.Controls.Add(this.btnHome);
             this.panelPrincipal.Controls.Add(this.panelLogo);
@@ -69,7 +67,7 @@
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(0, 292);
+            this.btnSair.Location = new System.Drawing.Point(0, 224);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(97, 68);
             this.btnSair.TabIndex = 4;
@@ -77,25 +75,6 @@
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // btnExibirVeiculos
-            // 
-            this.btnExibirVeiculos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExibirVeiculos.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnExibirVeiculos.FlatAppearance.BorderSize = 0;
-            this.btnExibirVeiculos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnExibirVeiculos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.btnExibirVeiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExibirVeiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibirVeiculos.ForeColor = System.Drawing.Color.White;
-            this.btnExibirVeiculos.Location = new System.Drawing.Point(0, 224);
-            this.btnExibirVeiculos.Name = "btnExibirVeiculos";
-            this.btnExibirVeiculos.Size = new System.Drawing.Size(97, 68);
-            this.btnExibirVeiculos.TabIndex = 3;
-            this.btnExibirVeiculos.Text = "Exibir Veiculos Cadastro Entrada";
-            this.btnExibirVeiculos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExibirVeiculos.UseVisualStyleBackColor = true;
-            this.btnExibirVeiculos.Click += new System.EventHandler(this.btnExibirVeiculos_Click);
             // 
             // btnCadastrarVeiculo
             // 
@@ -211,7 +190,6 @@
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnExibirVeiculos;
         private System.Windows.Forms.Button btnCadastrarVeiculo;
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Label label1;

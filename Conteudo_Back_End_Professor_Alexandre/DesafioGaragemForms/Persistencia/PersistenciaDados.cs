@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Garagemteste
 {
-    class EntityDados
+    class PersistenciaDados
      {
 
         /// <summary>
@@ -19,16 +19,13 @@ namespace Garagemteste
                           
                     foreach (Veiculo i in listaveiculos)
                     {
-                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada);
+                        escritor.WriteLine(i.Placaveiculo + ";" + i.Dataentrada + ";" + i.Horaentrada + ";" + i.Valorhora);
                         escritor.Flush();
-
-
                     }
                     escritor.Close();
 
         }
-
-     
+   
         /// <summary>
         /// Metodo para Trazer do arquivo as informações e Popular a TexBox Lista de entrada na garagem
         /// Referenciando o construtor para para dar entrada na garagem
@@ -39,7 +36,6 @@ namespace Garagemteste
             StreamReader leitor; 
             string linha;
             string[] vetorDados;
-
 
             try
             {
@@ -53,7 +49,8 @@ namespace Garagemteste
                         {
                             vetorDados = linha.Split(';');
 
-                            listaveiculos.Add(new Veiculo(vetorDados[0], vetorDados[1], vetorDados[2]));
+                            listaveiculos.Add(new Veiculo(vetorDados[0], vetorDados[1], 
+                            vetorDados[2], double.Parse(vetorDados[3])));
 
                         }
 
@@ -83,13 +80,12 @@ namespace Garagemteste
 
             foreach (Veiculo i in listaveiculos)
             {
-                escritor.WriteLine(i.Placaveiculo + ";" + i.Datasaida + ";" + i.Horasaida + ";"  + i.Tempopermanencia + ";" + i.Valorcobrado);
+               
+                escritor.WriteLine(i.Placaveiculo + ";" + i.Horasaida +  ";" + i.Tempopermanencia + ";" + i.Valorcobrado); ;
                 escritor.Flush();
             }
             escritor.Close();
         }
-
-        
 
         /// <summary>
         /// Metodo para ler os Dados para Popular a text box lista veiculos Saindo da garagem
@@ -111,8 +107,7 @@ namespace Garagemteste
                     {
                         vetorDadosSaida = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], vetorDadosSaida[2], int.Parse(vetorDadosSaida[4]),
-                           double.Parse(vetorDadosSaida[5])));
+                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], int.Parse(vetorDadosSaida[2]), double.Parse(vetorDadosSaida[3])));
                     }             
                 } while (!leitor2.EndOfStream);
                   leitor2.Close();

@@ -4,7 +4,6 @@ C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\DesafioGaragem.csproj.AssemblyReference.cache
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\DesafioGaragem.csproj.SuggestedBindingRedirects.cache
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\Garagemteste.FrmCadastroVeiculos.resources
-C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\Garagemteste.FrmExibirGaragem.resources
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\Garagemteste.FrmHome.resources
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\Garagemteste.Properties.Resources.resources
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\DesafioGaragemForms\obj\Debug\DesafioGaragem.csproj.GenerateResource.cache

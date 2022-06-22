@@ -47,13 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigGaragem\ConfigVaga.cs" />
-    <Compile Include="Persistencia\EntityDados.cs" />
-    <Compile Include="FrmExibirGaragem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmExibirGaragem.Designer.cs">
-      <DependentUpon>FrmExibirGaragem.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Persistencia\PersistenciaDados.cs" />
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,9 +66,6 @@
     <Compile Include="Veiculo.cs" />
     <EmbeddedResource Include="FrmCadastroVeiculos.resx">
       <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmExibirGaragem.resx">
-      <DependentUpon>FrmExibirGaragem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>

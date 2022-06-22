@@ -1,0 +1,28 @@
+body{
+    font-family:'Trebuchet MS', 'Helvetica', sans-serif;
+}
+
+fieldset{
+    margin: 1em 0;
+    padding: 1em;
+    border:  solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display:block;
+    cursor: pointer;
+}
+
+input{
+    width: 20em;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
