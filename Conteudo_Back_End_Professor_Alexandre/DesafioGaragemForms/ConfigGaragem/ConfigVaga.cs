@@ -30,7 +30,7 @@ namespace Garagemteste.ConfigGaragem
         /// </summary>
         public void GravarVagas()
         {
-            StreamWriter write = new StreamWriter("Configravar.txt");
+            StreamWriter write = new StreamWriter("Configravar.dat");
 
             //Cria o arquivo caso não existe
             
@@ -53,9 +53,9 @@ namespace Garagemteste.ConfigGaragem
             string linha;
             string[] vetorler;
             // Verifica se o Arquivo Exiiste
-            if (File.Exists("Configravar.txt"))
+            if (File.Exists("Configravar.dat"))
             {
-                leitor2 = new StreamReader("Configravar.txt");
+                leitor2 = new StreamReader("Configravar.dat");
                 do
                 {
                     linha = leitor2.ReadLine();

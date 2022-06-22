@@ -2,13 +2,7 @@
 using Garagemteste.Util;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Garagemteste
@@ -32,8 +26,8 @@ namespace Garagemteste
             textBox_listaveiculosSaida.Text = "";
             foreach (Veiculo i in listaveiculos)
             {
-                textBox_listaveiculosSaida.AppendText(i.Placaveiculo + "  -  "  + i.Horasaida + " - "
-                + i.Tempopermanencia + "horas " + i.Valorcobrado.ToString("c") + Environment.NewLine);
+                textBox_listaveiculosSaida.AppendText(i.Placaveiculo + "  -  "  + i.Datasaida + " - "  + tbhorasaida.Text + " - " + i.Horaentrada + " - "
+                + i.Tempopermanencia + " Minutos " + i.Valorcobrado.ToString("c") + Environment.NewLine);
             }
         }
 
@@ -69,9 +63,9 @@ namespace Garagemteste
             configura.Lergravados();
 
 
-            DateTime data = DateTime.Now;
-            tbData.Text = data.ToShortDateString();
-            tbHora.Text = data.ToShortTimeString();
+            
+            tbData.Text = DateTime.Now.ToShortDateString();
+            tbHora.Text = DateTime.Now.ToShortTimeString();
 
             tbvagas.Text = configura.Tamanhogaragem.ToString();
             tbvalor.Text = configura.Valorhora.ToString("C");
@@ -101,12 +95,18 @@ namespace Garagemteste
             ConfigVaga configura = new ConfigVaga();
             configura.Lergravados();
 
-            if(listaEntrada.Count >= configura.Tamanhogaragem)
+            ///Verificar a hora de funcionamento
+            Veiculo.Horafuncionamento(tbplaca.Text);
+
+
+            ///Vefifica o tamanho de espaço na garagem
+            if (listaEntrada.Count >= configura.Tamanhogaragem)
             {
                 MessageBox.Show("A garagem está cheia. \nNão há vagas disponíveis", "Lotação");
                 return;
             }
-            
+
+           
 
             // Validando o campo para que não fique vazio
             if (tbplaca.Text.Equals(""))
@@ -178,9 +178,9 @@ namespace Garagemteste
             {
 
                 //Verifica se o arquivo existe
-                if (File.Exists("veiculosEntrada.txt"))
+                if (File.Exists("veiculosEntrada.dat"))
                 {
-                    using (StreamReader sr = File.OpenText("veiculosEntrada.txt"))
+                    using (StreamReader sr = File.OpenText("veiculosEntrada.dat"))
                     {
                         textBox_listaVeiculosEntrada.Text = sr.ReadToEnd();
                     }
@@ -199,7 +199,6 @@ namespace Garagemteste
 
 
         }
-
       
         /// <summary>
         /// Botão para fazer toda a logica de saida da garagem
@@ -216,7 +215,7 @@ namespace Garagemteste
             //Alterando a fonta para Maiusculo
             tbplaca.Text = tbplaca.Text.ToUpper();
 
-
+            
             // Validando o campo para que não fique vazio
             if (tbplaca.Text.Equals(""))
             {
@@ -231,7 +230,6 @@ namespace Garagemteste
             }
 
             
-
             /// verifica se tem algum veiculo na lista de entrada para sair
             int procuraveiculo = UtilVeiculo.Localizado(tbplaca.Text, listaEntrada);
 
@@ -242,44 +240,43 @@ namespace Garagemteste
             }
             else
             {
-
-              
-
+                
                 /// criando e transferindo   da lista de entrada para uma lista temporaria
                 Veiculo veiculoTP = listaEntrada[procuraveiculo];
                 //Adiciona os Dados na Lista
-
-
-
-                /// realizando a cobrança do tempo que passou dentro da garagem
-                veiculoTP.RealizaCobranca(tbHora.Text, valorhora);
-
-
+               
                 ///removendo da lista de entrada o veiculo encontrado
                 listaEntrada.RemoveAt(procuraveiculo);
 
+                /// realizando a cobrança do tempo que passou dentro da garagem
+                veiculoTP.RealizaCobranca(tbhorasaida.Text, valorhora);
+
+                ///Exibe o Relatorio de Saida
+                veiculoTP.ExibirRelatorio();
+               
                 ///adicionando na lista  o veiculo atraves da lista temporaria
                 listaSaida.Add(veiculoTP);
 
                 ///atualiza a listbox de saida
                 PopularListatextBoxListaSaida(listaSaida);
 
+                
                 ///grava no arquivo a lista atualizada
                 PersistenciaDados.GravarNoarquivoSaida(listaSaida);
+               
 
                 ///atualiza a listbox de entrada
                 PopularListatextBoxListagaragem(listaEntrada);
 
                 ///grava no arquivo de entrada alista atualizada
                 PersistenciaDados.GravarNoarquivoEntrada(listaEntrada);
-
             }
 
             ///limpa o textbox
             tbplaca.Text = "";
         }
 
-      
+        
 
 
         /// <summary>
@@ -289,14 +286,12 @@ namespace Garagemteste
         /// <param name="e"></param>
         private void btnlistarsaida_Click(object sender, EventArgs e)
         {
-
             try
             {
-
                 //Verifica se o arquivo existe
-                if (File.Exists("veiculosSaida.txt"))
+                if (File.Exists("veiculosSaida.dat"))
                 {
-                    using (StreamReader sr = File.OpenText("veiculosSaida.txt"))
+                    using (StreamReader sr = File.OpenText("veiculosSaida.dat"))
                     {
                          textBox_listaveiculosSaida.Text = sr.ReadToEnd();
                     }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Garagemteste
@@ -43,11 +42,11 @@ namespace Garagemteste
         /// <param name="tempopermanencia"></param>
         /// <param name="valorcobrado"></param>
         /// <param name="valorhora"></param>
-        public Veiculo(string placaveiculo, string horasaida, int tempopermanencia,
-            double valorcobrado)
+        public Veiculo(string placaveiculo, string horasaida, string dataentrada, int tempopermanencia, double valorcobrado)
         {
 
-            this.Placaveiculo = placaveiculo;        
+            this.Placaveiculo = placaveiculo;
+            this.Dataentrada = dataentrada;
             this.Horasaida = horasaida;
             this.Tempopermanencia = tempopermanencia;
             this.Valorcobrado = valorcobrado;
@@ -95,27 +94,32 @@ namespace Garagemteste
         /// </summary>
         /// <param name="horasaida"></param>
         /// <param name="preco"></param>
-        public void RealizaCobranca(string horasaida, double valorhora)
+        public void RealizaCobranca( string horasaida ,double valorhora)
         {
             try
             {
+                //tempo em minutos entrada
                 string[] vetorcobranca = Horaentrada.Split(':');
                 int hora = int.Parse(vetorcobranca[0]);
                 int minutos = int.Parse(vetorcobranca[1]);
                 int entrada = hora * 60 + minutos;
 
 
-
+                /// tempo em minutos da saida
                 vetorcobranca = horasaida.Split(':');
                 hora = int.Parse(vetorcobranca[0]);
                 minutos = int.Parse(vetorcobranca[1]);
                 int saida = hora * 60 + minutos;
 
-
+                /// resultado da cobrança
                 this.Tempopermanencia = saida - entrada;
                 double cobranca = (double) this.Tempopermanencia / 60;
-                int tempo = (int)Math.Ceiling(cobranca);
-                this.Valorcobrado = tempo * valorhora;
+                double tempo = Math.Ceiling(cobranca);
+
+
+                this.Valorcobrado = (int)tempo * valorhora;
+
+
             }
             catch (Exception ex)
             {
@@ -123,11 +127,37 @@ namespace Garagemteste
                 return;
             }
 
-
         }
 
 
+        /// <summary>
+        /// Metodo para gerar relatorio de saida
+        /// </summary>
+        public  void ExibirRelatorio()
+        {
+            this.Datasaida = DateTime.Now.ToShortDateString();
+            this.Horasaida = DateTime.Now.ToShortTimeString();
 
+           
+            MessageBox.Show("Data Saida: " + this.Datasaida + "\nHora Saida da entrada na garagem: " + this.horasaida + "\nData Entrou: " + this.Dataentrada
+            + "\nQtd-Horas: " + this.Tempopermanencia + "Minutos"+ "\nValor Cobrado: " + this.Valorcobrado + " R$", "Alerta");
+        }
+
+
+        /// <summary>
+        /// Verificar a hora de funcionamento
+        /// </summary>
+        /// <param name="horaentrada"></param>
+        /// <returns></returns>
+        public static bool Horafuncionamento( string horaentrada)
+        {
+            if (horaentrada == "20:00")
+            {
+
+                return false;
+            }
+            return true;
+        }
 
     }
 }

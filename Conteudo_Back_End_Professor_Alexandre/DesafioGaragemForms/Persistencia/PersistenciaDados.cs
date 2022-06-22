@@ -15,7 +15,7 @@ namespace Garagemteste
         public static void GravarNoarquivoEntrada(List<Veiculo> listaveiculos)
         {
 
-                    StreamWriter escritor = new StreamWriter("veiculosEntrada.txt");
+                    StreamWriter escritor = new StreamWriter("veiculosEntrada.dat");
                           
                     foreach (Veiculo i in listaveiculos)
                     {
@@ -39,9 +39,9 @@ namespace Garagemteste
 
             try
             {
-                if (File.Exists("veiculosEntrada.txt"))
+                if (File.Exists("veiculosEntrada.dat"))
                 {
-                    leitor = new StreamReader("veiculosEntrada.txt");
+                    leitor = new StreamReader("veiculosEntrada.dat");
                     do
                     {
                         linha = leitor.ReadLine();
@@ -76,12 +76,12 @@ namespace Garagemteste
         /// <param name="listaveiculos"></param>
         public static void GravarNoarquivoSaida(List<Veiculo> listaveiculos)
         {
-            StreamWriter escritor = new StreamWriter("veiculosSaida.txt");
+            StreamWriter escritor = new StreamWriter("veiculosSaida.dat");
 
             foreach (Veiculo i in listaveiculos)
             {
                
-                escritor.WriteLine(i.Placaveiculo + ";" + i.Horasaida +  ";" + i.Tempopermanencia + ";" + i.Valorcobrado); ;
+                escritor.WriteLine(i.Placaveiculo + ";" + i.Datasaida  + ";"+ i.Dataentrada +  ";" + i.Tempopermanencia + ";" + i.Valorcobrado); ;
                 escritor.Flush();
             }
             escritor.Close();
@@ -97,9 +97,9 @@ namespace Garagemteste
             string linha;
             string[] vetorDadosSaida;
 
-            if (File.Exists("veiculosSaida.txt"))
+            if (File.Exists("veiculosSaida.dat"))
             {
-                leitor2 = new StreamReader("veiculosSaida.txt");
+                leitor2 = new StreamReader("veiculosSaida.dat");
                 do
                 {
                      linha = leitor2.ReadLine();
@@ -107,7 +107,7 @@ namespace Garagemteste
                     {
                         vetorDadosSaida = linha.Split(';');
 
-                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], int.Parse(vetorDadosSaida[2]), double.Parse(vetorDadosSaida[3])));
+                        listaveiculos.Add(new Veiculo(vetorDadosSaida[0], vetorDadosSaida[1], vetorDadosSaida[2], int.Parse(vetorDadosSaida[3]), double.Parse(vetorDadosSaida[4])));
                     }             
                 } while (!leitor2.EndOfStream);
                   leitor2.Close();
