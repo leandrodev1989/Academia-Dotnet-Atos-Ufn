@@ -24,10 +24,14 @@ Sistema de Garagem Entrada e Saida de Veiculos desenvolvido Com os Conteúdos re
 <br>
 
 ![validacaonagaragem](https://user-images.githubusercontent.com/83560879/175140578-cd9b1455-ecac-4bb0-9e4d-8046443522a8.png)
-
+----
 ![validacaovazio](https://user-images.githubusercontent.com/83560879/175140587-eaf4f3b1-8aa6-4afd-b884-46de294dd205.png)
+----
 ![realizandocobranca](https://user-images.githubusercontent.com/83560879/175140794-126ad7e0-6370-4a95-a52f-3b72397d5e8b.png)
+----
 ![registrandoentrada](https://user-images.githubusercontent.com/83560879/175140801-34eefbdb-9803-4a9c-90c4-7ddcf8711535.png)
+----
 ![registravagas](https://user-images.githubusercontent.com/83560879/175140806-7312c65c-0465-404e-8578-2b00b73bb10f.png)
+----
 ![saidadados](https://user-images.githubusercontent.com/83560879/175140811-85a9293e-2a9f-4274-a673-85699cf00f44.png)
 
