@@ -28,8 +28,6 @@ body{
     background: #89ebf8;
     font-family: "Poppins",sans-serif;
     font-weight:bold;
-    
-
     margin:50px;
 
 }
@@ -192,6 +190,7 @@ p{
     justify-content: center;
     margin-top: 50px; 
     cursor: pointer;
+    padding-right: 15px;
 
 }
 
@@ -208,6 +207,11 @@ h1{
     padding: 50px;
     color: white;
     margin-top: 1px; 
+}
+
+caption{
+    color: white; 
+    font-weight:bold;
 }
 
 /*----- Nomes dos Grupos ----- */
@@ -314,9 +318,10 @@ a {
 }
 
 table {
-    min-width: 1200px;
+    min-width: 1173px;
     margin: 90px auto 20px auto;
     border-collapse: collapse;
+    left: 100px;
 }
 
 table caption {
@@ -341,5 +346,164 @@ table tbody tr {
     font-size: .8em;
 }
 
+/*------------------------*/
 
+
+.numero-atomico {
+    text-align: right;
+    font-size: .6em;
+}
+
+.simbolo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.elemento .simbolo img {
+    margin-top: 7px;
+}
+
+.nome {
+    text-align: center;
+    font-size: .6em;
+}
+
+.massa {
+    text-align: center;
+    font-size: .5em;
+    display: none;
+}
+
+.nao-metal {
+    background-color: yellow;
+    border-color: #91bd3d;
+}
+
+.metal-alcalino {
+    background-color: #f1b200;
+    border-color: #d8a000;
+}
+
+.metal-alcalino-terroso {
+    background-color: rgb(90, 90, 236);
+    border-color: #d2c400;
+}
+
+.metal-transicao {
+    background-color: gray;
+    border-color: #d38080;
+}
+
+.outro-metal {
+    background-color: olivedrab;
+    border-color: #91b3bd;
+}
+
+.semimetal {
+    background-color: pink;
+    border-color: #45a39a;
+}
+
+.halogenio {
+    background-color: rgba(15, 15, 184, 0.712);
+    border-color: #65b6d3;
+}
+
+.gas-nobre {
+    background-color: rgb(71, 241, 71);
+    border-color: #378ecc;
+}
+
+.lantanideo {
+    background-color: salmon;
+    border-color: #81ccd1;
+}
+
+.actinidio {
+    background-color: orange;
+    border-color: #c69bc0;
+}
+
+h2 {
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef;
+    width: 1173px;
+    margin: 50px auto 0 auto;
+    text-indent: 20px;
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e9ecef;
+    width: 1173px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.legenda-detalhes {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    margin-right: 40px;    
+    border: 1px solid #CCC;
+    background-color: white;
+    position: relative;
+}
+
+.legenda-detalhes > .numero-atomico {
+    font-size: .8em;
+    margin: 8px;
+    line-height: 13px;
+}
+
+.legenda-detalhes > .simbolo {
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.legenda-detalhes > .nome {
+    font-size: 1.1em;
+}
+
+.legenda-cor {
+    width: 1173px;
+    font-size: .8em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.legenda-cor ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.legenda-cor ul li {
+    list-style: none;
+    margin: 3px;
+}
+
+.quadrado-cor {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    border-radius: 3px;
+}
+
+li{
+    color: black;
+}
 
