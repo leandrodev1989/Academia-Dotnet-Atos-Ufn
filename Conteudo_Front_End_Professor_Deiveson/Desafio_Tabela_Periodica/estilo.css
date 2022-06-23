@@ -10,6 +10,7 @@
 	list-style:none;
 	box-sizing:border-box;	
     scroll-behavior: smooth;
+    
    
 }
 
@@ -154,13 +155,13 @@ li{
     width: 60px;
     height: 50px;
     margin-left: 15px;  
+   
   
    
 }
 
 .acnideos1{
-    background-color: orange;
-    
+    background-color: orange;  
     border-radius: 10px; 
     width: 60px;
     height: 50px;
@@ -176,8 +177,7 @@ li{
 
 p{
     font-size: 8px;
-    color:rgb(37, 37, 37);
-    
+    color:rgb(37, 37, 37);    
     text-align: center;
 }
 
@@ -190,7 +190,8 @@ p{
     margin: auto;
     max-width: 800px;
     justify-content: center;
-    
+    margin-top: 50px; 
+    cursor: pointer;
 
 }
 
@@ -206,6 +207,7 @@ h1{
     text-align: center;
     padding: 50px;
     color: white;
+    margin-top: 1px; 
 }
 
 /*----- Nomes dos Grupos ----- */
@@ -214,7 +216,7 @@ h1{
     
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
     
 }
@@ -222,21 +224,21 @@ h1{
 .lantanideos:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .metais-transicao:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .metais-representativos:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -244,7 +246,7 @@ h1{
 
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -252,7 +254,7 @@ h1{
 .halogenios:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -260,41 +262,84 @@ h1{
 .semi-metais:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .metais-terrosos:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .metais-alcalinos:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .nao-metais:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .lantanideos1:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .acnideos1:hover{
     width: 60px;
     height: 50px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
+
+
+
+/*---------------*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    min-width: 1200px;
+    margin: 90px auto 20px auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+table th,
+table td {
+    padding: 15px 15px;
+}
+
+table thead {
+    background-color: #e9ecef;
+    font-size: .8em;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: .8em;
+}
+
+
+
