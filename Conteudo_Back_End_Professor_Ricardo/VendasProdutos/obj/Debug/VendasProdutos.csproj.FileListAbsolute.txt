@@ -1,0 +1,17 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\bin\Debug\VendasProdutos.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\bin\Debug\VendasProdutos.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\bin\Debug\VendasProdutos.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.FormCadastroProduto.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.FormMenu.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.FormCadastroClientes.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.FormVendas.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\bin\Debug\aa\VendasProdutos.resources.dll
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\VendasProdutos.FormMenu.aa.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\VendasProdutos\obj\Debug\aa\VendasProdutos.resources.dll
