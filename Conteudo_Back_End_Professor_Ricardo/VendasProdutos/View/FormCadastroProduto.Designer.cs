@@ -43,17 +43,15 @@
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vendas_dbDataSet1 = new VendasProdutos.vendas_dbDataSet1();
-            this.produtosTableAdapter = new VendasProdutos.vendas_dbDataSet1TableAdapters.produtosTableAdapter();
+            
             this.btnCancelarproduto = new System.Windows.Forms.Button();
             this.btnCadastrarproduto = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.vendas_dbDataSet3 = new VendasProdutos.vendas_dbDataSet3();
+            
             this.itemVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itemVendaTableAdapter = new VendasProdutos.vendas_dbDataSet3TableAdapters.itemVendaTableAdapter();
-            this.vendas_dbDataSet8 = new VendasProdutos.vendas_dbDataSet8();
+           
             this.produtosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.produtosTableAdapter1 = new VendasProdutos.vendas_dbDataSet8TableAdapters.produtosTableAdapter();
+           
             ((System.ComponentModel.ISupportInitialize)(this.dgwprodutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet1)).BeginInit();

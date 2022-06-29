@@ -1,0 +1,11 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\bin\Debug\WindowsSerializaDeserializa.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\bin\Debug\WindowsSerializaDeserializa.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\bin\Debug\WindowsSerializaDeserializa.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.Form1.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.pdb

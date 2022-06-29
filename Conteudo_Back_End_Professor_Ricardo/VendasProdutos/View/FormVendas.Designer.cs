@@ -30,14 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lbvalortotal = new System.Windows.Forms.Label();
-            this.vendas_dbDataSet4 = new VendasProdutos.vendas_dbDataSet4();
+           
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.produtosTableAdapter = new VendasProdutos.vendas_dbDataSet4TableAdapters.produtosTableAdapter();
+        
             this.cbClienteCadastrado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.vendas_dbDataSet5 = new VendasProdutos.vendas_dbDataSet5();
-            this.itemVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itemVendaTableAdapter = new VendasProdutos.vendas_dbDataSet5TableAdapters.itemVendaTableAdapter();
+         
+          
             this.cbProdutoCadastrado = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbQuantidade = new System.Windows.Forms.ComboBox();
@@ -51,24 +50,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.vendasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vendas_dbDataSet6 = new VendasProdutos.vendas_dbDataSet6();
-            this.vendasTableAdapter = new VendasProdutos.vendas_dbDataSet6TableAdapters.vendasTableAdapter();
-            this.vendas_dbDataSet9 = new VendasProdutos.vendas_dbDataSet9();
+           
             this.produtosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.produtosTableAdapter1 = new VendasProdutos.vendas_dbDataSet9TableAdapters.produtosTableAdapter();
+           
             this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codEANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet4)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet5)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.itemVendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet9)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,17 +78,16 @@
             // 
             // vendas_dbDataSet4
             // 
-            this.vendas_dbDataSet4.DataSetName = "vendas_dbDataSet4";
-            this.vendas_dbDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           
             // 
             // produtosBindingSource
             // 
             this.produtosBindingSource.DataMember = "produtos";
-            this.produtosBindingSource.DataSource = this.vendas_dbDataSet4;
+           
             // 
             // produtosTableAdapter
             // 
-            this.produtosTableAdapter.ClearBeforeFill = true;
+            
             // 
             // cbClienteCadastrado
             // 
@@ -115,17 +110,16 @@
             // 
             // vendas_dbDataSet5
             // 
-            this.vendas_dbDataSet5.DataSetName = "vendas_dbDataSet5";
-            this.vendas_dbDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           
             // 
             // itemVendaBindingSource
             // 
             this.itemVendaBindingSource.DataMember = "itemVenda";
-            this.itemVendaBindingSource.DataSource = this.vendas_dbDataSet5;
+            
             // 
             // itemVendaTableAdapter
             // 
-            this.itemVendaTableAdapter.ClearBeforeFill = true;
+            
             // 
             // cbProdutoCadastrado
             // 
@@ -258,30 +252,27 @@
             // vendasBindingSource
             // 
             this.vendasBindingSource.DataMember = "vendas";
-            this.vendasBindingSource.DataSource = this.vendas_dbDataSet6;
+          
             // 
             // vendas_dbDataSet6
             // 
-            this.vendas_dbDataSet6.DataSetName = "vendas_dbDataSet6";
-            this.vendas_dbDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+           
             // vendasTableAdapter
             // 
-            this.vendasTableAdapter.ClearBeforeFill = true;
+           
             // 
             // vendas_dbDataSet9
             // 
-            this.vendas_dbDataSet9.DataSetName = "vendas_dbDataSet9";
-            this.vendas_dbDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // produtosBindingSource1
             // 
             this.produtosBindingSource1.DataMember = "produtos";
-            this.produtosBindingSource1.DataSource = this.vendas_dbDataSet9;
+            
             // 
             // produtosTableAdapter1
             // 
-            this.produtosTableAdapter1.ClearBeforeFill = true;
+           
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
@@ -339,14 +330,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendas";
             this.Load += new System.EventHandler(this.FormVendas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet4)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet5)).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.itemVendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet9)).EndInit();
+            
+          
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -355,14 +346,14 @@
 
         #endregion
         private System.Windows.Forms.Label lbvalortotal;
-        private vendas_dbDataSet4 vendas_dbDataSet4;
+       
         private System.Windows.Forms.BindingSource produtosBindingSource;
-        private vendas_dbDataSet4TableAdapters.produtosTableAdapter produtosTableAdapter;
+        
         private System.Windows.Forms.ComboBox cbClienteCadastrado;
         private System.Windows.Forms.Label label1;
-        private vendas_dbDataSet5 vendas_dbDataSet5;
+        
         private System.Windows.Forms.BindingSource itemVendaBindingSource;
-        private vendas_dbDataSet5TableAdapters.itemVendaTableAdapter itemVendaTableAdapter;
+       
         private System.Windows.Forms.ComboBox cbProdutoCadastrado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbQuantidade;
@@ -375,12 +366,12 @@
         private System.Windows.Forms.ListView listViewCarrinho;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private vendas_dbDataSet6 vendas_dbDataSet6;
+       
         private System.Windows.Forms.BindingSource vendasBindingSource;
-        private vendas_dbDataSet6TableAdapters.vendasTableAdapter vendasTableAdapter;
-        private vendas_dbDataSet9 vendas_dbDataSet9;
+      
+        
         private System.Windows.Forms.BindingSource produtosBindingSource1;
-        private vendas_dbDataSet9TableAdapters.produtosTableAdapter produtosTableAdapter1;
+        
         private System.Windows.Forms.DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codEANDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
