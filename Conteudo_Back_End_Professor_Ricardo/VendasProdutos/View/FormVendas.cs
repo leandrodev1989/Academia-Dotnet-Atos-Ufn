@@ -166,7 +166,7 @@ namespace VendasProdutos
                 if (venda.gravarItensVenda(listavendas))
                 {
                     
-                    exibirProdutos(); //recarrega produtos após atualização do estoque
+                    exibirProdutos(); 
                     MessageBox.Show("Venda cadastrada com sucesso.", "Vendas");
                 }
             }
