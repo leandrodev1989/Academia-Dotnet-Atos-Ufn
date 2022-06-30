@@ -162,11 +162,10 @@ namespace VendasProdutos
                 if (venda.gravarItensVenda(listavendas))
                 {
                     
-<<<<<<< HEAD
-                    exibirProdutos();
-=======
+
+
                     exibirProdutos(); 
->>>>>>> d6372789f30cbe42556c1da3879cc758c8c62efb
+
                     MessageBox.Show("Venda cadastrada com sucesso.", "Vendas");
                 }
             }
@@ -302,7 +301,7 @@ namespace VendasProdutos
             }
             else
             {
-                List<Produtos> list = new List<Produtos>();
+                //List<Produtos> list = new List<Produtos>();
 
                 foreach(DataGridViewRow row in dgvprodutos.Rows)
                 {
