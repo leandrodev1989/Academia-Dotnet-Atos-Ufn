@@ -15,7 +15,7 @@ namespace VendasProdutos
 
         int quantidade;
         double valorunitario;
-        double valorvenda;
+        float valortotalvenda;
         double operacao;
 
         List<Produto> listaprodutos = new List<Produto>();
@@ -40,7 +40,7 @@ namespace VendasProdutos
                 cbClienteCadastrado.Items.Clear();
                 foreach (Cliente i in listaclientes)
                 {
-                    cbClienteCadastrado.Items.Add(i.Nome);
+                    cbClienteCadastrado.Items.Add(i.IdCliente);
                 }
             
            
@@ -100,14 +100,9 @@ namespace VendasProdutos
 
         private void FormVendas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'vendas_dbDataSet9.produtos' table. You can move, or remove it, as needed.
-            this.produtosTableAdapter1.Fill(this.vendas_dbDataSet9.produtos);
-            // TODO: This line of code loads data into the 'vendas_dbDataSet6.vendas' table. You can move, or remove it, as needed.
-            this.vendasTableAdapter.Fill(this.vendas_dbDataSet6.vendas);
-            // TODO: This line of code loads data into the 'vendas_dbDataSet5.itemVenda' table. You can move, or remove it, as needed.
-            this.itemVendaTableAdapter.Fill(this.vendas_dbDataSet5.itemVenda);
-            // TODO: This line of code loads data into the 'vendas_dbDataSet4.produtos' table. You can move, or remove it, as needed.
-            this.produtosTableAdapter.Fill(this.vendas_dbDataSet4.produtos);
+            // TODO: This line of code loads data into the 'vendas_dbDataSet2.vendas' table. You can move, or remove it, as needed.
+            this.vendasTableAdapter.Fill(this.vendas_dbDataSet2.vendas);
+
 
             exibirClientes();
             exibirProdutos();
@@ -125,12 +120,12 @@ namespace VendasProdutos
             
             string idvenda = Guid.NewGuid().ToString().Substring(1, 10);
             int quantidade = int.Parse(cbQuantidade.Text);
-            double valorunitario = double.Parse(cbvalorunitario.Text);
+            float valorunitario = float.Parse(cbvalorunitario.Text);
 
-            double Operacao = quantidade * valorunitario;
+            float Operacao = quantidade * valorunitario;
 
 
-            valorvenda = valorvenda + Operacao;
+            valortotalvenda = valortotalvenda + Operacao;
 
             
 
@@ -139,11 +134,11 @@ namespace VendasProdutos
             listViewCarrinho.Items.Add("ID VENDA: " + idvenda); 
             listViewCarrinho.Items.Add("QUANTIDADE:  " + quantidade.ToString());
             listViewCarrinho.Items.Add("VALOR UNIT:  " + valorunitario.ToString("C"));
-            listViewCarrinho.Items.Add("NOME CLIENTE:  " +  cbClienteCadastrado.Text);
+            listViewCarrinho.Items.Add("ID CLIENTE:  " +  cbClienteCadastrado.Text);
             listViewCarrinho.Items.Add("DESCRIÇÃO:  " +  cbProdutoCadastrado.Text);
-            listViewCarrinho.Items.Add("VALOR TOTAL:  " + valorvenda.ToString("C"));
+            listViewCarrinho.Items.Add("VALOR TOTAL:  " + valortotalvenda.ToString("C"));
 
-            tbvalortotal.Text = valorvenda.ToString("C");
+            tbvalortotal.Text = valortotalvenda.ToString("C");
 
         }
 
@@ -155,18 +150,19 @@ namespace VendasProdutos
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            int.Parse(cbClienteCadastrado.Text);
+            string idvenda = Guid.NewGuid().ToString().Substring(1, 10);
 
-            Venda venda = new Venda(double.Parse(valorvenda.ToString()));
+            Venda venda = new Venda(int.Parse(idvenda), int.Parse(cbClienteCadastrado.Text),float.Parse(tbvalortotal.Text));
 
-            if (venda.gravarvenda( valorvenda))
+            if(venda.gravarvenda(int.Parse(idvenda), cbClienteCadastrado.Text, float.Parse(tbvalortotal.Text)))
             { 
                
 
                 if (venda.gravarItensVenda(listavendas))
                 {
                     
-                    exibirProdutos(); //recarrega produtos após atualização do estoque
+                    exibirProdutos();
                     MessageBox.Show("Venda cadastrada com sucesso.", "Vendas");
                 }
             }

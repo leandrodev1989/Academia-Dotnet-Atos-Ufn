@@ -16,7 +16,7 @@ namespace VendasProdutos
         private void btnCadastrarproduto_Click(object sender, EventArgs e)
         {
 
-            Produto produto = new Produto(tbxNomeProduto.Text, double.Parse(txbPrecoProduto.Text), int.Parse(tbxEstoque.Text));
+            Produto produto = new Produto(tbxNomeProduto.Text, float.Parse(txbPrecoProduto.Text), int.Parse(tbxEstoque.Text));
 
             if (produto.Gravarproduto())
             {
@@ -26,8 +26,9 @@ namespace VendasProdutos
 
         private void FormCadastroProduto_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'vendas_dbDataSet8.produtos' table. You can move, or remove it, as needed.
-            this.produtosTableAdapter1.Fill(this.vendas_dbDataSet8.produtos);
+            // TODO: This line of code loads data into the 'vendas_dbDataSet1.produtos' table. You can move, or remove it, as needed.
+            this.produtosTableAdapter.Fill(this.vendas_dbDataSet1.produtos);
+
 
         }
     }

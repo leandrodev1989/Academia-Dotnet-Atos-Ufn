@@ -1,0 +1,11 @@
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\bin\Debug\Criptografia.exe.config
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\bin\Debug\Criptografia.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\bin\Debug\Criptografia.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.csproj.AssemblyReference.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.Form1.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.Properties.Resources.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.csproj.GenerateResource.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.exe
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Ricardo\Criptografia\obj\Debug\Criptografia.pdb

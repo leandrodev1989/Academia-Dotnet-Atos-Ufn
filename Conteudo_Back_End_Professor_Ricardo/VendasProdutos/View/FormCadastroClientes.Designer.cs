@@ -39,30 +39,27 @@
             this.btnCancelarcadastro = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
- 
-           
             this.tbxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.tbxCpf = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-           
             this.vendasdbDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            
-            this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-          
+            this.vendas_dbDataSet = new VendasProdutos.vendas_dbDataSet();
+            this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.clientesTableAdapter = new VendasProdutos.vendas_dbDataSetTableAdapters.clientesTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
-            
-            this.groupBox1.SuspendLayout();
-           
-            ((System.ComponentModel.ISupportInitialize)(this.vendasdbDataSet6BindingSource)).BeginInit();
-           
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vendasdbDataSet6BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -164,29 +161,24 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idClienteDataGridViewTextBoxColumn,
-            this.cpfDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.telefoneDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clientesBindingSource1;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.dataGridView1.DataSource = this.clientesBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(299, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 317);
             this.dataGridView1.TabIndex = 14;
             // 
+            // clientesBindingSource1
+            // 
+            this.clientesBindingSource1.DataMember = "clientes";
+            // 
             // clientesBindingSource
             // 
             this.clientesBindingSource.DataMember = "clientes";
-           
-            // 
-            // vendas_dbDataSet
-            // 
-           
-            // 
-            // clientesTableAdapter
-            // 
-           
             // 
             // tbxTelefone
             // 
@@ -227,58 +219,50 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
-            // vendas_dbDataSet6
+            // vendas_dbDataSet
             // 
-           
+            this.vendas_dbDataSet.DataSetName = "vendas_dbDataSet";
+            this.vendas_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // vendasdbDataSet6BindingSource
+            // clientesBindingSource2
             // 
-            
-            this.vendasdbDataSet6BindingSource.Position = 0;
+            this.clientesBindingSource2.DataMember = "clientes";
+            this.clientesBindingSource2.DataSource = this.vendas_dbDataSet;
             // 
-            // idClienteDataGridViewTextBoxColumn
+            // clientesTableAdapter
             // 
-            this.idClienteDataGridViewTextBoxColumn.DataPropertyName = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.Name = "idClienteDataGridViewTextBoxColumn";
-            this.idClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
-            // cpfDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "cpf";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "idCliente";
+            this.dataGridViewTextBoxColumn1.HeaderText = "idCliente";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "cpf";
+            this.dataGridViewTextBoxColumn2.HeaderText = "cpf";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // telefoneDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "telefone";
-            this.telefoneDataGridViewTextBoxColumn.HeaderText = "telefone";
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // emailDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "telefone";
+            this.dataGridViewTextBoxColumn4.HeaderText = "telefone";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // vendas_dbDataSet7
+            // dataGridViewTextBoxColumn5
             // 
-           
-            // 
-            // clientesBindingSource1
-            // 
-            this.clientesBindingSource1.DataMember = "clientes";
-           
-            // 
-            // clientesTableAdapter1
-            // 
-          
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "email";
+            this.dataGridViewTextBoxColumn5.HeaderText = "email";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // FormCadastroClientes
             // 
@@ -291,16 +275,15 @@
             this.Controls.Add(this.label6);
             this.Name = "FormCadastroClientes";
             this.Text = "Cadastro De Clientes";
-            
+            this.Load += new System.EventHandler(this.FormCadastroClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
-           
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-          
             ((System.ComponentModel.ISupportInitialize)(this.vendasdbDataSet6BindingSource)).EndInit();
-            
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendas_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,6 +315,13 @@
         private System.Windows.Forms.BindingSource vendasdbDataSet6BindingSource;
        
         private System.Windows.Forms.BindingSource clientesBindingSource1;
-       
+        private vendas_dbDataSet vendas_dbDataSet;
+        private System.Windows.Forms.BindingSource clientesBindingSource2;
+        private vendas_dbDataSetTableAdapters.clientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

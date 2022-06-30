@@ -29,6 +29,11 @@ namespace VendasProdutos
             }
         }
 
-        
+        private void FormCadastroClientes_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'vendas_dbDataSet.clientes' table. You can move, or remove it, as needed.
+            this.clientesTableAdapter.Fill(this.vendas_dbDataSet.clientes);
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace VendasProdutos.Model
         
         string codean;
         string nome;
-        double preco;
+        float preco;
         int estoque;
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace VendasProdutos.Model
         /// <param name="nome"></param>
         /// <param name="preco"></param>
         /// <param name="estoque"></param>
-        public Produto( string nome, double preco, int estoque)
+        public Produto( string nome, float preco, int estoque)
         {
             
             this.CodEan = Guid.NewGuid().ToString().Substring(1, 10);
@@ -112,7 +112,7 @@ namespace VendasProdutos.Model
                 while (leitorprodutos.Read())
                 {
                     listaprodutos.Add(new Produto(leitorprodutos["nome"].ToString(),
-                    Convert.ToDouble(leitorprodutos["preco"].ToString()), int.Parse(leitorprodutos["estoque"].ToString())));
+                    float.Parse(leitorprodutos["preco"].ToString()), int.Parse(leitorprodutos["estoque"].ToString())));
                 }
 
 
@@ -138,7 +138,7 @@ namespace VendasProdutos.Model
         //public int IdProduto { get => idproduto; set => idproduto = value; }
         public string CodEan { get => codean; set => codean = value; }
         public string Nome { get => nome; set => nome = value; }
-        public double Preco { get => preco; set => preco = value; }
+        public float Preco { get => preco; set => preco = value; }
         public int Estoque { get => estoque; set => estoque = value; }
 
 

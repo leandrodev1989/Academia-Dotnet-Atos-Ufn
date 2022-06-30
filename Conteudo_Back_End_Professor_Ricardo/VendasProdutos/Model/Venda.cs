@@ -15,11 +15,11 @@ namespace VendasProdutos.Model
         /// atributos
         /// </summary>
         int iditemvenda;
-        double valorunitario;
+        float valorunitario;
         int quantidade;
         int idproduto;
-        double valortotalvenda;
-        double valortotalitem;
+        float valortotalvenda;
+        float valortotalitem;
         int idvenda;
         int idcliente;
        
@@ -35,7 +35,7 @@ namespace VendasProdutos.Model
         /// <param name="valortotalitem"></param>
         /// <param name="idvenda"></param>
         /// <param name="idcliente"></param>
-        public Venda(int iditemvenda, double valorunitario, int quantidade,int idproduto, double valortotalvenda,double valortotalitem,int idvenda, int idcliente)
+        public Venda(int iditemvenda, float valorunitario, int quantidade,int idproduto,float valortotalvenda,float valortotalitem,int idvenda, int idcliente)
         {
 
             this.Iditemvenda = iditemvenda;
@@ -57,7 +57,7 @@ namespace VendasProdutos.Model
         /// <param name="valorunitario"></param>
         /// <param name="quantidade"></param>
         /// <param name="valortotalvenda"></param>
-        public Venda(double valorunitario, int quantidade, double valortotalvenda)
+        public Venda(float valorunitario, int quantidade, float valortotalvenda)
         {
             this.Valorunitario = valorunitario;
             this.Quantidade = quantidade;
@@ -68,7 +68,7 @@ namespace VendasProdutos.Model
         /// construtor para a operação  que salva  o id da venda o id do cliente e o valor total
         /// </summary>
         /// <param name="valortotalvenda"></param>
-        public Venda(double valortotalvenda)
+        public Venda(float valortotalvenda)
         {
             
             this.Valortotalvenda = valortotalvenda;
@@ -80,7 +80,7 @@ namespace VendasProdutos.Model
         /// </summary>
         /// <param name="valortotalvenda"></param>
         /// <returns></returns>
-        public  bool gravarvenda(double valortotalvenda)
+        public  bool gravarvenda( string idvenda, int idcliente, float valortotalvenda)
         {
 
             Banco banco = new Banco();
@@ -94,13 +94,16 @@ namespace VendasProdutos.Model
             command.CommandType = CommandType.Text;
 
 
-            command.CommandText = "Insert into vendas values  @valorTotal;";
+            command.CommandText = "Insert into vendas values  @idVenda, @idCliente, @valorTotal;";
 
-           
+            command.Parameters.Add("@idVenda", SqlDbType.Int);
+            command.Parameters.Add("@idCliente", SqlDbType.Int);
             command.Parameters.Add("@valorTotal", SqlDbType.Real);
 
            
-            command.Parameters[0].Value = valortotalvenda;
+            command.Parameters[0].Value = idvenda;
+            command.Parameters[1].Value = idcliente;
+            command.Parameters[2].Value = valortotalvenda;
             
 
             try
@@ -192,14 +195,17 @@ namespace VendasProdutos.Model
 
         }
 
-       
+        internal bool gravarvenda(int v1, string text, float v2)
+        {
+            throw new NotImplementedException();
+        }
 
         public int Iditemvenda { get => iditemvenda; set => iditemvenda = value; }
-        public double Valorunitario { get => valorunitario; set => valorunitario = value; }
+        public float Valorunitario { get => valorunitario; set => valorunitario = value; }
         public int Quantidade { get => quantidade; set => quantidade = value; }
         public int IdProduto { get => idproduto; set => idproduto = value; }
-        public double ValorTotalitem { get => valortotalitem; set => valortotalitem = value; }
-        public double Valortotalvenda { get => valortotalvenda; set => valortotalvenda = value; }
+        public float ValorTotalitem { get => valortotalitem; set => valortotalitem = value; }
+        public float Valortotalvenda { get => valortotalvenda; set => valortotalvenda = value; }
         public int IdVenda { get => idvenda; set => idvenda = value; }
         public int IdCliente { get => idcliente; set => idcliente = value; }
 

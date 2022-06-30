@@ -50,6 +50,21 @@
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Venda.cs" />
     <Compile Include="Model\Produto.cs" />
+    <Compile Include="vendas_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vendas_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vendas_dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vendas_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vendas_dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vendas_dbDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\FormCadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +124,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="vendas_dbDataSet.xsc">
+      <DependentUpon>vendas_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vendas_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vendas_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vendas_dbDataSet.xss">
+      <DependentUpon>vendas_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vendas_dbDataSet1.xsc">
+      <DependentUpon>vendas_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="vendas_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vendas_dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vendas_dbDataSet1.xss">
+      <DependentUpon>vendas_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="vendas_dbDataSet2.xsc">
+      <DependentUpon>vendas_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="vendas_dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vendas_dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vendas_dbDataSet2.xss">
+      <DependentUpon>vendas_dbDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

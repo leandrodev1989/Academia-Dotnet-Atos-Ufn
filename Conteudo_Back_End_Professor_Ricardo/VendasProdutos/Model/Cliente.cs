@@ -116,7 +116,7 @@ namespace VendasProdutos.Model
             command.CommandType = CommandType.Text;
 
 
-            command.CommandText = "select * from clientes order by Nome;";
+            command.CommandText = "select * from clientes order by idCliente;";
 
 
 
@@ -127,7 +127,7 @@ namespace VendasProdutos.Model
 
                 while (leitor.Read())
                 {
-                    listaclientes.Add(new Cliente(int.Parse(leitor["idcliente"].ToString()), leitor["cpf"].ToString(), leitor["nome"].ToString(),
+                    listaclientes.Add(new Cliente(int.Parse(leitor["idCliente"].ToString()), leitor["cpf"].ToString(), leitor["nome"].ToString(),
                     leitor["telefone"].ToString(), leitor["email"].ToString()));
                 }
                 
