@@ -144,7 +144,7 @@ namespace VendasProdutos
 
 
         /// <summary>
-        /// Metodo para confirmar a venda dos produtos no carrinho
+        /// Metodo para confirmar a venda dos produtos no carrinho na listview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -162,9 +162,277 @@ namespace VendasProdutos
                 if (venda.gravarItensVenda(listavendas))
                 {
                     
+<<<<<<< HEAD
                     exibirProdutos();
+=======
+                    exibirProdutos(); 
+>>>>>>> d6372789f30cbe42556c1da3879cc758c8c62efb
                     MessageBox.Show("Venda cadastrada com sucesso.", "Vendas");
                 }
+            }
+        }
+
+
+
+        ///pesquisa o produto pelo Id
+         private void btnpesquisar_Click(object sender, EventArgs e)
+        {
+            tbBuscarId.Focus();
+            strSql = "select * from Produtos where Id=@Id";
+
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("@Id", SqlDbType.Int).Value = tbBuscarId.Text;
+
+            try
+            {
+                if(tbBuscarId.Text == string.Empty)
+                {
+                    throw new Exception("Voçê precisa Digitar um Id");
+                }
+
+                sqlCon.Open();
+
+                SqlDataReader dr = comando.ExecuteReader();
+
+                if(dr.HasRows == false)
+                {
+                    throw new Exception("Id não Cadastrado");
+                }
+
+                dr.Read();
+
+                tbid.Text = Convert.ToString(dr["Id"]);
+                tbcodean.Text = Convert.ToString(dr["codEAN"]);
+                tbnome.Text = Convert.ToString(dr["nome"]);
+                tbpreco.Text = Convert.ToString(dr["precoUnitario"]);
+                tbestoque.Text = Convert.ToString(dr["estoque"]);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+
+
+
+        }
+         
+
+         ///faz alteração nos produtos
+        private void btnalterar_Click(object sender, EventArgs e)
+        {
+            strSql = "update Produtos set Id=@Id, codEAN=@codEAN, nome=@nome, precoUnitario=@precoUnitario, estoque=@estoque where Id=@IdBuscar";
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("@IdBuscar", SqlDbType.Int).Value =  tbBuscarId.Text;
+
+            comando.Parameters.Add("@Id", SqlDbType.Int).Value = tbid.Text;
+            comando.Parameters.Add("@codEAN", SqlDbType.Char).Value = tbcodean.Text;
+            comando.Parameters.Add("@nome", SqlDbType.Char).Value = tbnome.Text;
+            comando.Parameters.Add("@precoUnitario", SqlDbType.Float).Value = tbpreco.Text;
+            comando.Parameters.Add("@estoque", SqlDbType.Int).Value = tbestoque.Text;
+
+
+            try
+            {
+                sqlCon.Open();
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Cadastro Atualizado");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+        }
+        
+
+        ///excluir caso o usuario queira
+        private void btnexcluir_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Deseja Realmente Excluir Esse Produto?", "Cuidado", MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                MessageBox.Show("Operação Cancelada");
+            }
+            else
+            {
+                strSql = "delete from Produtos where Id=@Id";
+                sqlCon = new SqlConnection(strCon);
+                SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+                comando.Parameters.Add("@Id", SqlDbType.Int).Value = tbBuscarId.Text;
+
+                try
+                {
+                    sqlCon.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Produto Deletado");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sqlCon.Close();
+                }
+
+            }
+                    
+        }
+
+        float total ;
+
+        ///adiciona produtos do estoque para ser vendido no carrinho
+        private void btncarrinho_Click(object sender, EventArgs e)
+        {
+            if(tbquantidade.Text == string.Empty)
+            {
+                MessageBox.Show("Voçê precisa digitar uma quantidade") ;
+            }
+            else
+            {
+                List<Produtos> list = new List<Produtos>();
+
+                foreach(DataGridViewRow row in dgvprodutos.Rows)
+                {
+                    Produtos pro = new Produtos();
+
+                    pro.Id = (int)row.Cells["Id"].Value;
+                    pro.Codean = row.Cells["Codean"].Value.ToString();
+                    pro.Name = row.Cells["Nome"].Value.ToString();
+                    pro.Precounitario = float.Parse(row.Cells["PrecoUnitario"].Value.ToString());
+                    pro.Estoque = (int)row.Cells["Estoque"].Value;
+
+                    list.Add(pro);
+
+
+                }
+
+                Produtos p = new Produtos();
+                p.Id = int.Parse(tbid.Text);
+                p.Codean = tbcodean.Text;
+                p.Name = tbnome.Text;
+                p.Precounitario = float.Parse(tbpreco.Text);
+                p.Estoque = int.Parse(tbestoque.Text);
+
+                int quantidade = int.Parse(tbquantidade.Text);
+                float precounitario = float.Parse(tbpreco.Text);
+
+                total = total + (precounitario * quantidade);
+
+                lbltotal.Text = total.ToString("C");
+
+                list.Add(p);
+                dgvprodutos.DataSource = list;
+
+                
+            }
+        }
+
+        float troco;
+        
+        ///responsavel por finalizar a compra adicionada no carrinho
+        private void btnfinalizar_Click(object sender, EventArgs e)
+        {
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand("select * from Produtos where Id=@IdBuscar", sqlCon);
+            comando.Parameters.Add("@IdBuscar", SqlDbType.Int).Value = tbBuscarId.Text;
+
+            try
+            {
+                sqlCon.Open();
+                comando.ExecuteNonQuery();
+
+                float dinheiro = float.Parse(tbdinheiro.Text);
+                troco = dinheiro - total;
+                lbltroco.Text = troco.ToString("C");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+                Pesquisar();
+            }
+            Atualizar();
+        }
+
+        ///pesquisa o produto pelo Id
+        public void Pesquisar()
+        {
+            strSql = "select * from Produtos where Id=@Id";
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("@Id", SqlDbType.Int).Value = tbBuscarId.Text;
+
+            try
+            {
+                if(int.Parse(tbestoque.Text) == 0)
+                {
+                    throw new Exception("Descupa, produto indisponivel");
+                }
+
+                sqlCon.Open();
+
+                SqlDataReader dr = comando.ExecuteReader();
+
+                dr.Read();
+
+
+
+                tbid.Text = Convert.ToString(dr["Id"]);
+                tbcodean.Text = Convert.ToString(dr["codEAN"]);
+                tbnome.Text = Convert.ToString(dr["nome"]);
+                tbpreco.Text = Convert.ToString(dr["precoUnitario"]);
+                tbestoque.Text = Convert.ToString(dr["estoque"]);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+        }
+
+        ///atualiza o estoque apos a venda
+        public void Atualizar()
+        {
+            SqlConnection sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand("update Produtos set estoque = estoque-'" + tbquantidade.Text + "' where Id=@IdBuscar", sqlCon);
+
+            comando.Parameters.Add("@IdBuscar", SqlDbType.Int).Value = tbBuscarId.Text;
+
+            try
+            {
+
+                sqlCon.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+                Pesquisar();
             }
         }
     }
