@@ -17,6 +17,11 @@ namespace WindowsSerializaDeserializa
             this.cpf = cpf;    
         }
 
+        public Paciente()
+        {
+
+        }
+
 
         public string Nome { get => nome; set => nome = value; }
         public DateTime Datanascimento { get => datanascimewnto; set => datanascimewnto = value; }
@@ -24,11 +29,11 @@ namespace WindowsSerializaDeserializa
 
 
 
-        public static bool jacadastrado(string nome, List<Paciente> lista)
+        public static bool jacadastrado(List<Paciente> lista, string nome)
         {
-            foreach (Paciente i in lista)
+            foreach (Paciente paciente in lista)
             {
-                if (i.Nome.Equals(i.nome))
+                if (paciente.Nome.Equals(paciente.nome))
                 {
                     return true;
                 }

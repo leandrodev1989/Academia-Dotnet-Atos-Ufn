@@ -9,3 +9,8 @@ C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.CoreCompileInputs.cache
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.exe
 C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.pdb
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.FormJason.resources
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.csproj.CopyComplete
+C:\Users\Usuário\Academia-Dotnet-Atos-Ufn\Conteudo_Back_End_Professor_Alexandre\WindowsSerializaDeserializa\obj\Debug\WindowsSerializaDeserializa.FormMenu.resources
