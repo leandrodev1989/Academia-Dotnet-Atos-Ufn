@@ -1,4 +1,4 @@
-pull## Praticando os Conteúdos abordados nas Aulas de Front-End Html Css
+## Praticando os Conteúdos abordados nas Aulas de Front-End Html Css
 ----
 <br>
 
