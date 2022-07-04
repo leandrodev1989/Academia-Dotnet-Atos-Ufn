@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <form class="form-horizontal">
+       <fieldset>
+        <div class="panel panel-primary">
+            <div class="panel-heading" >Cadastro de Pessoas</div>
+            
+            <div class="panel-body">
+        <div class="form-group">
+       
+        <div class="col-md-11 control-label">
+                <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+        </div>
+        
+        
+            
+        
+        <!-- Text input nome e sobrenome-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="nome">Nome <h11>*</h11></label>  
+          <div class="col-md-4">
+          <input id="nome" name="nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-1 control-label" for="sobre-nome">Sobre Nome <h11>*</h11></label>  
+          <div class="col-md-4">
+          <input id="sobre-nome" name="nomesobre-" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+        </div>
+
+       
+             
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext">Email<h11>*</h11></label>
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+            </div>
+          </div>
+
+
+          <!-- Text input senha e login-->
+        
+            <label class="col-md-1 control-label" for="Login">Login<h11>*</h11></label>  
+            <div class="col-md-2">
+            <input id="login" name="login"  class="form-control input-md" required="" type="text">
+            </div>
+  
+            <label class="col-md-1 control-label" for="Senha">Senha<h11>*</h11></label>  
+            <div class="col-md-2">
+            <input id="senha" name="senha"  class="form-control input-md" required="" readonly="readonly" type="text">
+            </div>
+          
+        </div>
+
+        
+
+
+        
+        
+        
+        <!-- Search input-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+          <div class="col-md-2">
+            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+          </div>
+          <div class="col-md-2">
+              <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+            </div>
+        </div>
+        
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">Rua</span>
+              <input id="endereco" name="endereco" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+            </div>
+            
+          </div>
+            <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">Complemento <h11>*</h11></span>
+              <input id="complemento" name="complemento" class="form-control" placeholder="" required=""  type="text">
+            </div>
+            
+          </div>
+          
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">Bairro</span>
+              <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext"></label>
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-addon">Cidade</span>
+              <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+            </div>
+            
+          </div>
+          
+           <div class="col-md-2">
+            <div class="input-group">
+              <span class="input-group-addon">Estado</span>
+              <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+              <label class="col-md-2 control-label" for="git">Seu Perfil GitHub <h11>*</h11></label>
+        
+              <div class="col-md-3">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="git">github.com</span>
+                    <input type="text" class="form-control" required="" id="git" aria-describedby="basic-addon3" placeholder="username" >
+                  </div>
+                  
+              </div>
+
+              <label class="col-md-1 control-label" for="academia">Academia <h11>*</h11></label>
+              <div class="col-md-2">
+                <select required id="academia" name="academia" class="form-control" placeholder="Selecione..">
+                  <option value="" ></option>
+                  <option value="dotNet">DotNet</option>
+                  <option value="java">Java</option>
+                  <option value="cloud">Cloud</option>
+                  <option value="python">Python</option>
+                </select>
+              </div>
+
+
+              <label class="col-md-1 control-label" for="professor">Professor <h11>*</h11></label>
+              <div class="col-md-2">
+                <select required id="professor" name="professor" class="form-control" placeholder="Selecione..">
+                  <option value="" ></option>
+                  <option value="alexandre">Alexandre Zamberlan</option>
+                  <option value="ricardo">Ricardo</option>
+                  <option value="deivison">Deivison Pasa</option>
+                </select>
+              </div>         
+              <br>
+              <hr>
+        </div>
+
+        
+       
+        
+              
+
+                
+            <div class="form-group">
+               
+                <label  class=" col-md-2" for="texto"></label>
+                <div class="col-md-9">
+                     <h3>Termos legais</h3>
+                     <textarea class="form-control" id="texto" rows="3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus placeat assumenda quidem, soluta possimus quo porro reprehenderit nulla earum illum animi repellendus quia repellat ipsam sequi perspiciatis ut inventore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum magna id mi rhoncus ultrices. Vivamus aliquet interdum ante eget semper. Sed luctus risus et tempus mollis. Quisque nec tempor velit. Cras sit amet nibh dui. Aliquam vitae porta lorem. Nam faucibus, elit sit amet rhoncus pharetra, nibh magna cursus nisl, id sodales risus tellus quis ante. Maecenas fringilla dictum orci eget mollis. Duis cursus ex eu velit malesuada sollicitudin. Sed viverra pharetra neque, et iaculis eros pretium etAliquam erat volutpat. Quisque nunc dui, ultrices eu sapien sed, lobortis scelerisque tellus. Duis venenatis tempor nibh, at fermentum ipsum. Phasellus erat lectus, ullamcorper ac sagittis et, bibendum vitae ligula. Nulla mattis pharetra luctus. Pellentesque in mi nec lacus accumsan facilisis ac id urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla vitae suscipit massa. Cras a est dolor. Proin luctus eros sapien, sed placerat velit aliquam vulputate.
+                        Aenean consequat augue sit amet ullamcorper interdum. Etiam sit amet elit luctus, semper eros eget, faucibus erat. Vivamus gravida odio mi, et molestie sapien tristique id. Aenean in convallis enim, quis varius enim. Nunc ut fermentum ex, a lobortis diam. Nullam convallis diam sit amet ipsum commodo dapibus. Nulla quis justo quis velit fringilla volutpat ut vehicula metus. Aenean rutrum, purus quis feugiat mollis, libero risus consequat est, id laoreet risus turpis sed tellus. Nullam dictum luctus porttitor. Proin tristique ut massa sit amet semper. Maecenas a elementum ex. Etiam mauris orci, pellentesque non nunc et, cursus rutrum justo. Curabitur convallis purus sed nisi ornare placerat.
+                        Suspendisse eget placerat mauris. Sed ultrices orci sed dui faucibus hendrerit. Proin volutpat est malesuada laoreet egestas. Duis viverra consectetur sem, eu porta purus maximus in. Donec eget malesuada turpis. Nunc et dapibus purus. Maecenas blandit sapien et est vestibulum dapibus. Vestibulum aliquet cursus diam, et tincidunt ligula pellentesque eu. Cras sollicitudin nunc est, sed ultricies justo vehicula at. Pellentesque odio metus, congue sed dui dignissim, venenatis vehicula ligula.
+                        Maecenas suscipit ornare pharetra. Curabitur bibendum nibh quis cursus efficitur. Aenean dignissim accumsan augue in placerat. Mauris hendrerit nibh nunc, ac luctus quam egestas sed. Nunc eget tempus purus. Nulla iaculis porttitor nisi, ut bibendum urna dapibus sed. Nunc feugiat ante consectetur dapibus vulputate. Aenean quis magna porttitor, porta felis quis, fermentum diam. Donec ut faucibus magna, ac mollis augue.
+                     </textarea>
+
+                     <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Eu Li e Concordo com os Termos acima</label>
+                      </div>
+                      <br>
+
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Quero Receber Novidade Por Email
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Não Quero Receber Informações
+                        </label>
+                      </div>
+                </div>
+
+              
+                
+            </div>
+
+
+             <!-- Button (Double) -->
+             <div class="form-group">
+                <label class="col-md-2 control-label" for="Cadastrar"></label>
+              <div class="col-md-9">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+               
+               </div>
+           </div>
+
+
+               
+       </fieldset>      
+    </form>
+    
+    
+</body>
+</html>
