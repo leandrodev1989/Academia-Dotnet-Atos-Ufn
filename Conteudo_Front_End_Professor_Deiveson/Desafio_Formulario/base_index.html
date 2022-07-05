@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <form class="form-horizontal">
+    <form  class="form-horizontal" id="formulario" >
        <fieldset>
         <div class="panel panel-primary">
             <div class="panel-heading" >Cadastro de Pessoas</div>
@@ -63,7 +63,8 @@
   
             <label class="col-md-1 control-label" for="Senha">Senha<h11>*</h11></label>  
             <div class="col-md-2">
-            <input id="senha" name="senha"  class="form-control input-md" required=""  type="text">
+            <input id="senha" name="password"  class="form-control input-md" required=""  type="password" 
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title=" a senha estar fora do Padrão">
             </div>
           
         </div>
@@ -128,12 +129,12 @@
 
         
         <div class="form-group">
-              <label class="col-md-2 control-label" for="github">Seu Perfil GitHub <h11>*</h11></label>
+              <label class="col-md-2 control-label" for="basic-url">Seu Perfil GitHub <h11>*</h11></label>
         
               <div class="col-md-3">
                   <div class="input-group">
                     <span class="input-group-addon" id="github">github.com</span>
-                    <input type="text" class="form-control" required="" id="github" aria-describedby="basic-addon3" placeholder="username" >
+                    <input type="text" class="form-control" required="" id="github" aria-describedby="basic-addon1" placeholder="username" >
                   </div>
                   
               </div>
@@ -178,19 +179,19 @@
                      </textarea>
 
                      <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <input class="form-check-input" type="checkbox" id="termo-sim">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Eu Li e Concordo com os Termos acima</label>
                       </div>
                       <br>
 
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="opcao-sim" id="exampleRadios1" value="option1" checked>
+                     <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox"  id="receber-sim" >
                         <label class="form-check-label" for="opcao-sim">
                           Quero Receber Novidade Por Email
                         </label>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="opcao-nao" id="exampleRadios2" value="option2">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="opcao-nao" id="receber-nao">
                         <label class="form-check-label" for="opcao-nao">
                           Não Quero Receber Informações
                         </label>
@@ -206,16 +207,17 @@
              <div class="form-group">
                 <label class="col-md-2 control-label" for="Cadastrar"></label>
               <div class="col-md-9">
-                <button  type="submit" onclick="Salvar()" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+                <button  type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
 
                
                
                </div>
+              
            </div>
 
            <br>
            
-          <div class="for-group" class="tabela-dados">
+          <div class="for-group" id="tabela-dados">
               <label class="col-md-2 control-label"></label>
 
                <div class="col-md-9">
@@ -223,81 +225,89 @@
                   <thead>
                     <tr>
                      
-                      <th scope="col">Dados do Cadastro</th>
+                      <th scope="col"><h3>Dados do Cadastro</h3></th>
                      
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Nome: <p id="valordigitado-nome"></p></th>
+                      <th scope="row">Nome: <p id="valordigitado-nome" disable></p></th>
                       
                      
                     </tr>
                     <tr>
-                      <th scope="row">Sobre Nome: <p id="valordigitado-sobrenome"></p></th>
+                      <th scope="row">Sobre Nome: <p id="valordigitado-sobrenome" disable></p></th>
                      
                       
                     </tr>
                     <tr>
-                      <th scope="row">Email: <p id="valordigitado-email"></th>
-                      
-                     
-                    </tr>
-
-                    <tr>
-                      <th scope="row">Login: <p id="valordigitado-login"></p></th>
-                     
-                     
-                    </tr>
-
-                    <tr>
-                      <th scope="row">Senha: <p id="valordigitado-senha"></th>
-                      
-                    </tr>
-
-                    <tr>
-                      <th scope="row">Rua: <p id="valordigitado-rua"></p></th>
-                     
-                     
-                    </tr>
-
-                    <tr>
-                      <th scope="row">Complemento: <p id="valordigitado-complemento"></th>
-                      
-                    </tr>
-
-                    <tr>
-                      <th scope="row">Bairro: <p id="valordigitado-bairro"></p></th>
+                      <th scope="row">Email: <p id="valordigitado-email" disable></th>
                       
                      
                     </tr>
 
                     <tr>
-                      <th scope="row">Estado: <p id="valordigitado-estado"></p></th>
+                      <th scope="row">Login: <p id="valordigitado-login" disable></p></th>
+                     
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Senha: <p id="valordigitado-senha" disable></th>
+                      
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Rua: <p id="valordigitado-rua" disable></p></th>
+                     
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Complemento: <p id="valordigitado-complemento" disable></th>
+                      
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Bairro: <p id="valordigitado-bairro" disable></p></th>
                       
                      
                     </tr>
 
                     <tr>
-                      <th scope="row">Cidade: <p id="valordigitado-cidade"></p></th>
+                      <th scope="row">Estado: <p id="valordigitado-estado" disable></p></th>
                       
                      
                     </tr>
 
                     <tr>
-                      <th scope="row">GitHub: <p id="valordigitado-github"></th>
+                      <th scope="row">Cidade: <p id="valordigitado-cidade" disable></p></th>
                       
                      
                     </tr>
 
                     <tr>
-                      <th scope="row">Academia: <p id="valordigitado-academia"></p></th>
+                      <th scope="row">GitHub: <p id="valordigitado-github" disable></th>
                       
                      
                     </tr>
 
                     <tr>
-                      <th scope="row">Professor: <p id="valordigitado-professor"></p></th>                     
+                      <th scope="row">Academia: <p id="valordigitado-academia" disable></p></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Professor: <p id="valordigitado-professor" disable></p></th>                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Termos Legais: <p id="valordigitado-termo" disable></p></th>                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Informativo: <p id="valordigitado-sim" disable></p></th>                     
                     </tr>
 
                   </tbody>

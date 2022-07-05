@@ -1,13 +1,78 @@
+document.getElementById('formulario').addEventListener('submit', function (e){
+    e.preventDefault();
 
 
+       
+    
+     
+     var capturar = "";
+     
+     capturar = document.getElementById('nome').value;
+    document.getElementById('valordigitado-nome').innerHTML = capturar;
+
+    capturar = document.getElementById('sobrenome').value;
+    document.getElementById('valordigitado-sobrenome').innerHTML = capturar;
+
+    capturar = document.getElementById('email').value;
+    document.getElementById('valordigitado-email').innerHTML = capturar;
+
+    capturar = document.getElementById('login').value;
+    document.getElementById('valordigitado-login').innerHTML = capturar;
+
+    capturar = document.getElementById('senha').value;
+    document.getElementById('valordigitado-senha').innerHTML = capturar;
+
+    capturar = document.getElementById('endereco').value;
+    document.getElementById('valordigitado-rua').innerHTML = capturar;
+
+    capturar = document.getElementById('complemento').value;
+    document.getElementById('valordigitado-complemento').innerHTML = capturar;
+
+    capturar = document.getElementById('bairro').value;
+    document.getElementById('valordigitado-bairro').innerHTML = capturar;
+
+    capturar = document.getElementById('estado').value;
+    document.getElementById('valordigitado-estado').innerHTML = capturar;
+
+    capturar = document.getElementById('cidade').value;
+    document.getElementById('valordigitado-cidade').innerHTML = capturar;
+
+    capturar = document.getElementById('github').value;
+    document.getElementById('valordigitado-github').innerHTML = capturar;
+
+    capturar = document.getElementById('academia').value;
+    document.getElementById('valordigitado-academia').innerHTML = capturar;
 
 
+    capturar = document.getElementById('professor').value;
+    document.getElementById('valordigitado-professor').innerHTML = capturar;
+
+    capturar = document.getElementById('termo-sim').value;
+    document.getElementById('valordigitado-termo').innerHTML = capturar;
+
+    capturar = document.getElementById('receber-sim').value;
+    document.getElementById('valordigitado-sim').innerHTML = capturar;
 
 
+    document.getElementById('tabela-dados').classList.remove('d-none');
+    
+    alert('Cadastro Efetuado!!');
+
+    limpa_formulario_cep();
+    
+});
 
 
+    document.getElementById('nome').addEventListener('keyup', gerarLogin);
+    document.getElementById('sobrenome').addEventListener('keyup', gerarLogin);
 
+    function gerarLogin(){
+    const nome = document.getElementById('nome').value;
+    const sobrenome = document.getElementById('sobrenome').value;
+    const login = nome + "." + sobrenome;
 
+    document.getElementById('login').value = login.toLowerCase();
+}
 
 
 
@@ -16,9 +81,22 @@ function limpa_formulario_cep() {
     document.getElementById('endereco').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
-    document.getElementById('estado').value=("");
+    document.getElementById('estado').value=("");   
+    document.getElementById('nome').value=("");   
+    document.getElementById('sobrenome').value=(""); 
+    document.getElementById('email').value=("");     
+    document.getElementById('github').value=("");  
+    document.getElementById('professor').value=(""); 
+    document.getElementById('academia').value=("");      
+    document.getElementById('termo-sim').value=(""); 
+    document.getElementById('receber-sim').value=("");    
+    document.getElementById('senha').value=(""); 
+    document.getElementById('login').value=("");  
+    document.getElementById('cep').value=("");  
     
 }
+
+
 
 function meu_callback(conteudo) {
 if (!("erro" in conteudo)) {
@@ -79,74 +157,7 @@ else {
 }
 
 
-var capturar = "";
-
-function Salvar(){
-
-    capturar = document.getElementById('nome').value;
-    document.getElementById('valordigitado-nome').innerHTML = capturar;
-
-    capturar = document.getElementById('sobrenome').value;
-    document.getElementById('valordigitado-sobrenome').innerHTML = capturar;
-
-    capturar = document.getElementById('email').value;
-    document.getElementById('valordigitado-email').innerHTML = capturar;
-
-    capturar = document.getElementById('login').value;
-    document.getElementById('valordigitado-login').innerHTML = capturar;
-
-    capturar = document.getElementById('senha').value;
-    document.getElementById('valordigitado-senha').innerHTML = capturar;
-
-    capturar = document.getElementById('endereco').value;
-    document.getElementById('valordigitado-rua').innerHTML = capturar;
-
-    capturar = document.getElementById('complemento').value;
-    document.getElementById('valordigitado-complemento').innerHTML = capturar;
-
-    capturar = document.getElementById('bairro').value;
-    document.getElementById('valordigitado-bairro').innerHTML = capturar;
-
-    capturar = document.getElementById('estado').value;
-    document.getElementById('valordigitado-estado').innerHTML = capturar;
-
-    capturar = document.getElementById('cidade').value;
-    document.getElementById('valordigitado-cidade').innerHTML = capturar;
-
-    capturar = document.getElementById('github').value;
-    document.getElementById('valordigitado-github').innerHTML = capturar;
-
-    capturar = document.getElementById('academia').value;
-    document.getElementById('valordigitado-academia').innerHTML = capturar;
-
-
-    capturar = document.getElementById('professor').value;
-    document.getElementById('valordigitado-professor').innerHTML = capturar;
-    
-
-}
-
-
-document.getElementById('form-horizontal').addEventListener('submit', function (e){
-    e.preventDefault();
-    document.getElementById('tabela-dados')
-    alert('Submetido');
- });
-
-
- 
 
 
 
 
-
-documentgetElementById('.nome').addEventListener('keyup', gerarLogin);
-document.getElementById('.sobrenome').addEventListener('keyup', gerarLogin);
-
-function gerarLogin(){
-    const nome = document.getElementById('.nome').value;
-    const sobrenome = document.getElementById('.sobrenome').value;
-    const login = nome + "." + sobrenome;
-
-    document.getElementById('.login').value = login.toLowerCase();
-}
