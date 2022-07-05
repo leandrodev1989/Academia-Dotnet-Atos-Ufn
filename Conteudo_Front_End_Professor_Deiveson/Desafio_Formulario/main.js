@@ -96,8 +96,6 @@ function limpa_formulario_cep() {
     
 }
 
-
-
 function meu_callback(conteudo) {
 if (!("erro" in conteudo)) {
     //Atualiza os campos com os valores.
