@@ -40,10 +40,7 @@
           <input id="sobrenome" name="sobrenome" placeholder="" class="form-control input-md" required="" type="text">
           </div>
         </div>
-
-       
-             
-        <!-- Prepended text-->
+          
         <div class="form-group">
           <label class="col-md-2 control-label" for="prependedtext">Email<h11>*</h11></label>
           <div class="col-md-3">
@@ -52,8 +49,6 @@
               <input id="email" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
             </div>
           </div>
-
-
           <!-- Text input senha e login-->
         
             <label class="col-md-1 control-label" for="login">Login<h11>*</h11></label>  
@@ -67,9 +62,7 @@
             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title=" a senha estar fora do Padrão">
             </div>
           
-        </div>
-
-           
+        </div>        
         <!-- Search input-->
         <div class="form-group">
           <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
@@ -80,8 +73,7 @@
               <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
             </div>
         </div>
-        
-        <!-- Prepended text-->
+
         <div class="form-group">
           <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
           <div class="col-md-3">
@@ -129,11 +121,11 @@
 
         
         <div class="form-group">
-              <label class="col-md-2 control-label" id="inputGroupPrepend"for="basic-url">Seu Perfil GitHub <h11>*</h11></label>
+              <label class="col-md-2 control-label" for="basic-url">Seu Perfil GitHub <h11>*</h11></label>
         
               <div class="col-md-3">
                   <div class="input-group">
-                    <span class="input-group-addon1" id="github">github.com</span>
+                    <span class="input-group-addon" for="github">github.com</span>
                     <input type="text" class="form-control" required="" id="github" aria-describedby="basic-addon1" placeholder="username" >
                   </div>
                   
@@ -162,12 +154,10 @@
               </div>         
               <br>
             
-        </div>
-
-                   
+        </div>                  
             <div class="form-group">
                
-                <label  class=" col-md-2" for="texto"></label>
+                <label  class=" col-md-2" for="termos-legais"></label>
                 <div class="col-md-9">
                      <h3>Termos legais</h3>
                      <textarea class="form-control" id="texto" rows="3">
@@ -196,32 +186,24 @@
                           Não Quero Receber Informações
                         </label>
                       </div>
-                </div>
-
-              
+                </div>              
                 
-            </div>
-
-
-             <!-- Button (Double) -->
+            </div>        
              <div class="form-group">
                 <label class="col-md-2 control-label" for="Cadastrar"></label>
               <div class="col-md-9">
-                <button  type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
-
-               
-               
+                <button  type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>         
                </div>
               
            </div>
 
            <br>
            
-          <div class="for-group" id="tabela-dados">
+          <div class="for-group" >
               <label class="col-md-2 control-label"></label>
 
                <div class="col-md-9">
-                <table class="table table-dark">
+                <table class="table table-dark " id="tabela-dados">
                   <thead>
                     <tr>
                      
@@ -287,7 +269,7 @@
                     </tr>
 
                     <tr>
-                      <th scope="row">GitHub: <p id="valordigitado-github" disable></th>
+                      <th scope="row">GitHub: <p id="valordigitado-github" disable></p></th>
                       
                      
                     </tr>
@@ -314,9 +296,7 @@
                 </table>
                </div>
           </div>
-
-
-               
+           
        </fieldset>      
     </form>
     

@@ -1,67 +1,86 @@
 document.getElementById('formulario').addEventListener('submit', function (e){
     e.preventDefault();
 
+    
+   
+    var termo = document.querySelector('#termo-sim');
+    var capturar = "";
+    if(termo.checked){
 
        
+
+        capturar = document.getElementById('nome').value;
+        document.getElementById('valordigitado-nome').innerHTML = capturar;
+    
+        capturar = document.getElementById('sobrenome').value;
+        document.getElementById('valordigitado-sobrenome').innerHTML = capturar;
+    
+        capturar = document.getElementById('email').value;
+        document.getElementById('valordigitado-email').innerHTML = capturar;
+    
+        capturar = document.getElementById('login').value;
+        document.getElementById('valordigitado-login').innerHTML = capturar;
+    
+        capturar = document.getElementById('senha').value;
+        document.getElementById('valordigitado-senha').innerHTML = capturar;
+    
+        capturar = document.getElementById('endereco').value;
+        document.getElementById('valordigitado-rua').innerHTML = capturar;
+    
+        capturar = document.getElementById('complemento').value;
+        document.getElementById('valordigitado-complemento').innerHTML = capturar;
+    
+        capturar = document.getElementById('bairro').value;
+        document.getElementById('valordigitado-bairro').innerHTML = capturar;
+    
+        capturar = document.getElementById('estado').value;
+        document.getElementById('valordigitado-estado').innerHTML = capturar;
+    
+        capturar = document.getElementById('cidade').value;
+        document.getElementById('valordigitado-cidade').innerHTML = capturar;
+    
+        capturar = document.getElementById('github').value;
+        document.getElementById('valordigitado-github').innerHTML = capturar;
+    
+        capturar = document.getElementById('academia').value;
+        document.getElementById('valordigitado-academia').innerHTML = capturar;
+    
+    
+        capturar = document.getElementById('professor').value;
+        document.getElementById('valordigitado-professor').innerHTML = capturar;
+    
+        capturar = document.getElementById('termo-sim').value;
+        document.getElementById('valordigitado-termo').innerHTML = capturar;
+    
+        capturar = document.getElementById('receber-sim').value;
+        document.getElementById('valordigitado-sim').innerHTML = capturar;
+    
+        document.getElementById('tabela-dados').classList.remove('d-none');
+        
+        var receberEmails = document.querySelector('#receber-sim');
+
+        if(receberEmails.checked) {
+            document.getElementById('valordigitado-sim').innerText = "Aceito receber os e-mails.";
+        }
+        else {
+            document.getElementById('valordigitado-sim').innerText = "Não aceito receber os e-mails.";
+        }
+        this.reset();
+        
+        alert('Cadastro Efetuado!!');
+    
+        limpa_formulario_cep();
+    }
+    else{
+        alert("Termos não Aceite");
+    }
     
      
-     var capturar = "";
      
-     capturar = document.getElementById('nome').value;
-    document.getElementById('valordigitado-nome').innerHTML = capturar;
-
-    capturar = document.getElementById('sobrenome').value;
-    document.getElementById('valordigitado-sobrenome').innerHTML = capturar;
-
-    capturar = document.getElementById('email').value;
-    document.getElementById('valordigitado-email').innerHTML = capturar;
-
-    capturar = document.getElementById('login').value;
-    document.getElementById('valordigitado-login').innerHTML = capturar;
-
-    capturar = document.getElementById('senha').value;
-    document.getElementById('valordigitado-senha').innerHTML = capturar;
-
-    capturar = document.getElementById('endereco').value;
-    document.getElementById('valordigitado-rua').innerHTML = capturar;
-
-    capturar = document.getElementById('complemento').value;
-    document.getElementById('valordigitado-complemento').innerHTML = capturar;
-
-    capturar = document.getElementById('bairro').value;
-    document.getElementById('valordigitado-bairro').innerHTML = capturar;
-
-    capturar = document.getElementById('estado').value;
-    document.getElementById('valordigitado-estado').innerHTML = capturar;
-
-    capturar = document.getElementById('cidade').value;
-    document.getElementById('valordigitado-cidade').innerHTML = capturar;
-
-    capturar = document.getElementById('github').value;
-    document.getElementById('valordigitado-github').innerHTML = capturar;
-
-    capturar = document.getElementById('academia').value;
-    document.getElementById('valordigitado-academia').innerHTML = capturar;
-
-
-    capturar = document.getElementById('professor').value;
-    document.getElementById('valordigitado-professor').innerHTML = capturar;
-
-    capturar = document.getElementById('termo-sim').value;
-    document.getElementById('valordigitado-termo').innerHTML = capturar;
-
-    capturar = document.getElementById('receber-sim').value;
-    document.getElementById('valordigitado-sim').innerHTML = capturar;
-
-
-    document.getElementById('tabela-dados').classList.remove('d-none');
-    
-    alert('Cadastro Efetuado!!');
-
-    limpa_formulario_cep();
     
 });
 
+    
 
     document.getElementById('nome').addEventListener('keyup', gerarLogin);
     document.getElementById('sobrenome').addEventListener('keyup', gerarLogin);
@@ -73,6 +92,15 @@ document.getElementById('formulario').addEventListener('submit', function (e){
 
     document.getElementById('login').value = login.toLowerCase();
 }
+ 
+document.getElementById('termos-legais').addEventListener('scroll', habilitaTermo);
+
+function habilitaTermo() {
+    var termos = document.getElementById('termos-legais');
+    if ((termos.scrollTop + termos.offsetHeight) >= termos.scrollHeight){
+        document.getElementById('termo-sim').removeAttribute('disabled');
+    }  
+}
 
 
 
@@ -81,7 +109,8 @@ function limpa_formulario_cep() {
     document.getElementById('endereco').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
-    document.getElementById('estado').value=("");   
+    document.getElementById('estado').value=("");  
+    document.getElementById('complemento').value=("");    
     document.getElementById('nome').value=("");   
     document.getElementById('sobrenome').value=(""); 
     document.getElementById('email').value=("");     

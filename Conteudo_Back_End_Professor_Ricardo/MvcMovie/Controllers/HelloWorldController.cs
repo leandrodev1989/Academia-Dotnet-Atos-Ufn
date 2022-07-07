@@ -10,6 +10,11 @@ namespace MvcMovie.Controllers
             return View();
         }
 
+       
+
+
+        
+
 
         public string Welcome(string nome, int vezes = 1, int ID = 1)
         {
