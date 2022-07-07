@@ -12,6 +12,7 @@ namespace _18a_WinFormsApp_Entity_CodeFirst
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-AC\SQLEXPRESS;Initial Catalog=ATOSUFN;Integrated Security=True");
         }
 
-        DbSet<Paciente> Pacientes { get; set; }
+       public  DbSet<Paciente>? Pacientes { get; set; }
+        
     }
 }

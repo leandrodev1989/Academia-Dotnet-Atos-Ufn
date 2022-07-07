@@ -8,6 +8,7 @@ document.getElementById('formulario').addEventListener('submit', function (e){
     if(termo.checked){
 
        
+        document.getElementById('tabela-dados').classList.remove('d-none');
 
         capturar = document.getElementById('nome').value;
         document.getElementById('valordigitado-nome').innerHTML = capturar;
@@ -55,7 +56,7 @@ document.getElementById('formulario').addEventListener('submit', function (e){
         capturar = document.getElementById('receber-sim').value;
         document.getElementById('valordigitado-sim').innerHTML = capturar;
     
-        document.getElementById('tabela-dados').classList.remove('d-none');
+        
         
         var receberEmails = document.querySelector('#receber-sim');
 
@@ -84,7 +85,7 @@ document.getElementById('formulario').addEventListener('submit', function (e){
 
     document.getElementById('nome').addEventListener('keyup', gerarLogin);
     document.getElementById('sobrenome').addEventListener('keyup', gerarLogin);
-
+  // Gera senha automaticamente
     function gerarLogin(){
     const nome = document.getElementById('nome').value;
     const sobrenome = document.getElementById('sobrenome').value;
@@ -94,7 +95,7 @@ document.getElementById('formulario').addEventListener('submit', function (e){
 }
  
 document.getElementById('termos-legais').addEventListener('scroll', habilitaTermo);
-
+//Habiliat os atermos aceito
 function habilitaTermo() {
     var termos = document.getElementById('termos-legais');
     if ((termos.scrollTop + termos.offsetHeight) >= termos.scrollHeight){
