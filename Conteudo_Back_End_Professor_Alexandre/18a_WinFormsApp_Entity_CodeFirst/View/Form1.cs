@@ -24,6 +24,7 @@ namespace _18a_WinFormsApp_Entity_CodeFirst
             else
                 return true;
         }
+        //
 
 
         private void carregarListView()
@@ -44,7 +45,7 @@ namespace _18a_WinFormsApp_Entity_CodeFirst
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Problemas de Conexão com o Banco " + ex.Message, "Alerta");
+                MessageBox.Show("Problemas de Conexï¿½o com o Banco " + ex.Message, "Alerta");
             }
         }
 
@@ -57,7 +58,7 @@ namespace _18a_WinFormsApp_Entity_CodeFirst
             dataGridViewPaciente.DataSource = PacienteController.GetPacientes();
             if (textBox_nomePaciente.Text == String.Empty || textBox_email.Text == String.Empty)
             {
-                MessageBox.Show("Campos não pode ser vazios");
+                MessageBox.Show("Campos nï¿½o pode ser vazios");
             }
             else
             {
@@ -67,7 +68,7 @@ namespace _18a_WinFormsApp_Entity_CodeFirst
                 
             }
             
-            //capturar valores das variáveis
+            //capturar valores das variï¿½veis
 
             this.limparCampos();
             panel_campos.Enabled = false;
